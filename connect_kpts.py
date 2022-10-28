@@ -2,8 +2,8 @@ import numpy as np
 import argparse
 import json, io, pickle, os
 from PIL import Image
-import cv2, copy
-
+import cv2, copy, warnings
+from scipy.optimize import curve_fit
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -12,6 +12,41 @@ def parse_args():
     parser.add_argument('--save-dir', type=str, default='./test')
     return parser.parse_args()
 
+def interpPoints(x, y):
+    if abs(x[:-1] - x[1:]).max() < abs(y[:-1] - y[1:]).max():
+        curve_y, curve_x = interpPoints(y, x)
+        if curve_y is None:
+            return None, None
+    else:
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            if len(x) < 3:
+                popt, _ = curve_fit(linear, x, y)
+            else:
+                popt, _ = curve_fit(func, x, y)
+                if abs(popt[0]) > 1:
+                    return None, None
+        if x[0] > x[-1]:
+            x = list(reversed(x))
+            y = list(reversed(y))
+        #curve_x = np.linspace(x[0], x[-1], (x[-1]-x[0]))
+        curve_x = np.linspace(x[0], x[-1], int(x[-1]-x[0]))
+        if len(x) < 3:
+            curve_y = linear(curve_x, *popt)
+        else:
+            curve_y = func(curve_x, *popt)
+    return curve_x.astype(int), curve_y.astype(int)
+
+
+def extract_valid_keypoints(pts):
+    p = pts.shape[0]
+    thre = 0.01
+    output = np.zeros((p, 2))
+
+    valid = (pts[:, 2] > thre)
+    output[valid, :] = pts[valid, :2]
+
+    return output
 
 class ConnectKptHand:
     def __init__(self, kpt_dir, hand_dir, save_dir, music, kpt_scaling=1.4, hand_scaling=0.5):
@@ -63,6 +98,7 @@ class ConnectKptHand:
                 self.hands_seq[j] = hand
 
     def _match_hand(self, kpt_hands, hands):
+        hands = hands[:, :2]
         diff = hands[0] - kpt_hands
         hands -= diff
         return hands
@@ -74,6 +110,7 @@ class ConnectKptHand:
             black = np.full((self.img_shape[0], self.img_shape[1], 3), 0, dtype=np.int8)
 
             # draw skeleton
+            kpts = extract_valid_keypoints(kpts)
             kpts = np.trunc(kpts) * self.kpt_scaling
             kpts = kpts.astype(np.int16)
             kpts[:, 0] = self.img_shape[0] - kpts[:, 0] + 800
@@ -88,8 +125,8 @@ class ConnectKptHand:
             if (i >= start_timestep) and (i < end_timestep):
                 hands = np.trunc(copy.deepcopy(self.hands_seq[h])) * self.hand_scaling
                 hands = hands.astype(np.int16)
-                hands[:21] = self._match_hand(kpts[4], hands[:21])
-                hands[21:] = self._match_hand(kpts[7], hands[21:])
+                hands[:21, :-1] = self._match_hand(kpts[4], hands[:21])
+                hands[21:, :-1] = self._match_hand(kpts[7], hands[21:])
 
                 for j, hand in enumerate(hands):
                     if j > 21:
@@ -136,7 +173,7 @@ if __name__ == '__main__':
         connector = ConnectKptHand(args.kpt_dir, args.hand_dir, args.save_dir, clip)
         connector.read_data()
         connector.draw_kpts(start_timestep=0)
-        connector.make_video()
+        #connector.make_video()
 
 
 
