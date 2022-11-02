@@ -22,16 +22,12 @@ public class BoneController : MonoBehaviour
 	Vector3 init_position;
 	Vector3 position_offset;
     Quaternion[] init_inv; //Inverse
-	// int[] bones = new int[10] { 1, 2, 4, 5, 7, 8, 11, 12, 14, 15 }; 
-    // int[] child_bones = new int[10] { 2, 3, 5, 6, 8, 10, 12, 13, 15, 16 }; // bones
-	// int[] bones = new int[13] { 1, 2, 4, 5, 7, 8, 8, 8, 9, 11, 12, 14, 15 }; 
-    // int[] child_bones = new int[13] { 2, 3, 5, 6, 8, 1, 4, 9, 10, 12, 13, 15, 16 }; // bones
-	int[] bones = new int[15] { 0, 0, 1, 2, 4, 5, 7, 8, 8, 8, 9, 11, 12, 14, 15 }; 
-    int[] child_bones = new int[15] { 11, 14, 2, 3, 5, 6, 8, 1, 4, 9, 10, 12, 13, 15, 16 }; // bones
+	int[] bones = new int[16] {0, 0, 7, 8, 8, 8, 9, 10, 1, 2, 4, 5, 11, 12, 14, 15}; //7,8,9,10,0
+    int[] child_bones = new int[16] {1, 4, 0, 11, 14, 7, 8, 9, 2, 3, 5, 6, 12, 13, 15, 16}; // bones
 	int bone_num = 19;
 	float scale_ratio = 0.005f;
     float heal_position = 0.005f;
-    float head_angle = 0f;
+    float head_angle = -55f;
 	
 
 	float Timer;
@@ -76,7 +72,7 @@ public class BoneController : MonoBehaviour
 		BoneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftLowerArm));
 		BoneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftHand));
 
-		Vector3 init_forward = TriangleNormal(points[7],points[4],points[1]);
+		Vector3 init_forward = TriangleNormal(points[7],points[4],points[0]);
 		init_inv[0] = Quaternion.Inverse(Quaternion.LookRotation(init_forward));
 
 		init_position = BoneList[0].position;
@@ -166,7 +162,7 @@ public class BoneController : MonoBehaviour
 	{
 		Vector3[] now_pos = points;
 
-        Vector3 pos_forward = TriangleNormal(now_pos[7], now_pos[4], now_pos[1]);
+        Vector3 pos_forward = TriangleNormal(now_pos[7], now_pos[4], now_pos[0]);
 		// 캐릭터의 위치를 업데이트
         BoneList[0].position = (now_pos[0] * scale_ratio) + new Vector3(init_position.x, heal_position, init_position.z);
         BoneList[0].rotation = Quaternion.LookRotation(pos_forward) * init_inv[0] * init_rot[0];
@@ -176,17 +172,12 @@ public class BoneController : MonoBehaviour
             int b = bones[i];
             int cb = child_bones[i];
             // Debug.Log($"{i},{b},{cb}");
-			Debug.Log($"{BoneList[b].rotation = (Quaternion.LookRotation(now_pos[b] - now_pos[cb], pos_forward) * init_inv[b] * init_rot[b])}");
-			
-			if (i >= 2 && i <= 5){
-				BoneList[b].Rotate(180,0,180);
-			}
-			// if (i >= 0 && i <= 3){
-			// 	BoneList[b].Rotate(180,0,180);
-			// }
-        }
+			// Debug.Log($"{BoneList[b].rotation = (Quaternion.LookRotation(now_pos[b] - now_pos[cb], pos_forward) * init_inv[b] * init_rot[b])}");
+			BoneList[b].rotation = (Quaternion.LookRotation(now_pos[b] - now_pos[cb], pos_forward) * init_inv[b] * init_rot[b]);
 
-        // BoneList[9].rotation = Quaternion.AngleAxis(head_angle, BoneList[11].position - BoneList[14].position) * BoneList[8].rotation;
+        }
+		
+        BoneList[9].rotation = Quaternion.AngleAxis(head_angle, BoneList[11].position - BoneList[14].position) * BoneList[9].rotation;
 		
 		for (int i = 0; i < 16; i++)
 		{
