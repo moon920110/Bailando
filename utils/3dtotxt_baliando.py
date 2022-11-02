@@ -62,46 +62,64 @@ def write2txt(dances, dance_names, config, expdir, epoch):
             frame_txt = np.zeros((17,3))
 
             keypoints = dances[i][j]
+
             for k, keypoint in enumerate(keypoints):
                 x = (keypoint[0] + 1) * 0.5 * config.width
                 y = (keypoint[1] + 1) * 0.5 * config.height
                 z = (keypoint[2] + 1) * 0.5 * config.height
+
                 score = 0.8
                 if k < pose_keypoints_num:
                     pose_keypoints_2d.extend([x, y, z])
             #         # pose_keypoints_2d.extend([x, y, score])
             pose_keypoints_2d = np.array(pose_keypoints_2d).reshape(25,3)
 
+            # hip
             frame_txt[0] = pose_keypoints_2d[8]
-
+            # right Leg
             frame_txt[1] = pose_keypoints_2d[12]
             frame_txt[2] = pose_keypoints_2d[13]
             frame_txt[3] = pose_keypoints_2d[14]
+            # left Leg
             frame_txt[4] = pose_keypoints_2d[9]
             frame_txt[5] = pose_keypoints_2d[10]
             frame_txt[6] = pose_keypoints_2d[11]
 
+            # spine
             if pose_keypoints_2d[1][0] > pose_keypoints_2d[8][0]:
                 frame_txt[7][0] = pose_keypoints_2d[1][0] - np.abs(pose_keypoints_2d[1][0]-pose_keypoints_2d[8][0])/2
             else:
                 frame_txt[7][0] = pose_keypoints_2d[8][0] - np.abs(pose_keypoints_2d[1][0]-pose_keypoints_2d[8][0])/2
+
+            if pose_keypoints_2d[1][1] > pose_keypoints_2d[8][1]:
+                frame_txt[7][1] = pose_keypoints_2d[1][1] - np.abs(pose_keypoints_2d[1][1]-pose_keypoints_2d[8][1])/2
+            else:
+                frame_txt[7][1] = pose_keypoints_2d[8][1] - np.abs(pose_keypoints_2d[1][1]-pose_keypoints_2d[8][1])/2
 
             if pose_keypoints_2d[1][2] > pose_keypoints_2d[8][2]:
                 frame_txt[7][2] = pose_keypoints_2d[1][2] - np.abs(pose_keypoints_2d[1][2]-pose_keypoints_2d[8][2])/2
             else:
                 frame_txt[7][2] = pose_keypoints_2d[8][2] - np.abs(pose_keypoints_2d[1][2]-pose_keypoints_2d[8][2])/2
             
+            # chest
             frame_txt[8] = pose_keypoints_2d[1]
+            # neck
             frame_txt[9] = pose_keypoints_2d[0]
-            frame_txt[10] = pose_keypoints_2d[15]
+            # head
+            frame_txt[10] = pose_keypoints_2d[16]
+            
+            # frame_txt[10][2] = np.array([frame_txt[9][2],frame_txt[16][2]]).mean()
+            # right leg
             frame_txt[11] = pose_keypoints_2d[2]
             frame_txt[12] = pose_keypoints_2d[3]
             frame_txt[13] = pose_keypoints_2d[4]
+            # left leg
             frame_txt[14] = pose_keypoints_2d[5]
             frame_txt[15] = pose_keypoints_2d[6]
             frame_txt[16] = pose_keypoints_2d[7]
             frame_txt = np.transpose(frame_txt).tolist()
             frame_txt = [frame_txt]
+
             with open(os.path.join(dance_path, f'{j}.txt'), 'w') as f:
                 f.writelines("%s" % frame_txt)
 
