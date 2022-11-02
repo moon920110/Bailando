@@ -8,26 +8,26 @@ public class BoneController : MonoBehaviour
 {
 	[SerializeField] Animator animator;
 	[SerializeField, Range(10, 120)] float FrameRate;
-	[SerializeField] string Data_Path;
-	[SerializeField] string File_Name;
-	[SerializeField] int Start_Frame;
-	[SerializeField] int Data_Size;
+	[SerializeField] string DataPath;
+	[SerializeField] string FileName;
+	[SerializeField] int StartFrame;
+	[SerializeField] int DataSize;
 	public List<Transform> BoneList = new List<Transform>();
-	public float initX;
-	public float initY;
-	public float initZ;
-	Vector3[] points = new Vector3[17];
+	public float InitX;
+	public float InitY;
+	public float InitZ;
+	Vector3[] Points = new Vector3[17];
 	Vector3[] NormalizeBone = new Vector3[12];
-	Quaternion[] init_rot;
-	Vector3 init_position;
-	Vector3 position_offset;
-    Quaternion[] init_inv; //Inverse
-	int[] bones = new int[16] {0, 0, 7, 8, 8, 8, 9, 10, 1, 2, 4, 5, 11, 12, 14, 15}; //7,8,9,10,0
-    int[] child_bones = new int[16] {1, 4, 0, 11, 14, 7, 8, 9, 2, 3, 5, 6, 12, 13, 15, 16}; // bones
-	int bone_num = 19;
-	float scale_ratio = 0.005f;
-    float heal_position = 0.005f;
-    float head_angle = -55f;
+	Quaternion[] InitRot;
+	Vector3 InitPosition;
+	Vector3 PositionOffset;
+    Quaternion[] InitInv; //Inverse
+	int[] Bones = new int[16] {0, 0, 7, 8, 8, 8, 9, 10, 1, 2, 4, 5, 11, 12, 14, 15};
+    int[] ChildBones = new int[16] {1, 4, 0, 11, 14, 7, 8, 9, 2, 3, 5, 6, 12, 13, 15, 16};
+	int BoneNum = 19;
+	float ScaleRatio = 0.005f;
+    float HealPosition = 0.005f;
+    float HeadAngle = -55f;
 	
 
 	float Timer;
@@ -51,8 +51,8 @@ public class BoneController : MonoBehaviour
 	}
 	void GetBones()
 	{
-        init_rot = new Quaternion[bone_num];
-        init_inv = new Quaternion[bone_num];
+        InitRot = new Quaternion[BoneNum];
+        InitInv = new Quaternion[BoneNum];
 
 		BoneList.Add(animator.GetBoneTransform(HumanBodyBones.Hips));
 		BoneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftUpperLeg));
@@ -72,27 +72,27 @@ public class BoneController : MonoBehaviour
 		BoneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftLowerArm));
 		BoneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftHand));
 
-		Vector3 init_forward = TriangleNormal(points[7],points[4],points[0]);
-		init_inv[0] = Quaternion.Inverse(Quaternion.LookRotation(init_forward));
+		Vector3 init_forward = TriangleNormal(Points[7],Points[4],Points[0]);
+		InitInv[0] = Quaternion.Inverse(Quaternion.LookRotation(init_forward));
 
-		init_position = BoneList[0].position;
-        init_rot[0] = BoneList[0].rotation;
-        for (int i = 0; i < bones.Length; i++) {
-            int b = bones[i];
-            int cb = child_bones[i];
+		InitPosition = BoneList[0].position;
+        InitRot[0] = BoneList[0].rotation;
+        for (int i = 0; i < Bones.Length; i++) {
+            int b = Bones[i];
+            int cb = ChildBones[i];
         
            
-            init_rot[b] = BoneList[b].rotation;
+            InitRot[b] = BoneList[b].rotation;
             
-            init_inv[b] = Quaternion.Inverse(Quaternion.LookRotation(BoneList[b].position - BoneList[cb].position,init_forward));
-            // Debug.Log($"{init_rot[b]},{init_inv[b]}");
+            InitInv[b] = Quaternion.Inverse(Quaternion.LookRotation(BoneList[b].position - BoneList[cb].position,init_forward));
+            // Debug.Log($"{InitRot[b]},{InitInv[b]}");
 		}
 	}
 	void PointUpdate()
 	{
-		if (NowFrame < Data_Size)
+		if (NowFrame < DataSize)
 		{
-			StreamReader fi = new StreamReader(Application.dataPath + Data_Path + File_Name + (NowFrame + Start_Frame).ToString() + ".txt");
+			StreamReader fi = new StreamReader(Application.dataPath + DataPath + FileName + (NowFrame + StartFrame).ToString() + ".txt");
 			string all = fi.ReadToEnd();
 			if (all != "0")
 			{
@@ -107,15 +107,15 @@ public class BoneController : MonoBehaviour
                 if (NowFrame == 0)
                 {
 					int idx = 0;
-                    position_offset = new Vector3(x[idx] - initX, y[idx] - initY, z[idx] - initZ);
+                    PositionOffset = new Vector3(x[idx] - InitX, y[idx] - InitY, z[idx] - InitZ);
                 }
 				for (int i = 0; i < 17; i++)
 				{
-					points[i] = new Vector3(x[i], y[i], z[i]) - position_offset; 
+					Points[i] = new Vector3(x[i], y[i], z[i]) - PositionOffset; 
 				}
 				for (int i = 0; i < 12; i++)
 				{
-					NormalizeBone[i] = (points[BoneJoint[i, 1]] - points[BoneJoint[i, 0]]).normalized;
+					NormalizeBone[i] = (Points[BoneJoint[i, 1]] - Points[BoneJoint[i, 0]]).normalized;
 				}
 			}
 			else
@@ -154,41 +154,41 @@ public class BoneController : MonoBehaviour
 	static Vector3 SpineCalc(Vector3 a2, Vector3 b2, Vector3 c2)
 	{
 		Vector3 s2 = (b2-c2)/2;
-	Vector3 s=(a2-s2)/2;
+	Vector3 s = (a2-s2)/2;
 	return s;
 	}
 
 	void SetBoneRot()
 	{
-		Vector3[] now_pos = points;
+		Vector3[] now_pos = Points;
 
         Vector3 pos_forward = TriangleNormal(now_pos[7], now_pos[4], now_pos[0]);
 		// 캐릭터의 위치를 업데이트
-        BoneList[0].position = (now_pos[0] * scale_ratio) + new Vector3(init_position.x, heal_position, init_position.z);
-        BoneList[0].rotation = Quaternion.LookRotation(pos_forward) * init_inv[0] * init_rot[0];
+        BoneList[0].position = (now_pos[0] * ScaleRatio) + new Vector3(InitPosition.x, HealPosition, InitPosition.z);
+        BoneList[0].rotation = Quaternion.LookRotation(pos_forward) * InitInv[0] * InitRot[0];
 
 		Vector3 tmp = new Vector3(-1, 0, 0);
-        for (int i = 0; i < bones.Length; i++) {
-            int b = bones[i];
-            int cb = child_bones[i];
+        for (int i = 0; i < Bones.Length; i++) {
+            int b = Bones[i];
+            int cb = ChildBones[i];
             // Debug.Log($"{i},{b},{cb}");
-			// Debug.Log($"{BoneList[b].rotation = (Quaternion.LookRotation(now_pos[b] - now_pos[cb], pos_forward) * init_inv[b] * init_rot[b])}");
-			BoneList[b].rotation = (Quaternion.LookRotation(now_pos[b] - now_pos[cb], pos_forward) * init_inv[b] * init_rot[b]);
+			// Debug.Log($"{BoneList[b].rotation = (Quaternion.LookRotation(now_pos[b] - now_pos[cb], pos_forward) * InitInv[b] * InitRot[b])}");
+			BoneList[b].rotation = (Quaternion.LookRotation(now_pos[b] - now_pos[cb], pos_forward) * InitInv[b] * InitRot[b]);
 
         }
 		
-        BoneList[9].rotation = Quaternion.AngleAxis(head_angle, BoneList[11].position - BoneList[14].position) * BoneList[9].rotation;
+        BoneList[9].rotation = Quaternion.AngleAxis(HeadAngle, BoneList[11].position - BoneList[14].position) * BoneList[9].rotation;
 		
 		for (int i = 0; i < 16; i++)
 		{
-			DrawLine(points[joints[i, 0]] * 0.001f + new Vector3(-1, 0.8f, 0), points[joints[i, 1]] * 0.001f + new Vector3(-1, 0.8f, 0), Color.blue);
-			DrawRay(points[joints[i, 0]] * 0.001f + new Vector3(-1, 0.8f, 0), BoneList[i].right * 0.01f, Color.magenta);
-			DrawRay(points[joints[i, 0]] * 0.001f + new Vector3(-1, 0.8f, 0), BoneList[i].forward * 0.01f, Color.green);
-			DrawRay(points[joints[i, 0]] * 0.001f + new Vector3(-1, 0.8f, 0), BoneList[i].up * 0.01f, Color.cyan);
+			DrawLine(Points[joints[i, 0]] * 0.001f + new Vector3(-1, 0.8f, 0), Points[joints[i, 1]] * 0.001f + new Vector3(-1, 0.8f, 0), Color.blue);
+			DrawRay(Points[joints[i, 0]] * 0.001f + new Vector3(-1, 0.8f, 0), BoneList[i].right * 0.01f, Color.magenta);
+			DrawRay(Points[joints[i, 0]] * 0.001f + new Vector3(-1, 0.8f, 0), BoneList[i].forward * 0.01f, Color.green);
+			DrawRay(Points[joints[i, 0]] * 0.001f + new Vector3(-1, 0.8f, 0), BoneList[i].up * 0.01f, Color.cyan);
 		}
 		for (int i = 0; i < 12; i++)
 		{
-			DrawRay(points[BoneJoint[i, 0]] * 0.001f + new Vector3(1, 0.8f, 0), NormalizeBone[i] * 0.1f, Color.green);
+			DrawRay(Points[BoneJoint[i, 0]] * 0.001f + new Vector3(1, 0.8f, 0), NormalizeBone[i] * 0.1f, Color.green);
 		}
 	}
 	void DrawLine(Vector3 s, Vector3 e, Color c)
@@ -199,24 +199,4 @@ public class BoneController : MonoBehaviour
 	{
 		Debug.DrawRay(s, d, c);
 	}
-}
-enum PointsNum
-{
-	Hips,
-	RightUpperLeg,
-	RightLowerLeg,
-	RightFoot,
-	LeftUpperLeg,
-	LeftLowerLeg,
-	LeftFoot,
-	Spine,
-	Chest,
-	Neck,
-	Head,
-	LeftUpperArm,
-	LeftLowerArm,
-	LeftHand,
-	RightUpperArm,
-	RightLowerArm,
-	RightHand
 }
