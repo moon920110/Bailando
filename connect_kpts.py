@@ -138,5 +138,3 @@ if __name__ == '__main__':
         connector.draw_kpts(start_timestep=0)
         connector.make_video()
 
-
-
