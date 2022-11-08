@@ -16,6 +16,7 @@ public class BoneController : MonoBehaviour
 	public float initX;
 	public float initY;
 	public float initZ;
+
 	Vector3[] points = new Vector3[17];
 	Vector3[] normalizeBone = new Vector3[12];
 	Quaternion[] initRot;
