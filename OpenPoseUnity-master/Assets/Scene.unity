@@ -293,7 +293,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842610249}
   m_LocalRotation: {x: 0.002853143, y: 0.99707085, z: -0.047526423, w: 0.059856933}
-  m_LocalPosition: {x: 2.123, y: 1.061, z: -1.185}
+  m_LocalPosition: {x: 2.123, y: 0.34, z: -3.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -328,16 +328,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 901750379}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ef9b1bb250b13e44b3f15392f505c5d, type: 3}
+  m_Script: {fileID: 11500000, guid: 26310839dffca704d8495561660f9312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 901750381}
-  FrameRate: 60
-  Data_Path: /dances/Davichi-Happy_Together/
-  File_Name: 
-  Data_Size: 18000
-  BoneList: []
-  startFrame: 1320
+  frameRate: 60
+  dataPath: /DataArms/
+  fileName: 
+  startFrame: 0
+  dataSize: 100
+  boneList: []
+  initX: 0
+  initY: 0
+  initZ: 0
 --- !u!95 &901750381
 Animator:
   serializedVersion: 3
@@ -379,17 +382,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 901750379}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3404e1ca2aba3074585fa85fb363d0b5, type: 3}
+  m_Script: {fileID: 11500000, guid: 67cbc41099cf54d4191a6bc7220dcef2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 901750381}
-  FrameRate: 60
-  Data_Path: "D:\\CILAB\\\uACFC\uC81C\\CT\\\uCCAD\uAC01\\Davichi-Happy_Together"
-  File_Name: 
-  Data_Size: 137
-  BoneList: []
+  frameRate: 60
+  dataPath: /DataPose/
+  fileName: 
+  startFrame: 1320
+  dataSize: 1700
+  boneList: []
+  initX: 0
+  initY: 0
+  initZ: 0
 --- !u!82 &901750384
 AudioSource:
   m_ObjectHideFlags: 0
