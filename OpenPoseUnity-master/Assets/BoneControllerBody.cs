@@ -32,11 +32,12 @@ public class BoneControllerBody : MonoBehaviour
 	int numberOfPoints = 17;
 	float scaleRatio = 0.005f;
     float healPosition = 0.005f;
-    float headAngle = -55f;
+    float headAngle = 55f;
 	
 	float timer;
 	int[,] joints = new int[,]
-	{ { 0, 1 }, { 1, 2 }, { 2, 3 }, { 0, 4 }, { 4, 5 }, { 5, 6 }, { 0, 7 }, { 7, 8 }, { 8, 9 }, { 9, 10 }, { 8, 11 }, { 11, 12 }, { 12, 13 }, { 8, 14 }, { 14, 15 }, { 15, 16 }
+	{ 
+		{ 0, 1 }, { 1, 2 }, { 2, 3 }, { 0, 4 }, { 4, 5 }, { 5, 6 }, { 0, 7 }, { 7, 8 }, { 8, 9 }, { 9, 10 }, { 8, 11 }, { 11, 12 }, { 12, 13 }, { 8, 14 }, { 14, 15 }, { 15, 16 }
 	};
 	int[,] boneJoint = new int[,]
 	{ { 0, 2 }, { 2, 3 }, { 0, 5 }, { 5, 6 }, { 0, 7 }, { 7, 8 }, { 8, 9 }, { 9, 10 }, { 9, 12 }, { 12, 13 }, { 9, 15 }, { 15, 16 }
@@ -70,12 +71,12 @@ public class BoneControllerBody : MonoBehaviour
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.Chest));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.Neck));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.Head));
-		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightUpperArm));
-		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightLowerArm));
-		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightHand));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftUpperArm));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftLowerArm));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftHand));
+		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightUpperArm));
+		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightLowerArm));
+		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightHand));
 
 		Vector3 init_forward = TriangleNormal(points[7],points[4],points[0]);
 		initInv[0] = Quaternion.Inverse(Quaternion.LookRotation(init_forward));
