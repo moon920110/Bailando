@@ -22,17 +22,22 @@ public class BoneControllerArms : MonoBehaviour
 	Vector3 initPosition;
 	Vector3 positionOffset;
     Quaternion[] initInv; //Inverse
-	// int [] bones = new int[34] {1, 2, 3, 4, 5, 3, 7, 8, 3, 10, 11, 3, 13, 14, 3, 16, 17, 19, 20, 21, 22, 23, 21, 25, 26, 21, 28, 29, 21, 31, 32, 21, 34, 35};
-	// int[] child_bones = new int[34] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36 };
+	int [] bones = new int[34] {1, 2, 3, 4, 5, 3, 7, 8, 3, 10, 11, 3, 13, 14, 3, 16, 17, 19, 20, 21, 22, 23, 21, 25, 26, 21, 28, 29, 21, 31, 32, 21, 34, 35};
+	int[] child_bones = new int[34] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36 };
 
-	int [] bones = new int[6] {1, 2, 3, 19, 20, 21};
-	int[] child_bones = new int[6] {2, 3, 4, 20, 21, 22};
+	// int [] bones = new int[6] {1, 2, 3, 19, 20, 21};
+	// int[] child_bones = new int[6] {2, 3, 4, 20, 21, 22};
 
 	// int [] bones = new int[3] {3, 2, 1};
 	// int[] child_bones = new int[3] {4,3,2};
 
 	int boneNum = 39;
 	int numberOfPoints = 38;
+
+	int[,] joints = new int[,]
+	{ 
+		{1, 2}, {2, 3}, {3, 4}, {4, 5}, {5, 6}, {3, 7}, {7, 8}, {8, 9}, {3, 10}, {10, 11}, {11, 12}, {3, 13}, {13, 14}, {14, 15}, {3, 16}, {16, 17}, {17, 18}, {19, 20}, {20, 21}, {21, 22}, {22, 23}, {23, 24}, {21, 25}, {25, 26}, {26, 27}, {21, 28}, {28, 29}, {29, 30}, {21, 31}, {31, 32}, {32, 33}, {21, 34}, {34, 35}, {35, 36}
+	};
 
 	float timer;
 	int nowFrame = 0;
@@ -149,7 +154,8 @@ public class BoneControllerArms : MonoBehaviour
                 }
 				for (int i = 0; i < numberOfPoints; i++)
 				{
-					points[i] = new Vector3(x[i], y[i], -z[i]) - positionOffset; 
+					//Todo : swap z and y when create txt file
+					points[i] = new Vector3(x[i], z[i], -y[i]) - positionOffset; 
 				}
 			}
 			else
@@ -190,5 +196,26 @@ public class BoneControllerArms : MonoBehaviour
 			// Debug.Log($"{boneList[b].rotation = (Quaternion.LookRotation(now_pos[b] - now_pos[cb], pos_forward) * initInv[b] * initRot[b])}");
 			boneList[b].rotation = (Quaternion.LookRotation(now_pos[b] - now_pos[cb], pos_forward) * initInv[b] * initRot[b]);
 		}
+
+		for (int i = 0; i<34; i++)
+		{
+			DrawLine(points[joints[i, 0]] + new Vector3(-1, 0.8f, 0), points[joints[i, 1]] + new Vector3(-1, 0.8f, 0), Color.blue);
+			DrawRay(points[joints[i, 0]] + new Vector3(-1, 0.8f, 0), boneList[i].right * 0.01f, Color.magenta);
+			DrawRay(points[joints[i, 0]] + new Vector3(-1, 0.8f, 0), boneList[i].forward * 0.01f, Color.green);
+			DrawRay(points[joints[i, 0]] + new Vector3(-1, 0.8f, 0), boneList[i].up * 0.01f, Color.cyan);
+
+			// DrawLine(points[joints[i, 0]] * 0.001f + new Vector3(-1, 0.8f, 0), points[joints[i, 1]] * 0.001f + new Vector3(-1, 0.8f, 0), Color.blue);
+			// DrawRay(points[joints[i, 0]] * 0.001f + new Vector3(-1, 0.8f, 0), boneList[i].right * 0.01f, Color.magenta);
+			// DrawRay(points[joints[i, 0]] * 0.001f + new Vector3(-1, 0.8f, 0), boneList[i].forward * 0.01f, Color.green);
+			// DrawRay(points[joints[i, 0]] * 0.001f + new Vector3(-1, 0.8f, 0), boneList[i].up * 0.01f, Color.cyan);
+		}
+	}
+	void DrawLine(Vector3 s, Vector3 e, Color c)
+	{
+		Debug.DrawLine(s, e, c);
+	}
+	void DrawRay(Vector3 s, Vector3 d, Color c)
+	{
+		Debug.DrawRay(s, d, c);
 	}
 }
