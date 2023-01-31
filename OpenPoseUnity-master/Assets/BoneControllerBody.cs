@@ -23,6 +23,7 @@ public class BoneControllerBody : MonoBehaviour
 	Vector3 initPosition;
 	Vector3 positionOffset;
     Quaternion[] initInv; //Inverse
+
 	int[] bones = new int[16] {0, 0, 7, 8, 8, 8, 9, 10, 1, 2, 4, 5, 11, 12, 14, 15};
     int[] childBones = new int[16] {1, 4, 0, 11, 14, 7, 8, 9, 2, 3, 5, 6, 12, 13, 15, 16};
 	// int[] bones = new int[12] {0, 0, 7, 8, 8, 8, 9, 10, 1, 2, 4, 5};
@@ -71,12 +72,12 @@ public class BoneControllerBody : MonoBehaviour
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.Chest));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.Neck));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.Head));
-		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightUpperArm));
-		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightLowerArm));
-		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightHand));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftUpperArm));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftLowerArm));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftHand));
+		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightUpperArm));
+		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightLowerArm));
+		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightHand));
 
 		Vector3 init_forward = TriangleNormal(points[7],points[4],points[0]);
 		initInv[0] = Quaternion.Inverse(Quaternion.LookRotation(init_forward));
@@ -142,6 +143,7 @@ public class BoneControllerBody : MonoBehaviour
 	}
 	Vector3 TriangleNormal(Vector3 a, Vector3 b, Vector3 c)
     {
+
         Vector3 d1 = b - a;
         Vector3 d2 = c - a;
 
@@ -191,26 +193,5 @@ public class BoneControllerBody : MonoBehaviour
 	void DrawRay(Vector3 s, Vector3 d, Color c)
 	{
 		Debug.DrawRay(s, d, c);
-	}
-	Vector3 GetHipsRotation(Vector3 rootJoint, Vector3 relJointA, Vector3 relJointB)
-	{
-		Vector3 u = relJointA - rootJoint;
-		u.Normalize();
-		Vector3 v = relJointB - rootJoint;
-		v.Normalize();
-		Vector3 w = Vector3.Cross(u, v);
-		
-		w.Normalize();
-		return w;
-	}
-	Vector3 GetR2(Vector3 A, Vector3 B)
-	{
-		Vector3 uA = A.normalized;
-		Vector3 uB = B.normalized;
-
-		Vector3 v = Vector3.Cross(uA, uB);
-		Vector3 s = v.normalized;
-		Vector3 c = uA + uB;
-		return A;
 	}
 }
