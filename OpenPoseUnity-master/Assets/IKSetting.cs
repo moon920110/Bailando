@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class IKSetting : MonoBehaviour
 {
+    [SerializeField] Animator animator;
     [SerializeField, Range(10, 120)] float FrameRate;
     public List<Transform> BoneList = new List<Transform>();
     [SerializeField] string Data_Path;
@@ -21,6 +22,7 @@ public class IKSetting : MonoBehaviour
     int[, ] joints = new int[, ] { { 0, 1 }, { 1, 2 }, { 2, 3 }, { 0, 4 }, { 4, 5 }, { 5, 6 }, { 0, 7 }, { 7, 8 }, { 8, 9 }, { 9, 10 }, { 8, 11 }, { 11, 12 }, { 12, 13 }, { 8, 14 }, { 14, 15 }, { 15, 16 } };
     int[, ] BoneJoint = new int[, ] { { 0, 2 }, { 2, 3 }, { 0, 5 }, { 5, 6 }, { 0, 9 }, { 9, 10 }, { 9, 11 }, { 11, 12 }, { 12, 13 }, { 9, 14 }, { 14, 15 }, { 15, 16 } };
     int[, ] NormalizeJoint = new int[, ] { { 0, 1 }, { 1, 2 }, { 0, 3 }, { 3, 4 }, { 0, 5 }, { 5, 6 }, { 5, 7 }, { 7, 8 }, { 8, 9 }, { 5, 10 }, { 10, 11 }, { 11, 12 } };
+    // int[,] NormalizeJoint = new int[,] { { 0, 1 }, { 1, 2 }, { 0, 3 }, { 3, 4 }, { 0, 5 }, { 5, 6 }, { 5, 10 }, { 10, 11 }, { 11, 12 }, { 5, 7 }, { 7, 8 }, { 8, 9 } };
     int NowFrame = 0;
     void Start()
     {
@@ -60,13 +62,16 @@ public class IKSetting : MonoBehaviour
             // float[] z = axis[1].Replace("[", "").Replace(Environment.NewLine, "").Split(' ').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
             for (int i = 0; i < 17; i++)
             {
-                points[i] = new Vector3(-x[i], y[i], -z[i]);
+                points[i] = new Vector3(-x[i], y[i], z[i]);
             }
 
             for (int i = 0; i < 12; i++)
             {
+                // NormalizeBone[i] = (points[BoneJoint[i, 1]] - points[BoneJoint[i, 0]]).normalized;
                 NormalizeBone[i] = (points[BoneJoint[i, 1]] - points[BoneJoint[i, 0]]).normalized;
+                // 최대값 최소값 찾아놓기
             }
+            // 관절 전체에 대해 normalize 연산 실행
         }
     }
     void IKFind()
@@ -92,10 +97,15 @@ public class IKSetting : MonoBehaviour
     {
         if (Math.Abs(points[0].x) < 1000 && Math.Abs(points[0].y) < 1000 && Math.Abs(points[0].z) < 1000)
         {
+            // BoneList[0].position = Vector3.Lerp(BoneList[0].position, points[0] * 0.001f + Vector3.up * 0.8f, 0.1f);
+            // 아바타의 위치를 결정
             BoneList[0].position = Vector3.Lerp(BoneList[0].position, points[0] * 0.001f + Vector3.up * 0.8f, 0.1f);
             FullbodyIK.transform.position = Vector3.Lerp(FullbodyIK.transform.position, points[0] * 0.001f, 0.01f);
+            // 아바타가 보는 방향을 결정
             Vector3 hipRot = (NormalizeBone[0] + NormalizeBone[1] + NormalizeBone[4]).normalized;
+            // Vector3 hipRot = (NormalizeBone[0] + NormalizeBone[1] + NormalizeBone[4]);
             FullbodyIK.transform.forward = Vector3.Lerp(FullbodyIK.transform.forward, new Vector3(hipRot.x, 0, hipRot.z), 0.1f);
+            // FullbodyIK.transform.forward = Vector3.Lerp(FullbodyIK.transform.forward, new Vector3(BoneList[0].forward.x, 0, BoneList[0].forward.z), 0.1f);
         }
         for (int i = 0; i < 12; i++)
         {
@@ -108,7 +118,7 @@ public class IKSetting : MonoBehaviour
         }
         for (int i = 0; i < joints.Length / 2; i++)
         {
-            DrawLine(points[joints[i, 0]] * 0.001f + new Vector3(-1, 0.8f, 0), points[joints[i, 1]] * 0.001f + new Vector3(-1, 0.8f, 0), Color.blue);
+            DrawLine(points[joints[i, 0]] * 1.0f + new Vector3(1000, -100, 0), points[joints[i, 1]] * 1.0f + new Vector3(1000, -100, 0), Color.blue);
         }
     }
     void DrawLine(Vector3 s, Vector3 e, Color c)
@@ -136,10 +146,10 @@ enum OpenPoseRef
 };
 enum NormalizeBoneRef
 {
-    Hip2LeftKnee,
-    LeftKnee2LeftFoot,
     Hip2RightKnee,
     RightKnee2RightFoot,
+    Hip2LeftKnee,
+    LeftKnee2LeftFoot,
     Hip2Neck,
     Neck2Head,
     Neck2RightArm,
