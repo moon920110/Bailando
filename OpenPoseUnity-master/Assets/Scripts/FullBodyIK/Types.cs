@@ -248,12 +248,18 @@ namespace SA
 			case BoneLocation.LeftEye:			return Side.Left;
 			case BoneLocation.RightEye:			return Side.Right;
 
-			case BoneLocation.LeftLeg:			return Side.Left;
-			case BoneLocation.RightLeg:			return Side.Right;
-			case BoneLocation.LeftKnee:			return Side.Left;
-			case BoneLocation.RightKnee:		return Side.Right;
-			case BoneLocation.LeftFoot:			return Side.Left;
-			case BoneLocation.RightFoot:		return Side.Right;
+			case BoneLocation.LeftLeg:			return Side.Right;
+			case BoneLocation.RightLeg:			return Side.Left;
+			case BoneLocation.LeftKnee:			return Side.Right;
+			case BoneLocation.RightKnee:		return Side.Left;
+			case BoneLocation.LeftFoot:			return Side.Right;
+			case BoneLocation.RightFoot:		return Side.Left;
+			// case BoneLocation.LeftLeg:			return Side.Left;
+			// case BoneLocation.RightLeg:			return Side.Right;
+			// case BoneLocation.LeftKnee:			return Side.Left;
+			// case BoneLocation.RightKnee:		return Side.Right;
+			// case BoneLocation.LeftFoot:			return Side.Left;
+			// case BoneLocation.RightFoot:		return Side.Right;
 
 			case BoneLocation.LeftShoulder:		return Side.Left;
 			case BoneLocation.RightShoulder:	return Side.Right;

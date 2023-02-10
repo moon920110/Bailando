@@ -81,6 +81,8 @@ namespace SA
 				_limbIKSide = FullBodyIK.ToLimbIKSide( limbIKLocation );
 
 				if( _limbIKType == LimbIKType.Leg ) {
+					// var legBones = (_limbIKSide == Side.Left) ? fullBodyIK.leftLegBones : fullBodyIK.rightLegBones;
+					// var legEffectors = (_limbIKSide == Side.Left) ? fullBodyIK.leftLegEffectors : fullBodyIK.rightLegEffectors;
 					var legBones = (_limbIKSide == Side.Left) ? fullBodyIK.leftLegBones : fullBodyIK.rightLegBones;
 					var legEffectors = (_limbIKSide == Side.Left) ? fullBodyIK.leftLegEffectors : fullBodyIK.rightLegEffectors;
 					_beginBone = legBones.leg;
