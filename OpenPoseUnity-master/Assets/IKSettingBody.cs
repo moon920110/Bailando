@@ -75,17 +75,18 @@ public class IKSettingBody : MonoBehaviour
     }
     void IKFind()
     {
-        FullbodyIK = GameObject.Find("FullBodyIK");
+        FullbodyIK = gameObject.transform.Find("FullBodyIK").gameObject;
         if (FullbodyIK)
         {
             for (int i = 0; i < Enum.GetNames(typeof(OpenPoseRef)).Length; i++)
             {
-                Transform obj = GameObject.Find(Enum.GetName(typeof(OpenPoseRef), i)).transform;
+                Transform obj = RecursiveFindChild(FullbodyIK.transform, Enum.GetName(typeof(OpenPoseRef), i));
                 if (obj)
                 {
                     BoneList.Add(obj);
                 }
             }
+
             for (int i = 0; i < Enum.GetNames(typeof(NormalizeBoneRef)).Length; i++)
             {
                 BoneDistance[i] = Vector3.Distance(BoneList[NormalizeJoint[i, 0]].position, BoneList[NormalizeJoint[i, 1]].position);
@@ -98,12 +99,11 @@ public class IKSettingBody : MonoBehaviour
         {
             // 아바타의 위치를 결정
             // BoneList[0].position = Vector3.Lerp(BoneList[0].position, points[0] * 0.001f + Vector3.up * 0.8f, 0.1f);
-            Vector3 offset = GameObject.Find("Ch03_nonPBR").transform.position - GameObject.Find("FullBodyIK").transform.position;
+            Vector3 offset = gameObject.transform.position - gameObject.transform.Find("FullBodyIK").position;
             for (int i = 0; i < 12; i++)
             {
                 //BoneList[i].localPosition = new Vector3(BoneList[i].localPosition.x * style, BoneList[i].localPosition.y, BoneList[i].localPosition.z * style);
                 BoneList[i].localPosition += offset;
-                Debug.Log(BoneList[i].localPosition);
             }
             FullbodyIK.transform.position = Vector3.Lerp(FullbodyIK.transform.position, points[0] * 0.001f, 0.01f);
             // 아바타가 보는 방향을 결정
@@ -129,7 +129,29 @@ public class IKSettingBody : MonoBehaviour
     {
         Debug.DrawLine(s, e, c);
     }
+    
+    Transform RecursiveFindChild(Transform parent, string childName)
+    {
+        foreach (Transform child in parent)
+        {
+            if(child.name == childName)
+            {
+                return child;
+            }
+            else
+            {
+                Transform found = RecursiveFindChild(child, childName);
+                if (found != null)
+                {
+                    return found;
+                }
+            }
+        }
+        return null;
+    }
+
 }
+
 enum OpenPoseRef
 {
     Hips,
