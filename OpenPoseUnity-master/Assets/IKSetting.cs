@@ -106,17 +106,19 @@ public class IKSetting : MonoBehaviour
     }
     void IKFind()
     {
-        FullbodyIK = GameObject.Find("FullBodyIK");
+        FullbodyIK = gameObject.transform.Find("FullBodyIK").gameObject;
         if (FullbodyIK)
         {
             for (int i = 0; i < Enum.GetNames(typeof(OpenPoseRef)).Length; i++)
             {
-                Transform obj = GameObject.Find(Enum.GetName(typeof(OpenPoseRef), i)).transform;
+                Transform obj = RecursiveFindChild(FullbodyIK.transform, Enum.GetName(typeof(OpenPoseRef), i));
                 if (obj)
                 {
                     BoneList.Add(obj);
                 }
             }
+
+            Debug.Log(BoneList.Count);
             for (int i = 0; i < Enum.GetNames(typeof(NormalizeBoneRef)).Length; i++)
             {
                 BoneDistance[i] = Vector3.Distance(BoneList[NormalizeJoint[i, 0]].position, BoneList[NormalizeJoint[i, 1]].position);
@@ -127,12 +129,12 @@ public class IKSetting : MonoBehaviour
     {
         if (Math.Abs(points[0].x) < 1000 && Math.Abs(points[0].y) < 1000 && Math.Abs(points[0].z) < 1000)
         {
-            Vector3 offset = GameObject.Find("Ch03_nonPBR").transform.position - GameObject.Find("FullBodyIK").transform.position;
+            Vector3 offset = gameObject.transform.position - gameObject.transform.Find("FullBodyIK").position;
             for (int i = 0; i < 12; i++)
             {
                 //BoneList[i].localPosition = new Vector3(BoneList[i].localPosition.x * style, BoneList[i].localPosition.y, BoneList[i].localPosition.z * style);
                 BoneList[i].localPosition += offset;
-                Debug.Log(BoneList[i].localPosition);
+                // Debug.Log(BoneList[i].localPosition);
             }
             Vector3 hipRot = (NormalizeBone[0] + NormalizeBone[1] + NormalizeBone[4]).normalized;
             FullbodyIK.transform.forward = Vector3.Lerp(FullbodyIK.transform.forward, new Vector3(hipRot.x, 0, hipRot.z), 0.1f);
@@ -155,7 +157,29 @@ public class IKSetting : MonoBehaviour
     {
         Debug.DrawLine(s, e, c);
     }
+    
+    Transform RecursiveFindChild(Transform parent, string childName)
+    {
+        foreach (Transform child in parent)
+        {
+            if(child.name == childName)
+            {
+                return child;
+            }
+            else
+            {
+                Transform found = RecursiveFindChild(child, childName);
+                if (found != null)
+                {
+                    return found;
+                }
+            }
+        }
+        return null;
+    }
+
 }
+
 enum OpenPoseRef
 {
     Hips,
