@@ -1074,12 +1074,14 @@ namespace SA
 					Transform head = animator.GetBoneTransform( HumanBodyBones.Head );
 					Transform leftEye = animator.GetBoneTransform( HumanBodyBones.LeftEye );
 					Transform rightEye = animator.GetBoneTransform( HumanBodyBones.RightEye );
+					
 					Transform leftLeg = animator.GetBoneTransform( HumanBodyBones.LeftUpperLeg );
 					Transform rightLeg = animator.GetBoneTransform( HumanBodyBones.RightUpperLeg );
 					Transform leftKnee = animator.GetBoneTransform( HumanBodyBones.LeftLowerLeg );
 					Transform rightKnee = animator.GetBoneTransform( HumanBodyBones.RightLowerLeg );
 					Transform leftFoot = animator.GetBoneTransform( HumanBodyBones.LeftFoot );
 					Transform rightFoot = animator.GetBoneTransform( HumanBodyBones.RightFoot );
+
 					Transform leftShoulder = animator.GetBoneTransform( HumanBodyBones.LeftShoulder );
 					Transform rightShoulder = animator.GetBoneTransform( HumanBodyBones.RightShoulder );
 					Transform leftArm = animator.GetBoneTransform( HumanBodyBones.LeftUpperArm );
@@ -1088,6 +1090,7 @@ namespace SA
 					Transform rightElbow = animator.GetBoneTransform( HumanBodyBones.RightLowerArm );
 					Transform leftWrist = animator.GetBoneTransform( HumanBodyBones.LeftHand );
 					Transform rightWrist = animator.GetBoneTransform( HumanBodyBones.RightHand );
+
 					Transform[,] leftFingers = new Transform[5, 4];
 					Transform[,] rightFingers = new Transform[5, 4];
 					for( int n = 0; n != 2; ++n ) {
