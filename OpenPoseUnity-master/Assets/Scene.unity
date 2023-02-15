@@ -7567,7 +7567,7 @@ MonoBehaviour:
         eyesYawInnerRate: 0.212
     editorSettings:
       isAdvanced: 0
-      toolbarSelected: 2
+      toolbarSelected: 1
       isShowEffectorTransform: 0
     bodyBones:
       hips:
@@ -12666,7 +12666,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2100829719}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a43a21afb6af8144a982067893c3eed1, type: 3}
   m_Name: 
@@ -12691,7 +12691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  FrameRate: 60
+  FrameRate: 30
   BoneList: []
   Data_Path: /DataArmsTest/
   File_Name: 
