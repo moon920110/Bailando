@@ -59,58 +59,58 @@ public class BoneControllerArms : MonoBehaviour
 	{
 		initRot = new Quaternion[boneNum];
 		initInv = new Quaternion[boneNum];
-
+		//0
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.Chest));
 		//원래 왼손 먼저
-
+		//1,2,3
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightUpperArm));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightLowerArm));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightHand));
-		//
+		//4,5,6
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightThumbProximal));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightThumbIntermediate));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightThumbDistal));
-		//
+		//7,8,9
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightIndexProximal));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightIndexIntermediate));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightIndexDistal));
-		//
+		//10,11,12
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightMiddleProximal));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightMiddleIntermediate));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightMiddleDistal));
-		//
+		//13,14,15
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightRingProximal));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightRingIntermediate));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightRingDistal));
-		//
+		//16,17,18
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightLittleProximal));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightLittleIntermediate));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightLittleDistal));
-		//19
+		//19,20,21
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftUpperArm));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftLowerArm));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftHand));
-		//22
+		//22,23,24
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftThumbProximal));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftThumbIntermediate));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftThumbDistal));
-		//25
+		//25,26,27
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftIndexProximal));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftIndexIntermediate));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftIndexDistal));
-		//28
+		//28,29,30
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftMiddleProximal));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftMiddleIntermediate));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftMiddleDistal));
-		//31
+		//31,32,33
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftRingProximal));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftRingIntermediate));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftRingDistal));
-		//34
+		//34,35,36
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftLittleProximal));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftLittleIntermediate));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftLittleDistal));
-
+		//37
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.Head));
 
 		Vector3 init_forward = TriangleNormal(points[1], points[19], points[0]);
