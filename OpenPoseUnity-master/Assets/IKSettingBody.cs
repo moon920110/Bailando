@@ -122,7 +122,8 @@ public class IKSettingBody : MonoBehaviour
         }
         for (int i = 0; i < joints.Length / 2; i++)
         {
-            DrawLine(points[joints[i, 0]] * 1.0f + new Vector3(1000, -100, 0), points[joints[i, 1]] * 1.0f + new Vector3(1000, -100, 0), Color.blue);
+            DrawLine(points[joints[i, 0]] * 1.0f + new Vector3(1, 1, 1), points[joints[i, 1]] * 1.0f + new Vector3(1, 
+                1, 1), Color.blue);
         }
     }
     void DrawLine(Vector3 s, Vector3 e, Color c)
