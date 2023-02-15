@@ -67,7 +67,7 @@ public class IKSettingBody : MonoBehaviour
                 points[i] = new Vector3(-x[i], y[i], z[i]);
             }
 
-            for (int i = 0; i < 12; i++)
+            for (int i = 0; i < 6; i++)
             {
                 NormalizeBone[i] = (points[BoneJoint[i, 1]] - points[BoneJoint[i, 0]]).normalized;
             }
@@ -100,18 +100,18 @@ public class IKSettingBody : MonoBehaviour
             // 아바타의 위치를 결정
             // BoneList[0].position = Vector3.Lerp(BoneList[0].position, points[0] * 0.001f + Vector3.up * 0.8f, 0.1f);
             Vector3 offset = gameObject.transform.position - gameObject.transform.Find("FullBodyIK").position;
-            for (int i = 0; i < 12; i++)
+            for (int i = 0; i < 6; i++)
             {
                 //BoneList[i].localPosition = new Vector3(BoneList[i].localPosition.x * style, BoneList[i].localPosition.y, BoneList[i].localPosition.z * style);
                 BoneList[i].localPosition += offset;
             }
-            FullbodyIK.transform.position = Vector3.Lerp(FullbodyIK.transform.position, points[0] * 0.001f, 0.01f);
+            // FullbodyIK.transform.position = Vector3.Lerp(FullbodyIK.transform.position, points[0] * 0.001f, 0.01f);
             // 아바타가 보는 방향을 결정
             Vector3 hipRot = (NormalizeBone[0] + NormalizeBone[1] + NormalizeBone[4]).normalized;
             FullbodyIK.transform.forward = Vector3.Lerp(FullbodyIK.transform.forward, new Vector3(hipRot.x, 0, hipRot.z), 0.1f);
             // FullbodyIK.transform.forward = Vector3.Lerp(FullbodyIK.transform.forward, new Vector3(BoneList[0].forward.x, 0, BoneList[0].forward.z), 0.1f);
         }
-        for (int i = 0; i < 12; i++)
+        for (int i = 0; i < 6; i++)
         {
             BoneList[NormalizeJoint[i, 1]].position = Vector3.Lerp(
                 BoneList[NormalizeJoint[i, 1]].position,
@@ -163,12 +163,12 @@ enum OpenPoseRef
     Neck,
     Head,
 
-    LeftArm,
-    LeftElbow,
-    LeftWrist,
-    RightArm,
-    RightElbow,
-    RightWrist,
+    // LeftArm,
+    // LeftElbow,
+    // LeftWrist,
+    // RightArm,
+    // RightElbow,
+    // RightWrist,
 };
 enum NormalizeBoneRef
 {
@@ -178,10 +178,10 @@ enum NormalizeBoneRef
     LeftKnee2LeftFoot,
     Hip2Neck,
     Neck2Head,
-    Neck2RightArm,
-    RightArm2RightElbow,
-    RightElbow2RightWrist,
-    Neck2LeftArm,
-    LeftArm2LeftElbow,
-    LeftElbow2LeftWrist
+    // Neck2RightArm,
+    // RightArm2RightElbow,
+    // RightElbow2RightWrist,
+    // Neck2LeftArm,
+    // LeftArm2LeftElbow,
+    // LeftElbow2LeftWrist
 };
