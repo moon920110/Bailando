@@ -12691,7 +12691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  FrameRate: 30
+  FrameRate: 60
   BoneList: []
   Data_Path: /DataArmsTest/
   File_Name: 
