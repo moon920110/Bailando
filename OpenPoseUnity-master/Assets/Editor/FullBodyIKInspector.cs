@@ -556,8 +556,8 @@ namespace SA
 				_Header( (i == 0) ? "Left Wrist Fingers" : "Right Wrist Fingers" );
 				var effectors = (i == 0) ? leftHandFingersEffectors : rightHandFingersEffectors;
 				var prefix = (i == 0) ? "L " : "R ";
-				_EffectorField( prefix + "Thumb", ref effectors.thumb );
-				_EffectorField( prefix + "Index", ref effectors.index );
+				_EffectorField( prefix + "Thumb", ref effectors.thumb1 );
+				_EffectorField( prefix + "Index", ref effectors.index1 );
 				_EffectorField( prefix + "Middle", ref effectors.middle );
 				_EffectorField( prefix + "Ring", ref effectors.ring );
 				_EffectorField( prefix + "Little", ref effectors.little );

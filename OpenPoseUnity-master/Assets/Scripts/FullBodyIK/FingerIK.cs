@@ -123,13 +123,13 @@ namespace SA
 						Bone[] bones = null;
 						Effector effector = null;
 						switch( fingerType ) {
-						case (int)FingerType.Thumb:
+						case (int)FingerType.Thumb1:
 							bones = fingerBones.thumb;
-							effector = fingerEffectors.thumb;
+							effector = fingerEffectors.thumb1;
 							break;
-						case (int)FingerType.Index:
+						case (int)FingerType.Index1:
 							bones = fingerBones.index;
-							effector = fingerEffectors.index;
+							effector = fingerEffectors.index1;
 							break;
 						case (int)FingerType.Middle:
 							bones = fingerBones.middle;
@@ -196,7 +196,7 @@ namespace SA
 
 				_fingerBranches[fingerType] = fingerBranch;
 
-				if( fingerType == (int)FingerType.Thumb ) {
+				if( fingerType == (int)FingerType.Thumb1 ) {
 					_thumbBranch = new _ThumbBranch();
 					_thumbBranch.thumbLinks = new _ThumbLink[boneLength];
 					for( int i = 0; i != boneLength; ++i ) {
@@ -259,7 +259,7 @@ namespace SA
 						ref fingerEffector._defaultPosition, ref fingerBranch.fingerLinks[0].bone._defaultPosition );
 				}
 
-				if( fingerType == (int)FingerType.Thumb ) {
+				if( fingerType == (int)FingerType.Thumb1 ) {
 					_FingerBranch middleFingerBranch = _fingerBranches[(int)FingerType.Middle];
 					if( middleFingerBranch == null ) {
 						return;
@@ -363,7 +363,7 @@ namespace SA
                         }
 					}
 
-					if( fingerType != (int)FingerType.Thumb ) {
+					if( fingerType != (int)FingerType.Thumb1 ) {
 						fingerLink.childToLength = sourceToDestLength.length;
 						fingerLink.childToLengthSq = sourceToDestLength.lengthSq;
 					}
@@ -378,7 +378,7 @@ namespace SA
 						}
 					}
 
-					if( fingerType == (int)FingerType.Thumb ) {
+					if( fingerType == (int)FingerType.Thumb1 ) {
 						_ThumbLink thumbLink = _thumbBranch.thumbLinks[n];
 
 						Vector3 dirX = fingerBranch.effector._defaultPosition - sourcePosition;
@@ -391,7 +391,7 @@ namespace SA
 					}
 				}
 
-				if( fingerType != (int)FingerType.Thumb ) {
+				if( fingerType != (int)FingerType.Thumb1 ) {
 					if( fingerBranch.fingerLinks.Length == 3 ) {
 						// Compute rotate angle. Based X/Y coordinate.
 						// !isRight ... Plus value as warp, minus value as bending.
@@ -445,8 +445,8 @@ namespace SA
 			// for Prepare, SyncDisplacement.
 			void _PrepareThumb()
 			{
-				_FingerBranch fingerBranch = _fingerBranches[(int)FingerType.Thumb];
-				_FingerBranch indexFingerBranch = _fingerBranches[(int)FingerType.Index];
+				_FingerBranch fingerBranch = _fingerBranches[(int)FingerType.Thumb1];
+				_FingerBranch indexFingerBranch = _fingerBranches[(int)FingerType.Index1];
 				if( fingerBranch == null || fingerBranch.fingerLinks.Length != 3 ||
 					indexFingerBranch == null || indexFingerBranch.fingerLinks.Length == 0 ) {
 					return;
@@ -730,7 +730,7 @@ namespace SA
 						continue;
 					}
 
-					if( i == (int)FingerType.Thumb ) {
+					if( i == (int)FingerType.Thumb1 ) {
 						isSolved |= _SolveThumb( ref parentTransform );
 					} else {
 						isSolved |= _SolveNotThumb( i, ref parentTransform );
@@ -1200,7 +1200,7 @@ namespace SA
 
 			bool _SolveThumb( ref Matrix3x4 parentTransform )
 			{
-				_FingerBranch fingerBranch = _fingerBranches[(int)FingerType.Thumb];
+				_FingerBranch fingerBranch = _fingerBranches[(int)FingerType.Thumb1];
 				if( fingerBranch == null || fingerBranch.fingerLinks.Length != 3 ) {
 					return false;
 				}

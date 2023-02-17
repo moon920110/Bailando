@@ -375,29 +375,69 @@ namespace SA
 			LeftWrist,
 			RightWrist,
 
-			LeftHandThumb,
-			LeftHandIndex,
-			LeftHandMiddle,
-			LeftHandRing,
-			LeftHandLittle,
-			RightHandThumb,
-			RightHandIndex,
-			RightHandMiddle,
-			RightHandRing,
-			RightHandLittle,
-			
-			Max,
-			Unknown = Max,
-		}
-		
-		public static EffectorType ToEffectorType( EffectorLocation effectorLocation )
-		{
-			switch( effectorLocation ) {
-			case EffectorLocation.Root:			return EffectorType.Root;
-			case EffectorLocation.Hips:			return EffectorType.Hips;
-			case EffectorLocation.Neck:			return EffectorType.Neck;
-			case EffectorLocation.Head:			return EffectorType.Head;
-			case EffectorLocation.Eyes:			return EffectorType.Eyes;
+            LeftHandThumb1,
+            LeftHandThumb2,
+            LeftHandThumb3,
+            LeftHandThumb4,
+
+            LeftHandIndex1,
+            LeftHandIndex2,
+            LeftHandIndex3,
+            LeftHandIndex4,
+
+            LeftHandMiddle1,
+            LeftHandMiddle2,
+            LeftHandMiddle3,
+            LeftHandMiddle4,
+
+            LeftHandRing1,
+            LeftHandRing2,
+            LeftHandRing3,
+            LeftHandRing4,
+
+            LeftHandLittle1,
+            LeftHandLittle2,
+            LeftHandLittle3,
+            LeftHandLittle4,
+
+            RightHandThumb1,
+            RightHandThumb2,
+            RightHandThumb3,
+            RightHandThumb4,
+
+            RightHandIndex1,
+            RightHandIndex2,
+            RightHandIndex3,
+            RightHandIndex4,
+
+            RightHandMiddle1,
+            RightHandMiddle2,
+            RightHandMiddle3,
+            RightHandMiddle4,
+
+            RightHandRing1,
+            RightHandRing2,
+            RightHandRing3,
+            RightHandRing4,
+
+            RightHandLittle1,
+            RightHandLittle2,
+            RightHandLittle3,
+            RightHandLittle4,
+
+            Max,
+            Unknown = Max,
+        }
+
+        public static EffectorType ToEffectorType(EffectorLocation effectorLocation)
+        {
+            switch (effectorLocation)
+            {
+                case EffectorLocation.Root: return EffectorType.Root;
+                case EffectorLocation.Hips: return EffectorType.Hips;
+                case EffectorLocation.Neck: return EffectorType.Neck;
+                case EffectorLocation.Head: return EffectorType.Head;
+                case EffectorLocation.Eyes: return EffectorType.Eyes;
 
 			case EffectorLocation.LeftKnee:		return EffectorType.Knee;
 			case EffectorLocation.RightKnee:	return EffectorType.Knee;
@@ -412,10 +452,11 @@ namespace SA
 			case EffectorLocation.RightWrist:	return EffectorType.Wrist;
 			}
 
-			if( (int)effectorLocation >= (int)EffectorLocation.LeftHandThumb &&
-				(int)effectorLocation <= (int)EffectorLocation.RightHandLittle ) {
-				return EffectorType.HandFinger;
-			}
+            if ((int)effectorLocation >= (int)EffectorLocation.LeftHandThumb1 &&
+                (int)effectorLocation <= (int)EffectorLocation.RightHandLittle4)
+            {
+                return EffectorType.HandFinger;
+            }
 
 			return EffectorType.Unknown;
 		}
@@ -436,56 +477,72 @@ namespace SA
 			case EffectorLocation.RightWrist:	return Side.Right;
 			}
 
-			if( (int)effectorLocation >= (int)EffectorLocation.LeftHandThumb &&
-				(int)effectorLocation <= (int)EffectorLocation.LeftHandLittle ) {
-				return Side.Left;
-			}
+            if ((int)effectorLocation >= (int)EffectorLocation.LeftHandThumb1 &&
+                (int)effectorLocation <= (int)EffectorLocation.LeftHandLittle4)
+            {
+                return Side.Left;
+            }
 
-			if( (int)effectorLocation >= (int)EffectorLocation.RightHandThumb &&
-				(int)effectorLocation <= (int)EffectorLocation.RightHandLittle ) {
-				return Side.Right;
-			}
+            if ((int)effectorLocation >= (int)EffectorLocation.RightHandThumb1 &&
+                (int)effectorLocation <= (int)EffectorLocation.RightHandLittle4)
+            {
+                return Side.Right;
+            }
 
 			return Side.None;
 		}
 
-		public static string GetEffectorName( EffectorLocation effectorLocation )
-		{
-			if( effectorLocation == EffectorLocation.Root ) {
-				return "FullBodyIK";
-			} else if( IsHandFingerEffectors( effectorLocation ) ) {
-				return ToFingerType( effectorLocation ).ToString();
-			} else {
-				return effectorLocation.ToString();
-			}
-		}
-		
-		public static bool IsHandFingerEffectors( EffectorLocation effectorLocation )
-		{
-			int v = (int)effectorLocation;
-			return v >= (int)EffectorLocation.LeftHandThumb && v <= (int)EffectorLocation.RightHandLittle;
-		}
-		
-		public static FingerType ToFingerType( EffectorLocation effectorLocation )
-		{
-			if( IsHandFingerEffectors( effectorLocation ) ) {
-				int value = (int)effectorLocation - (int)EffectorLocation.LeftHandThumb;
-				return (FingerType)(value % 5);
-			}
+        public static string GetEffectorName(EffectorLocation effectorLocation)
+        {
+            if (effectorLocation == EffectorLocation.Root)
+            {
+                return "FullBodyIK";
+            }
+            else if (IsHandFingerEffectors(effectorLocation))
+            {
+                return ToFingerType(effectorLocation).ToString();
+            }
+            else
+            {
+                return effectorLocation.ToString();
+            }
+        }
 
-			return FingerType.Unknown;
-		}
-		
-		public enum FingerType
-		{
-			Thumb,
-			Index,
-			Middle,
-			Ring,
-			Little,
-			Max,
-			Unknown = Max,
-		}
+        public static bool IsHandFingerEffectors(EffectorLocation effectorLocation)
+        {
+            int v = (int)effectorLocation;
+            return v >= (int)EffectorLocation.LeftHandThumb1 && v <= (int)EffectorLocation.RightHandLittle4;
+        }
+
+        public static FingerType ToFingerType(EffectorLocation effectorLocation)
+        {
+            if (IsHandFingerEffectors(effectorLocation))
+            {
+                int value = (int)effectorLocation - (int)EffectorLocation.LeftHandThumb1;
+                return (FingerType)(value);
+            }
+
+            return FingerType.Unknown;
+        }
+
+        public enum FingerType
+        {
+            Thumb1,
+            Thumb2,
+            Thumb3,
+            Thumb4,
+
+            Index1,
+            Index2,
+            Index3,
+            Index4,
+
+            Middle,
+            Ring,
+            Little,
+            Max,
+            Unknown = Max,
+        }
 
 		public const float Eyes_DefaultDistance = 1.0f;
 		public const float Eyes_MinDistance = 0.5f;

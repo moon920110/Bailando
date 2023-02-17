@@ -112,8 +112,16 @@ namespace SA
 		[System.Serializable]
 		public class FingersEffectors
 		{
-			public Effector thumb;
-			public Effector index;
+			public Effector thumb1;
+			public Effector thumb2;
+			public Effector thumb3;
+			public Effector thumb4;
+
+			public Effector index1;
+			public Effector index2;
+			public Effector index3;
+			public Effector index4;
+
 			public Effector middle;
 			public Effector ring;
 			public Effector little;
@@ -984,17 +992,33 @@ namespace SA
 			_Prefix( ref rightArmEffectors.elbow, EffectorLocation.RightElbow, bodyEffectors.hips, rightArmBones.elbow );
 			_Prefix( ref rightArmEffectors.wrist, EffectorLocation.RightWrist, bodyEffectors.hips, rightArmBones.wrist );
 
-			_Prefix( ref leftHandFingersEffectors.thumb, EffectorLocation.LeftHandThumb, leftArmEffectors.wrist, leftHandFingersBones.thumb );
-			_Prefix( ref leftHandFingersEffectors.index, EffectorLocation.LeftHandIndex, leftArmEffectors.wrist, leftHandFingersBones.index );
-			_Prefix( ref leftHandFingersEffectors.middle, EffectorLocation.LeftHandMiddle, leftArmEffectors.wrist, leftHandFingersBones.middle );
-			_Prefix( ref leftHandFingersEffectors.ring, EffectorLocation.LeftHandRing, leftArmEffectors.wrist, leftHandFingersBones.ring );
-			_Prefix( ref leftHandFingersEffectors.little, EffectorLocation.LeftHandLittle, leftArmEffectors.wrist, leftHandFingersBones.little );
+			_Prefix( ref leftHandFingersEffectors.thumb1, EffectorLocation.LeftHandThumb1, leftArmEffectors.wrist, leftHandFingersBones.thumb );
+			_Prefix( ref leftHandFingersEffectors.thumb2, EffectorLocation.LeftHandThumb2, leftArmEffectors.wrist, leftHandFingersBones.thumb );
+            _Prefix( ref leftHandFingersEffectors.thumb3, EffectorLocation.LeftHandThumb3, leftArmEffectors.wrist, leftHandFingersBones.thumb );
+            _Prefix( ref leftHandFingersEffectors.thumb4, EffectorLocation.LeftHandThumb4, leftArmEffectors.wrist, leftHandFingersBones.thumb );
 
-			_Prefix( ref rightHandFingersEffectors.thumb, EffectorLocation.RightHandThumb, rightArmEffectors.wrist, rightHandFingersBones.thumb );
-			_Prefix( ref rightHandFingersEffectors.index, EffectorLocation.RightHandIndex, rightArmEffectors.wrist, rightHandFingersBones.index );
-			_Prefix( ref rightHandFingersEffectors.middle, EffectorLocation.RightHandMiddle, rightArmEffectors.wrist, rightHandFingersBones.middle );
-			_Prefix( ref rightHandFingersEffectors.ring, EffectorLocation.RightHandRing, rightArmEffectors.wrist, rightHandFingersBones.ring );
-			_Prefix( ref rightHandFingersEffectors.little, EffectorLocation.RightHandLittle, rightArmEffectors.wrist, rightHandFingersBones.little );
+            _Prefix( ref leftHandFingersEffectors.index1, EffectorLocation.LeftHandIndex1, leftArmEffectors.wrist, leftHandFingersBones.index );
+            _Prefix(ref leftHandFingersEffectors.index2, EffectorLocation.LeftHandIndex2, leftArmEffectors.wrist, leftHandFingersBones.index);
+            _Prefix(ref leftHandFingersEffectors.index3, EffectorLocation.LeftHandIndex3, leftArmEffectors.wrist, leftHandFingersBones.index);
+            _Prefix(ref leftHandFingersEffectors.index4, EffectorLocation.LeftHandIndex4, leftArmEffectors.wrist, leftHandFingersBones.index);
+
+            _Prefix( ref leftHandFingersEffectors.middle, EffectorLocation.LeftHandMiddle1, leftArmEffectors.wrist, leftHandFingersBones.middle );
+			_Prefix( ref leftHandFingersEffectors.ring, EffectorLocation.LeftHandRing1, leftArmEffectors.wrist, leftHandFingersBones.ring );
+			_Prefix( ref leftHandFingersEffectors.little, EffectorLocation.LeftHandLittle1, leftArmEffectors.wrist, leftHandFingersBones.little );
+
+			_Prefix( ref rightHandFingersEffectors.thumb1, EffectorLocation.RightHandThumb1, rightArmEffectors.wrist, rightHandFingersBones.thumb );
+			_Prefix( ref rightHandFingersEffectors.thumb2, EffectorLocation.RightHandThumb2, rightArmEffectors.wrist, rightHandFingersBones.thumb );
+            _Prefix( ref rightHandFingersEffectors.thumb3, EffectorLocation.RightHandThumb3, rightArmEffectors.wrist, rightHandFingersBones.thumb );
+            _Prefix( ref rightHandFingersEffectors.thumb4, EffectorLocation.RightHandThumb4, rightArmEffectors.wrist, rightHandFingersBones.thumb );
+
+            _Prefix( ref rightHandFingersEffectors.index1, EffectorLocation.RightHandIndex1, rightArmEffectors.wrist, rightHandFingersBones.index );
+            _Prefix(ref rightHandFingersEffectors.index2, EffectorLocation.RightHandIndex2, rightArmEffectors.wrist, rightHandFingersBones.index);
+            _Prefix(ref rightHandFingersEffectors.index3, EffectorLocation.RightHandIndex3, rightArmEffectors.wrist, rightHandFingersBones.index);
+            _Prefix(ref rightHandFingersEffectors.index4, EffectorLocation.RightHandIndex4, rightArmEffectors.wrist, rightHandFingersBones.index);
+
+            _Prefix( ref rightHandFingersEffectors.middle, EffectorLocation.RightHandMiddle1, rightArmEffectors.wrist, rightHandFingersBones.middle );
+			_Prefix( ref rightHandFingersEffectors.ring, EffectorLocation.RightHandRing1, rightArmEffectors.wrist, rightHandFingersBones.ring );
+			_Prefix( ref rightHandFingersEffectors.little, EffectorLocation.RightHandLittle1, rightArmEffectors.wrist, rightHandFingersBones.little );
 
 			if( !_isPrefixedAtLeastOnce ) {
 				_isPrefixedAtLeastOnce = true;
