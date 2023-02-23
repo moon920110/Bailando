@@ -8187,7 +8187,7 @@ MonoBehaviour:
         eyesYawInnerRate: 0.212
     editorSettings:
       isAdvanced: 0
-      toolbarSelected: 2
+      toolbarSelected: 1
       isShowEffectorTransform: 0
     bodyBones:
       hips:
