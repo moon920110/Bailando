@@ -8187,7 +8187,7 @@ MonoBehaviour:
         eyesYawInnerRate: 0.212
     editorSettings:
       isAdvanced: 0
-      toolbarSelected: 1
+      toolbarSelected: 2
       isShowEffectorTransform: 0
     bodyBones:
       hips:
@@ -13313,7 +13313,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   FrameRate: 60
   BoneList: []
-  Data_Path: /DataArmsTest/
+  Data_Path: /DataArmsTest_2/
   File_Name: 
   startFrame: 0
-  Data_Size: 162
+  Data_Size: 158
