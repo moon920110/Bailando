@@ -956,7 +956,7 @@ namespace SA
 					var thumbLocation = (i == 0) ? BoneLocation.LeftHandThumb0 : BoneLocation.RightHandThumb0;
 					var indexLocation = (i == 0) ? BoneLocation.LeftHandIndex0 : BoneLocation.RightHandIndex0;
 					var middleLocation = (i == 0) ? BoneLocation.LeftHandMiddle0 : BoneLocation.RightHandMiddle0;
-					var ringLocation = (i == 0) ? BoneLocation.LeftHandRing0 : BoneLocation.RightHandRing0;
+					var ringLocation = (i == 0) ? BoneLocation.LeftHandRing0 : BoneLocation.RightHandRing0;//here
 					var littleLocation = (i == 0) ? BoneLocation.LeftHandLittle0 : BoneLocation.RightHandLittle0;
 					_Prefix( ref fingerBones.thumb[n], (BoneLocation)((int)thumbLocation + n), (n == 0) ? armBones.wrist : fingerBones.thumb[n - 1] );
 					_Prefix( ref fingerBones.index[n], (BoneLocation)((int)indexLocation + n), (n == 0) ? armBones.wrist : fingerBones.index[n - 1] );

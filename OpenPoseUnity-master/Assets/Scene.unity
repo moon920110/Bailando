@@ -13037,7 +13037,7 @@ MonoBehaviour:
     leftArmEffectors:
       arm:
         transform: {fileID: 673365081}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 0
         rotationWeight: 1
@@ -13052,7 +13052,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       elbow:
         transform: {fileID: 672537835}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -13083,7 +13083,7 @@ MonoBehaviour:
     rightArmEffectors:
       arm:
         transform: {fileID: 1242480853}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 0
         rotationWeight: 1
@@ -13098,7 +13098,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       elbow:
         transform: {fileID: 1948031572}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -13129,7 +13129,7 @@ MonoBehaviour:
     leftHandFingersEffectors:
       thumb:
         transform: {fileID: 1144475812}
-        positionEnabled: 1
+        positionEnabled: 0
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -13144,7 +13144,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       index:
         transform: {fileID: 1176381939}
-        positionEnabled: 1
+        positionEnabled: 0
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -13159,7 +13159,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       middle:
         transform: {fileID: 1500754887}
-        positionEnabled: 1
+        positionEnabled: 0
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -13174,7 +13174,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       ring:
         transform: {fileID: 1066668178}
-        positionEnabled: 1
+        positionEnabled: 0
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -13189,7 +13189,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       little:
         transform: {fileID: 757628774}
-        positionEnabled: 1
+        positionEnabled: 0
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -13205,7 +13205,7 @@ MonoBehaviour:
     rightHandFingersEffectors:
       thumb:
         transform: {fileID: 799872449}
-        positionEnabled: 1
+        positionEnabled: 0
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -13220,7 +13220,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       index:
         transform: {fileID: 969514169}
-        positionEnabled: 1
+        positionEnabled: 0
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -13235,7 +13235,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       middle:
         transform: {fileID: 194306163}
-        positionEnabled: 1
+        positionEnabled: 0
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -13250,7 +13250,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       ring:
         transform: {fileID: 984720064}
-        positionEnabled: 1
+        positionEnabled: 0
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -13265,7 +13265,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       little:
         transform: {fileID: 1766846759}
-        positionEnabled: 1
+        positionEnabled: 0
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1

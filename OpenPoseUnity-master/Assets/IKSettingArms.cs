@@ -36,6 +36,12 @@ public class IKSettingArms : MonoBehaviour
     void Start()
     {
         PointUpdate();
+        for (int i = 0; i < 34; i++)
+        {
+            // NormalizeBone[i] = (points[BoneJoint[i, 1]] - points[BoneJoint[i, 0]]).normalized;
+            Debug.Log(BoneList[i].position);
+
+        }
     }
     void Update()
     {
@@ -77,7 +83,7 @@ public class IKSettingArms : MonoBehaviour
             {
                 // NormalizeBone[i] = (points[BoneJoint[i, 1]] - points[BoneJoint[i, 0]]).normalized;
                 NormalizeBone[i] = (points[BoneJoint[i, 1]] - points[BoneJoint[i, 0]]).normalized;
-                // 최대값 최소값 찾아놓기
+               
             }
             // 관절 전체에 대해 normalize 연산 실행
         }
@@ -100,7 +106,7 @@ public class IKSettingArms : MonoBehaviour
                 BoneDistance[i] = Vector3.Distance(BoneList[NormalizeJoint[i, 0]].position, BoneList[NormalizeJoint[i, 1]].position);
                 if (BoneDistance[i] == 0)
                 {
-                    Debug.Log(i);
+                    //Debug.Log(i);
                 }
 
             }
@@ -113,29 +119,33 @@ public class IKSettingArms : MonoBehaviour
             //BoneList[NormalizeJoint[i, 1]].position = points[NormalizeJoint[i, 1]];
             //BoneList[NormalizeJoint[i, 0]].position = points[NormalizeJoint[i, 0]];
 
-            BoneList[NormalizeJoint[i, 1]].position = Vector3.Lerp(
-            BoneList[NormalizeJoint[i, 1]].position,
-            BoneList[NormalizeJoint[i, 0]].position + BoneDistance[i] * NormalizeBone[i], 0.05f
-            );
+            //BoneList[NormalizeJoint[i, 1]].position = Vector3.Lerp(
+            //BoneList[NormalizeJoint[i, 1]].position,
+            //BoneList[NormalizeJoint[i, 0]].position + BoneDistance[i] * NormalizeBone[i], 0.05f
+            //);
             if (i == 14)
             {
                 float distance_ = Vector3.Distance(BoneList[NormalizeJoint[i, 1]].position, BoneList[NormalizeJoint[i, 0]].position);
-                Debug.Log(distance_);
+                //Debug.Log(distance_);
             }
 
             if (i < 17)
             {
                 DrawLine(BoneList[NormalizeJoint[i, 0]].position + Vector3.right, BoneList[NormalizeJoint[i, 1]].position + Vector3.right, Color.red);
-            }
+            }//+ Vector3.right
             else
             {
-                DrawLine(BoneList[NormalizeJoint[i, 0]].position + Vector3.right, BoneList[NormalizeJoint[i, 1]].position + Vector3.right, Color.yellow);
+                DrawLine(BoneList[NormalizeJoint[i, 0]].position + Vector3.right, BoneList[NormalizeJoint[i, 1]].position + Vector3.right, Color.red);
             }
-            
+
+        }
+        for (int i = 0; i != 2; ++i)
+        {
+            Debug.Log(i);
         }
         for (int i = 0; i < joints.Length / 2; i++)
         {
-            DrawLine(points[joints[i, 0]] * 1.0f + new Vector3(1, 1, 1), points[joints[i, 1]] * 1.0f + new Vector3(1, 1, 1), Color.blue);
+            DrawLine(points[joints[i, 0]] * 1.0f + new Vector3(0.8f, 1, 0.3f), points[joints[i, 1]] * 1.0f + new Vector3(0.8f, 1, 0.3f), Color.blue);
         }
     }
     void DrawLine(Vector3 s, Vector3 e, Color c)
