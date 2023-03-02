@@ -67,16 +67,16 @@ namespace SA
 			public Bone[] thumb1;
 			public Bone[] thumb2;
 			public Bone[] index;
-			public Bone[] middle;
 			public Bone[] index1;
+            public Bone[] index2;
+			public Bone[] middle;
 			public Bone[] middle1;
-			public Bone[] index2;
-			public Bone[] middle2;
-			public Bone[] ring;
-			public Bone[] little;
-			public Bone[] ring1;
-			public Bone[] little1;
-			public Bone[] ring2;
+            public Bone[] middle2;
+            public Bone[] ring;
+            public Bone[] ring2;
+            public Bone[] ring1;
+            public Bone[] little;
+            public Bone[] little1;
 			public Bone[] little2;
 
 			public void Repair()
@@ -124,19 +124,19 @@ namespace SA
 		{
 			public Effector thumb;
 			public Effector thumb1;
-			public Effector thumb2;
-			public Effector index;
-			public Effector middle;
+			public Effector thumb2;			
+            public Effector index;
 			public Effector index1;
+            public Effector index2;
+            public Effector middle;
 			public Effector middle1;
-			public Effector index2;
-			public Effector middle2;
+            public Effector middle2;
 			public Effector ring;
-			public Effector little;
 			public Effector ring1;
-			public Effector little1;
 			public Effector ring2;
-			public Effector little2;
+            public Effector little;
+            public Effector little1;
+            public Effector little2;
 		}
 
 		public enum AutomaticBool
@@ -1004,40 +1004,43 @@ namespace SA
 			_Prefix( ref rightArmEffectors.elbow, EffectorLocation.RightElbow, bodyEffectors.hips, rightArmBones.elbow );
 			_Prefix( ref rightArmEffectors.wrist, EffectorLocation.RightWrist, bodyEffectors.hips, rightArmBones.wrist );
 
-			_tmpPrefix( ref leftHandFingersEffectors.thumb2, EffectorLocation.LeftHandThumb2, leftArmEffectors.wrist, leftHandFingersBones.thumb,3 );
+            //_Prefix(ref leftHandFingersEffectors.thumb, EffectorLocation.LeftHandThumb, leftArmEffectors.wrist, leftHandFingersBones.thumb);
+            //_Prefix(ref leftHandFingersEffectors.index, EffectorLocation.LeftHandIndex, leftArmEffectors.wrist, leftHandFingersBones.index);
+            //_Prefix(ref leftHandFingersEffectors.middle, EffectorLocation.LeftHandMiddle, leftArmEffectors.wrist, leftHandFingersBones.middle);
+            //_Prefix(ref rightHandFingersEffectors.index, EffectorLocation.RightHandIndex, rightArmEffectors.wrist, rightHandFingersBones.index);
+            //_Prefix(ref rightHandFingersEffectors.middle, EffectorLocation.RightHandMiddle, rightArmEffectors.wrist, rightHandFingersBones.middle);
+
+
+            _tmpPrefix( ref leftHandFingersEffectors.thumb2, EffectorLocation.LeftHandThumb2, leftArmEffectors.wrist, leftHandFingersBones.thumb,3 );
 			_tmpPrefix(ref leftHandFingersEffectors.thumb1, EffectorLocation.LeftHandThumb1, leftHandFingersEffectors.thumb2, leftHandFingersBones.thumb,2);
 			_tmpPrefix(ref leftHandFingersEffectors.thumb, EffectorLocation.LeftHandThumb, leftHandFingersEffectors.thumb1, leftHandFingersBones.thumb,1);
 			_tmpPrefix(ref leftHandFingersEffectors.index2, EffectorLocation.LeftHandIndex2, leftArmEffectors.wrist, leftHandFingersBones.index,3);
+            _tmpPrefix(ref leftHandFingersEffectors.index1, EffectorLocation.LeftHandIndex1, leftHandFingersEffectors.index2, leftHandFingersBones.index, 2);
+			_tmpPrefix(ref leftHandFingersEffectors.index, EffectorLocation.LeftHandIndex, leftHandFingersEffectors.index1, leftHandFingersBones.index, 1);
             _tmpPrefix(ref leftHandFingersEffectors.middle2, EffectorLocation.LeftHandMiddle2, leftArmEffectors.wrist, leftHandFingersBones.middle,3);
-            _tmpPrefix(ref leftHandFingersEffectors.index1, EffectorLocation.LeftHandIndex1, leftHandFingersEffectors.index2, leftHandFingersBones.index,2);
-            _tmpPrefix(ref leftHandFingersEffectors.middle1, EffectorLocation.LeftHandMiddle1, leftHandFingersEffectors.middle2, leftHandFingersBones.middle,2);
-            _tmpPrefix(ref leftHandFingersEffectors.index, EffectorLocation.LeftHandIndex, leftHandFingersEffectors.index1, leftHandFingersBones.index,1);
-            _tmpPrefix(ref leftHandFingersEffectors.middle, EffectorLocation.LeftHandMiddle, leftHandFingersEffectors.middle1, leftHandFingersBones.middle,1);
-            //_Prefix(ref leftHandFingersEffectors.index, EffectorLocation.LeftHandIndex, leftArmEffectors.wrist, leftHandFingersBones.index);
-            //_Prefix(ref leftHandFingersEffectors.middle, EffectorLocation.LeftHandMiddle, leftArmEffectors.wrist, leftHandFingersBones.middle);
-            _tmpPrefix( ref leftHandFingersEffectors.ring2, EffectorLocation.LeftHandRing2, leftArmEffectors.wrist, leftHandFingersBones.ring,3);
-			_tmpPrefix( ref leftHandFingersEffectors.little2, EffectorLocation.LeftHandLittle2, leftArmEffectors.wrist, leftHandFingersBones.little,3 );
-			_tmpPrefix(ref leftHandFingersEffectors.ring1, EffectorLocation.LeftHandRing1, leftHandFingersEffectors.ring2, leftHandFingersBones.ring,2);
+            _tmpPrefix(ref leftHandFingersEffectors.middle1, EffectorLocation.LeftHandMiddle1, leftHandFingersEffectors.middle2, leftHandFingersBones.middle,2);			
+			_tmpPrefix(ref leftHandFingersEffectors.middle, EffectorLocation.LeftHandMiddle, leftHandFingersEffectors.middle1, leftHandFingersBones.middle,1);
+			_tmpPrefix( ref leftHandFingersEffectors.ring2, EffectorLocation.LeftHandRing2, leftArmEffectors.wrist, leftHandFingersBones.ring,3);
+            _tmpPrefix(ref leftHandFingersEffectors.ring1, EffectorLocation.LeftHandRing1, leftHandFingersEffectors.ring2, leftHandFingersBones.ring, 2);
+            _tmpPrefix(ref leftHandFingersEffectors.ring, EffectorLocation.LeftHandRing, leftHandFingersEffectors.ring1, leftHandFingersBones.ring, 1);
+            _tmpPrefix( ref leftHandFingersEffectors.little2, EffectorLocation.LeftHandLittle2, leftArmEffectors.wrist, leftHandFingersBones.little,3 );
 			_tmpPrefix(ref leftHandFingersEffectors.little1, EffectorLocation.LeftHandLittle1, leftHandFingersEffectors.little2, leftHandFingersBones.little,2);
-			_tmpPrefix(ref leftHandFingersEffectors.ring, EffectorLocation.LeftHandRing, leftHandFingersEffectors.ring1, leftHandFingersBones.ring,1);
 			_tmpPrefix(ref leftHandFingersEffectors.little, EffectorLocation.LeftHandLittle, leftHandFingersEffectors.little1, leftHandFingersBones.little,1);
 
 			_tmpPrefix( ref rightHandFingersEffectors.thumb2, EffectorLocation.RightHandThumb2, rightArmEffectors.wrist, rightHandFingersBones.thumb,3 );
 			_tmpPrefix(ref rightHandFingersEffectors.thumb1, EffectorLocation.RightHandThumb1, rightHandFingersEffectors.thumb2, rightHandFingersBones.thumb,2);
 			_tmpPrefix(ref rightHandFingersEffectors.thumb, EffectorLocation.RightHandThumb, rightHandFingersEffectors.thumb1, rightHandFingersBones.thumb,1);
 			_tmpPrefix(ref rightHandFingersEffectors.index2, EffectorLocation.RightHandIndex2, rightArmEffectors.wrist, rightHandFingersBones.index,3);
+            _tmpPrefix(ref rightHandFingersEffectors.index1, EffectorLocation.RightHandIndex1, rightHandFingersEffectors.index2, rightHandFingersBones.index, 2);
+            _tmpPrefix(ref rightHandFingersEffectors.index, EffectorLocation.RightHandIndex, rightHandFingersEffectors.index1, rightHandFingersBones.index, 1);
             _tmpPrefix(ref rightHandFingersEffectors.middle2, EffectorLocation.RightHandMiddle2, rightArmEffectors.wrist, rightHandFingersBones.middle,3);
-            _tmpPrefix(ref rightHandFingersEffectors.index1, EffectorLocation.RightHandIndex1, rightHandFingersEffectors.index2, rightHandFingersBones.index,2);
             _tmpPrefix(ref rightHandFingersEffectors.middle1, EffectorLocation.RightHandMiddle1, rightHandFingersEffectors.middle2, rightHandFingersBones.middle,2);
-            _tmpPrefix(ref rightHandFingersEffectors.index, EffectorLocation.RightHandIndex, rightHandFingersEffectors.index1, rightHandFingersBones.index,1);
             _tmpPrefix(ref rightHandFingersEffectors.middle, EffectorLocation.RightHandMiddle, rightHandFingersEffectors.middle1, rightHandFingersBones.middle,1);
-            //_Prefix(ref rightHandFingersEffectors.index, EffectorLocation.RightHandIndex, rightArmEffectors.wrist, rightHandFingersBones.index);
-            //_Prefix(ref rightHandFingersEffectors.middle, EffectorLocation.RightHandMiddle, rightArmEffectors.wrist, rightHandFingersBones.middle);
             _tmpPrefix( ref rightHandFingersEffectors.ring2, EffectorLocation.RightHandRing2, rightArmEffectors.wrist, rightHandFingersBones.ring ,3);
-			_tmpPrefix(ref rightHandFingersEffectors.little2, EffectorLocation.RightHandLittle2, rightArmEffectors.wrist, rightHandFingersBones.little, 3);
-			_tmpPrefix(ref rightHandFingersEffectors.ring1, EffectorLocation.RightHandRing1, rightHandFingersEffectors.ring2, rightHandFingersBones.ring,2);
+            _tmpPrefix(ref rightHandFingersEffectors.ring1, EffectorLocation.RightHandRing1, rightHandFingersEffectors.ring2, rightHandFingersBones.ring, 2);
+            _tmpPrefix(ref rightHandFingersEffectors.ring, EffectorLocation.RightHandRing, rightHandFingersEffectors.ring1, rightHandFingersBones.ring, 1);
+            _tmpPrefix(ref rightHandFingersEffectors.little2, EffectorLocation.RightHandLittle2, rightArmEffectors.wrist, rightHandFingersBones.little, 3);
 			_tmpPrefix(ref rightHandFingersEffectors.little1, EffectorLocation.RightHandLittle1, rightHandFingersEffectors.little2, rightHandFingersBones.little,2);
-			_tmpPrefix(ref rightHandFingersEffectors.ring, EffectorLocation.RightHandRing, rightHandFingersEffectors.ring1, rightHandFingersBones.ring,1);
 			_tmpPrefix(ref rightHandFingersEffectors.little, EffectorLocation.RightHandLittle, rightHandFingersEffectors.little1, rightHandFingersBones.little,1);
 
 

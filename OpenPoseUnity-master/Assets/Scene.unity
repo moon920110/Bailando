@@ -151,7 +151,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 658671426}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &49860187
 GameObject:
@@ -181,7 +181,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 658671426}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &97611392
 GameObject:
@@ -5821,7 +5821,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 133131203}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &133131202
 GameObject:
@@ -5851,18 +5851,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 799872449}
-  - {fileID: 969514169}
-  - {fileID: 194306163}
-  - {fileID: 984720064}
-  - {fileID: 1766846759}
   - {fileID: 1750966412}
   - {fileID: 774483226}
+  - {fileID: 969514169}
   - {fileID: 489197593}
   - {fileID: 112597614}
+  - {fileID: 194306163}
   - {fileID: 646502279}
   - {fileID: 674779961}
+  - {fileID: 984720064}
   - {fileID: 1361585963}
   - {fileID: 1850762904}
+  - {fileID: 1766846759}
   - {fileID: 978463156}
   - {fileID: 752600842}
   m_Father: {fileID: 135020107}
@@ -5933,7 +5933,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 658671426}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &194169119
 GameObject:
@@ -6056,7 +6056,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 133131203}
-  m_RootOrder: 2
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &242264855
 GameObject:
@@ -6273,7 +6273,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 133131203}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &489394330
 GameObject:
@@ -6333,7 +6333,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 133131203}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &658671425
 GameObject:
@@ -6363,18 +6363,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1144475812}
-  - {fileID: 1176381939}
-  - {fileID: 1500754887}
-  - {fileID: 1066668178}
-  - {fileID: 757628774}
   - {fileID: 168719046}
   - {fileID: 1142816329}
+  - {fileID: 1176381939}
   - {fileID: 1993713842}
   - {fileID: 49860188}
+  - {fileID: 1500754887}
   - {fileID: 1741931931}
   - {fileID: 1269124573}
+  - {fileID: 1066668178}
   - {fileID: 35715432}
   - {fileID: 1644298847}
+  - {fileID: 757628774}
   - {fileID: 273957051}
   - {fileID: 1182817969}
   m_Father: {fileID: 135020107}
@@ -6468,7 +6468,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 133131203}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &676849027
 GameObject:
@@ -6499,36 +6499,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1366809470}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &681464229
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 681464230}
-  m_Layer: 0
-  m_Name: tmp
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &681464230
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 681464229}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.89363366, y: 0.8814291, z: 0.22229075}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &702854616
 GameObject:
@@ -6618,7 +6588,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 658671426}
-  m_RootOrder: 4
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &758591634
 GameObject:
@@ -6678,7 +6648,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 133131203}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &776179752
 GameObject:
@@ -6942,7 +6912,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 133131203}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &978463155
 GameObject:
@@ -7002,7 +6972,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 133131203}
-  m_RootOrder: 3
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1066668177
 GameObject:
@@ -7032,7 +7002,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 658671426}
-  m_RootOrder: 3
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1095166169
 GameObject:
@@ -7092,7 +7062,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 658671426}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1143602414
 GameObject:
@@ -7182,7 +7152,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 658671426}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1177301759
 GameObject:
@@ -7398,7 +7368,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 658671426}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1279060634
 GameObject:
@@ -7530,7 +7500,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 133131203}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1366809469
 GameObject:
@@ -7831,7 +7801,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 658671426}
-  m_RootOrder: 2
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1519152766
 GameObject:
@@ -7922,7 +7892,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 658671426}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1729439025
 GameObject:
@@ -7982,7 +7952,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 658671426}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1750966411
 GameObject:
@@ -8012,7 +7982,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 133131203}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1766846758
 GameObject:
@@ -8042,7 +8012,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 133131203}
-  m_RootOrder: 4
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1850762903
 GameObject:
@@ -8072,7 +8042,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 133131203}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1852978611
 GameObject:
@@ -8227,7 +8197,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 658671426}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2042080782
 GameObject:
@@ -11111,8 +11081,480 @@ MonoBehaviour:
           column1: {x: 0, y: 1, z: 0}
           column2: {x: 0, y: 0, z: 1}
         _isWritebackWorldPosition: 0
-      thumb1: []
-      thumb2: []
+      thumb1:
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      thumb2:
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
       index:
       - transform: {fileID: 0}
         _isPresetted: 1
@@ -11587,10 +12029,954 @@ MonoBehaviour:
           column1: {x: 0, y: 1, z: 0}
           column2: {x: 0, y: 0, z: 1}
         _isWritebackWorldPosition: 0
-      index1: []
-      middle1: []
-      index2: []
-      middle2: []
+      index1:
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      middle1:
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      index2:
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      middle2:
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
       ring:
       - transform: {fileID: 0}
         _isPresetted: 1
@@ -12065,10 +13451,954 @@ MonoBehaviour:
           column1: {x: 0, y: 1, z: 0}
           column2: {x: 0, y: 0, z: 1}
         _isWritebackWorldPosition: 0
-      ring1: []
-      little1: []
-      ring2: []
-      little2: []
+      ring1:
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      little1:
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      ring2:
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      little2:
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
     rightHandFingersBones:
       thumb:
       - transform: {fileID: 0}
@@ -12307,8 +14637,480 @@ MonoBehaviour:
           column1: {x: 0, y: 1, z: 0}
           column2: {x: 0, y: 0, z: 1}
         _isWritebackWorldPosition: 0
-      thumb1: []
-      thumb2: []
+      thumb1:
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      thumb2:
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
       index:
       - transform: {fileID: 0}
         _isPresetted: 1
@@ -12783,10 +15585,954 @@ MonoBehaviour:
           column1: {x: 0, y: 1, z: 0}
           column2: {x: 0, y: 0, z: 1}
         _isWritebackWorldPosition: 0
-      index1: []
-      middle1: []
-      index2: []
-      middle2: []
+      index1:
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      middle1:
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      index2:
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      middle2:
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
       ring:
       - transform: {fileID: 0}
         _isPresetted: 1
@@ -13261,10 +17007,954 @@ MonoBehaviour:
           column1: {x: 0, y: 1, z: 0}
           column2: {x: 0, y: 0, z: 1}
         _isWritebackWorldPosition: 0
-      ring1: []
-      little1: []
-      ring2: []
-      little2: []
+      ring1:
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      little1:
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      ring2:
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      little2:
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
+      - transform: {fileID: 0}
+        _isPresetted: 0
+        _boneLocation: 79
+        _boneType: 15
+        _boneSide: 2
+        _fingerType: 15
+        _fingerIndex: -1
+        _localAxisFrom: 3
+        _localDirectionAs: 5
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _defaultBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _defaultLocalTranslate: {x: 0, y: 0, z: 0}
+        _defaultLocalDirection: {x: 0, y: 0, z: 0}
+        _defaultLocalLength:
+          length: 0
+          lengthSq: 0
+        _localAxisBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisBasisInv:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _localAxisRotation: {x: 0, y: 0, z: 0, w: 1}
+        _localAxisRotationInv: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _baseToWorldBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _worldToBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+        _boneToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _worldToBaseRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToWorldRotation: {x: 0, y: 0, z: 0, w: 1}
+        _baseToBoneBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _boneToBaseBasis:
+          column0: {x: 1, y: 0, z: 0}
+          column1: {x: 0, y: 1, z: 0}
+          column2: {x: 0, y: 0, z: 1}
+        _isWritebackWorldPosition: 0
     rootEffector:
       transform: {fileID: 1486938075}
       positionEnabled: 0
