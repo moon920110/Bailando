@@ -472,13 +472,33 @@ namespace SA
 
 				_FingerBoneField( prefix + "Thumb", ref fingerBones.thumb, true );
 				EditorGUILayout.Separator();
-				_FingerBoneField( prefix + "Index", ref fingerBones.index, true );
+				_FingerBoneField(prefix + "Thumb1", ref fingerBones.thumb1, true);
 				EditorGUILayout.Separator();
-				_FingerBoneField( prefix + "Middle", ref fingerBones.middle, true );
+				_FingerBoneField(prefix + "Thumb2", ref fingerBones.thumb2, true);
+				EditorGUILayout.Separator();
+				_FingerBoneField( prefix + "Index1", ref fingerBones.index1, true );
+				EditorGUILayout.Separator();
+				_FingerBoneField( prefix + "Middle1", ref fingerBones.middle1, true );
+				EditorGUILayout.Separator();
+				_FingerBoneField(prefix + "Index2", ref fingerBones.index2, true);
+				EditorGUILayout.Separator();
+				_FingerBoneField(prefix + "Middle2", ref fingerBones.middle2, true);
+				EditorGUILayout.Separator();
+				_FingerBoneField(prefix + "Index", ref fingerBones.index, true);
+				EditorGUILayout.Separator();
+				_FingerBoneField(prefix + "Middle", ref fingerBones.middle, true);
 				EditorGUILayout.Separator();
 				_FingerBoneField( prefix + "Ring", ref fingerBones.ring, true );
 				EditorGUILayout.Separator();
 				_FingerBoneField( prefix + "Little", ref fingerBones.little, true );
+				EditorGUILayout.Separator();
+				_FingerBoneField(prefix + "Ring1", ref fingerBones.ring1, true);
+				EditorGUILayout.Separator();
+				_FingerBoneField(prefix + "Little1", ref fingerBones.little1, true);
+				EditorGUILayout.Separator();
+				_FingerBoneField(prefix + "Ring2", ref fingerBones.ring2, true);
+				EditorGUILayout.Separator();
+				_FingerBoneField(prefix + "Little2", ref fingerBones.little2, true);
 				EditorGUILayout.Separator();
 			}
 
@@ -556,11 +576,21 @@ namespace SA
 				_Header( (i == 0) ? "Left Wrist Fingers" : "Right Wrist Fingers" );
 				var effectors = (i == 0) ? leftHandFingersEffectors : rightHandFingersEffectors;
 				var prefix = (i == 0) ? "L " : "R ";
-				_EffectorField( prefix + "Thumb", ref effectors.thumb );
+				_EffectorField(prefix + "Thumb", ref effectors.thumb);
+				_EffectorField(prefix + "Thumb1", ref effectors.thumb1);
+				_EffectorField(prefix + "Thumb2", ref effectors.thumb2);
 				_EffectorField( prefix + "Index", ref effectors.index );
 				_EffectorField( prefix + "Middle", ref effectors.middle );
+				_EffectorField(prefix + "Index1", ref effectors.index1);
+				_EffectorField(prefix + "Middle1", ref effectors.middle1);
+				_EffectorField(prefix + "Index2", ref effectors.index2);
+				_EffectorField(prefix + "Middle2", ref effectors.middle2);
 				_EffectorField( prefix + "Ring", ref effectors.ring );
 				_EffectorField( prefix + "Little", ref effectors.little );
+				_EffectorField(prefix + "Ring1", ref effectors.ring1);
+				_EffectorField(prefix + "Little1", ref effectors.little1);
+				_EffectorField(prefix + "Ring2", ref effectors.ring2);
+				_EffectorField(prefix + "Little2", ref effectors.little2);
 			}
 
 			EditorGUILayout.EndScrollView();

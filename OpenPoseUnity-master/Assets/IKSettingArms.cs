@@ -119,10 +119,10 @@ public class IKSettingArms : MonoBehaviour
             //BoneList[NormalizeJoint[i, 1]].position = points[NormalizeJoint[i, 1]];
             //BoneList[NormalizeJoint[i, 0]].position = points[NormalizeJoint[i, 0]];
 
-            //BoneList[NormalizeJoint[i, 1]].position = Vector3.Lerp(
-            //BoneList[NormalizeJoint[i, 1]].position,
-            //BoneList[NormalizeJoint[i, 0]].position + BoneDistance[i] * NormalizeBone[i], 0.05f
-            //);
+            BoneList[NormalizeJoint[i, 1]].position = Vector3.Lerp(
+            BoneList[NormalizeJoint[i, 1]].position,
+            BoneList[NormalizeJoint[i, 0]].position + BoneDistance[i] * NormalizeBone[i], 0.05f
+            );
             if (i == 14)
             {
                 float distance_ = Vector3.Distance(BoneList[NormalizeJoint[i, 1]].position, BoneList[NormalizeJoint[i, 0]].position);
@@ -160,39 +160,39 @@ enum OpenPosehandsRef
     RightArm,
     RightElbow,
     RightWrist,
-    RightThumb,
-    RightThumb_1,
     RightThumb_2,
-    RightIndex,
-    RightIndex_1,
+    RightThumb_1,
+    RightThumb,
     RightIndex_2,
-    RightMiddle,
-    RightMiddle_1,
+    RightIndex_1,
+    RightIndex,
     RightMiddle_2,
-    RightRing,
-    RightRing_1,
+    RightMiddle_1,
+    RightMiddle,
     RightRing_2,
-    RightLittle,
-    RightLittle_1,
+    RightRing_1,
+    RightRing,
     RightLittle_2,
+    RightLittle_1,
+    RightLittle,
     LeftArm,
     LeftElbow,
     LeftWrist,
-    LeftThumb,
-    LeftThumb_1,
     LeftThumb_2,
-    LeftIndex,
-    LeftIndex_1,
+    LeftThumb_1,
+    LeftThumb,
     LeftIndex_2,
-    LeftMiddle,
-    LeftMiddle_1,
+    LeftIndex_1,
+    LeftIndex,
     LeftMiddle_2,
-    LeftRing,
-    LeftRing_1,
+    LeftMiddle_1,
+    LeftMiddle,
     LeftRing_2,
-    LeftLittle,
+    LeftRing_1,
+    LeftRing,
+    LeftLittle_2,
     LeftLittle_1,
-    LeftLittle_2
+    LeftLittle
 };
 enum NormalizeBonehandsRef
 {

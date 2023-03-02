@@ -28,6 +28,7 @@ namespace SA
 				public float beginLink_endCosTheta;
 			}
 
+
 			public class _FingerBranch
 			{
 				public Effector effector = null;
@@ -127,13 +128,37 @@ namespace SA
 							bones = fingerBones.thumb;
 							effector = fingerEffectors.thumb;
 							break;
+						case (int)FingerType.Thumb1:
+							bones = fingerBones.thumb1;
+							effector = fingerEffectors.thumb1;
+							break;
+						case (int)FingerType.Thumb2:
+							bones = fingerBones.thumb2;
+							effector = fingerEffectors.thumb2;
+							break;
 						case (int)FingerType.Index:
 							bones = fingerBones.index;
 							effector = fingerEffectors.index;
 							break;
+						case (int)FingerType.Index1:
+							bones = fingerBones.index1;
+							effector = fingerEffectors.index1;
+							break;
+						case (int)FingerType.Index2:
+							bones = fingerBones.index2;
+							effector = fingerEffectors.index2;
+							break;
 						case (int)FingerType.Middle:
 							bones = fingerBones.middle;
 							effector = fingerEffectors.middle;
+							break;
+						case (int)FingerType.Middle1:
+							bones = fingerBones.middle1;
+							effector = fingerEffectors.middle1;
+							break;
+						case (int)FingerType.Middle2:
+							bones = fingerBones.middle2;
+							effector = fingerEffectors.middle2;
 							break;
 						case (int)FingerType.Ring:
 							bones = fingerBones.ring;
@@ -142,6 +167,22 @@ namespace SA
 						case (int)FingerType.Little:
 							bones = fingerBones.little;
 							effector = fingerEffectors.little;
+							break;
+						case (int)FingerType.Ring1:
+							bones = fingerBones.ring1;
+							effector = fingerEffectors.ring1;
+							break;
+						case (int)FingerType.Little1:
+							bones = fingerBones.little1;
+							effector = fingerEffectors.little1;
+							break;
+						case (int)FingerType.Ring2:
+							bones = fingerBones.ring2;
+							effector = fingerEffectors.ring2;
+							break;
+						case (int)FingerType.Little2:
+							bones = fingerBones.little2;
+							effector = fingerEffectors.little2;
 							break;
 						}
 

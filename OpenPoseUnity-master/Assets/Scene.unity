@@ -2936,6 +2936,8 @@ MonoBehaviour:
           column1: {x: 0, y: 1, z: 0}
           column2: {x: 0, y: 0, z: 1}
         _isWritebackWorldPosition: 0
+      thumb1: []
+      thumb2: []
       index:
       - transform: {fileID: 0}
         _isPresetted: 1
@@ -3410,6 +3412,10 @@ MonoBehaviour:
           column1: {x: 0, y: 1, z: 0}
           column2: {x: 0, y: 0, z: 1}
         _isWritebackWorldPosition: 0
+      index1: []
+      middle1: []
+      index2: []
+      middle2: []
       ring:
       - transform: {fileID: 0}
         _isPresetted: 1
@@ -3884,6 +3890,10 @@ MonoBehaviour:
           column1: {x: 0, y: 1, z: 0}
           column2: {x: 0, y: 0, z: 1}
         _isWritebackWorldPosition: 0
+      ring1: []
+      little1: []
+      ring2: []
+      little2: []
     rightHandFingersBones:
       thumb:
       - transform: {fileID: 0}
@@ -4122,6 +4132,8 @@ MonoBehaviour:
           column1: {x: 0, y: 1, z: 0}
           column2: {x: 0, y: 0, z: 1}
         _isWritebackWorldPosition: 0
+      thumb1: []
+      thumb2: []
       index:
       - transform: {fileID: 0}
         _isPresetted: 1
@@ -4596,6 +4608,10 @@ MonoBehaviour:
           column1: {x: 0, y: 1, z: 0}
           column2: {x: 0, y: 0, z: 1}
         _isWritebackWorldPosition: 0
+      index1: []
+      middle1: []
+      index2: []
+      middle2: []
       ring:
       - transform: {fileID: 0}
         _isPresetted: 1
@@ -5070,6 +5086,10 @@ MonoBehaviour:
           column1: {x: 0, y: 1, z: 0}
           column2: {x: 0, y: 0, z: 1}
         _isWritebackWorldPosition: 0
+      ring1: []
+      little1: []
+      ring2: []
+      little2: []
     rootEffector:
       transform: {fileID: 399351110}
       positionEnabled: 0
@@ -5317,6 +5337,36 @@ MonoBehaviour:
         _defaultPosition: {x: 0, y: 0, z: 0}
         _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
         _isSimulateFingerTips: 0
+      thumb1:
+        transform: {fileID: 0}
+        positionEnabled: 0
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 0
+        _effectorLocation: 45
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      thumb2:
+        transform: {fileID: 0}
+        positionEnabled: 0
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 0
+        _effectorLocation: 45
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
       index:
         transform: {fileID: 1852978612}
         positionEnabled: 0
@@ -5344,6 +5394,66 @@ MonoBehaviour:
         _effectorType: 10
         _effectorFlags: 0
         _createdTransform: {fileID: 1464123588}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      index1:
+        transform: {fileID: 0}
+        positionEnabled: 0
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 0
+        _effectorLocation: 33
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      middle1:
+        transform: {fileID: 0}
+        positionEnabled: 0
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 0
+        _effectorLocation: 33
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      index2:
+        transform: {fileID: 0}
+        positionEnabled: 0
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 0
+        _effectorLocation: 33
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      middle2:
+        transform: {fileID: 0}
+        positionEnabled: 0
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 0
+        _effectorLocation: 33
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
         _defaultPosition: {x: 0, y: 0, z: 0}
         _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
         _isSimulateFingerTips: 0
@@ -5377,6 +5487,66 @@ MonoBehaviour:
         _defaultPosition: {x: 0, y: 0, z: 0}
         _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
         _isSimulateFingerTips: 0
+      ring1:
+        transform: {fileID: 0}
+        positionEnabled: 0
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 0
+        _effectorLocation: 45
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      little1:
+        transform: {fileID: 0}
+        positionEnabled: 0
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 0
+        _effectorLocation: 45
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      ring2:
+        transform: {fileID: 0}
+        positionEnabled: 0
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 0
+        _effectorLocation: 45
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      little2:
+        transform: {fileID: 0}
+        positionEnabled: 0
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 0
+        _effectorLocation: 45
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
     rightHandFingersEffectors:
       thumb:
         transform: {fileID: 2042080783}
@@ -5390,6 +5560,36 @@ MonoBehaviour:
         _effectorType: 10
         _effectorFlags: 0
         _createdTransform: {fileID: 2042080783}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      thumb1:
+        transform: {fileID: 0}
+        positionEnabled: 0
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 0
+        _effectorLocation: 45
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      thumb2:
+        transform: {fileID: 0}
+        positionEnabled: 0
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 0
+        _effectorLocation: 45
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
         _defaultPosition: {x: 0, y: 0, z: 0}
         _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
         _isSimulateFingerTips: 0
@@ -5423,6 +5623,66 @@ MonoBehaviour:
         _defaultPosition: {x: 0, y: 0, z: 0}
         _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
         _isSimulateFingerTips: 0
+      index1:
+        transform: {fileID: 0}
+        positionEnabled: 0
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 0
+        _effectorLocation: 33
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      middle1:
+        transform: {fileID: 0}
+        positionEnabled: 0
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 0
+        _effectorLocation: 33
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      index2:
+        transform: {fileID: 0}
+        positionEnabled: 0
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 0
+        _effectorLocation: 33
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      middle2:
+        transform: {fileID: 0}
+        positionEnabled: 0
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 0
+        _effectorLocation: 33
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
       ring:
         transform: {fileID: 2070743902}
         positionEnabled: 0
@@ -5450,6 +5710,66 @@ MonoBehaviour:
         _effectorType: 10
         _effectorFlags: 0
         _createdTransform: {fileID: 702854617}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      ring1:
+        transform: {fileID: 0}
+        positionEnabled: 0
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 0
+        _effectorLocation: 45
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      little1:
+        transform: {fileID: 0}
+        positionEnabled: 0
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 0
+        _effectorLocation: 45
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      ring2:
+        transform: {fileID: 0}
+        positionEnabled: 0
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 0
+        _effectorLocation: 45
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      little2:
+        transform: {fileID: 0}
+        positionEnabled: 0
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 0
+        _effectorLocation: 45
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
         _defaultPosition: {x: 0, y: 0, z: 0}
         _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
         _isSimulateFingerTips: 0
@@ -6527,13 +6847,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842610249}
-  m_LocalRotation: {x: 0.002853143, y: 0.99707085, z: -0.047526423, w: 0.059856933}
-  m_LocalPosition: {x: -1.2, y: 2.04, z: 1.6}
+  m_LocalRotation: {x: 0.015509706, y: 0.96418995, z: -0.25835398, w: 0.057883002}
+  m_LocalPosition: {x: -0.898, y: 2.417, z: 1.044}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 5.458, y: 173.129, z: 0}
+  m_LocalEulerAnglesHint: {x: 30, y: 173.129, z: 0}
 --- !u!1 &871251760
 GameObject:
   m_ObjectHideFlags: 0
@@ -10761,6 +11081,8 @@ MonoBehaviour:
           column1: {x: 0, y: 1, z: 0}
           column2: {x: 0, y: 0, z: 1}
         _isWritebackWorldPosition: 0
+      thumb1: []
+      thumb2: []
       index:
       - transform: {fileID: 0}
         _isPresetted: 1
@@ -11235,6 +11557,10 @@ MonoBehaviour:
           column1: {x: 0, y: 1, z: 0}
           column2: {x: 0, y: 0, z: 1}
         _isWritebackWorldPosition: 0
+      index1: []
+      middle1: []
+      index2: []
+      middle2: []
       ring:
       - transform: {fileID: 0}
         _isPresetted: 1
@@ -11709,6 +12035,10 @@ MonoBehaviour:
           column1: {x: 0, y: 1, z: 0}
           column2: {x: 0, y: 0, z: 1}
         _isWritebackWorldPosition: 0
+      ring1: []
+      little1: []
+      ring2: []
+      little2: []
     rightHandFingersBones:
       thumb:
       - transform: {fileID: 0}
@@ -11947,6 +12277,8 @@ MonoBehaviour:
           column1: {x: 0, y: 1, z: 0}
           column2: {x: 0, y: 0, z: 1}
         _isWritebackWorldPosition: 0
+      thumb1: []
+      thumb2: []
       index:
       - transform: {fileID: 0}
         _isPresetted: 1
@@ -12421,6 +12753,10 @@ MonoBehaviour:
           column1: {x: 0, y: 1, z: 0}
           column2: {x: 0, y: 0, z: 1}
         _isWritebackWorldPosition: 0
+      index1: []
+      middle1: []
+      index2: []
+      middle2: []
       ring:
       - transform: {fileID: 0}
         _isPresetted: 1
@@ -12895,6 +13231,10 @@ MonoBehaviour:
           column1: {x: 0, y: 1, z: 0}
           column2: {x: 0, y: 0, z: 1}
         _isWritebackWorldPosition: 0
+      ring1: []
+      little1: []
+      ring2: []
+      little2: []
     rootEffector:
       transform: {fileID: 1486938075}
       positionEnabled: 0
@@ -13129,7 +13469,7 @@ MonoBehaviour:
     leftHandFingersEffectors:
       thumb:
         transform: {fileID: 1144475812}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -13142,9 +13482,39 @@ MonoBehaviour:
         _defaultPosition: {x: 0, y: 0, z: 0}
         _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
         _isSimulateFingerTips: 0
+      thumb1:
+        transform: {fileID: 168719046}
+        positionEnabled: 1
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 1
+        _effectorLocation: 18
+        _effectorType: 10
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      thumb2:
+        transform: {fileID: 1142816329}
+        positionEnabled: 1
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 1
+        _effectorLocation: 19
+        _effectorType: 10
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
       index:
         transform: {fileID: 1176381939}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -13159,7 +13529,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       middle:
         transform: {fileID: 1500754887}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -13172,40 +13542,9 @@ MonoBehaviour:
         _defaultPosition: {x: 0, y: 0, z: 0}
         _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
         _isSimulateFingerTips: 0
-      ring:
-        transform: {fileID: 1066668178}
-        positionEnabled: 0
-        rotationEnabled: 0
-        positionWeight: 1
-        rotationWeight: 1
-        pull: 0
-        _isPresetted: 1
-        _effectorLocation: 18
-        _effectorType: 10
-        _effectorFlags: 0
-        _createdTransform: {fileID: 1066668178}
-        _defaultPosition: {x: 0, y: 0, z: 0}
-        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
-        _isSimulateFingerTips: 0
-      little:
-        transform: {fileID: 757628774}
-        positionEnabled: 0
-        rotationEnabled: 0
-        positionWeight: 1
-        rotationWeight: 1
-        pull: 0
-        _isPresetted: 1
-        _effectorLocation: 19
-        _effectorType: 10
-        _effectorFlags: 0
-        _createdTransform: {fileID: 757628774}
-        _defaultPosition: {x: 0, y: 0, z: 0}
-        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
-        _isSimulateFingerTips: 0
-    rightHandFingersEffectors:
-      thumb:
-        transform: {fileID: 799872449}
-        positionEnabled: 0
+      index1:
+        transform: {fileID: 1993713842}
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -13214,13 +13553,13 @@ MonoBehaviour:
         _effectorLocation: 20
         _effectorType: 10
         _effectorFlags: 0
-        _createdTransform: {fileID: 799872449}
+        _createdTransform: {fileID: 0}
         _defaultPosition: {x: 0, y: 0, z: 0}
         _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
         _isSimulateFingerTips: 0
-      index:
-        transform: {fileID: 969514169}
-        positionEnabled: 0
+      middle1:
+        transform: {fileID: 1741931931}
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -13229,13 +13568,13 @@ MonoBehaviour:
         _effectorLocation: 21
         _effectorType: 10
         _effectorFlags: 0
-        _createdTransform: {fileID: 969514169}
+        _createdTransform: {fileID: 0}
         _defaultPosition: {x: 0, y: 0, z: 0}
         _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
         _isSimulateFingerTips: 0
-      middle:
-        transform: {fileID: 194306163}
-        positionEnabled: 0
+      index2:
+        transform: {fileID: 49860188}
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -13244,13 +13583,13 @@ MonoBehaviour:
         _effectorLocation: 22
         _effectorType: 10
         _effectorFlags: 0
-        _createdTransform: {fileID: 194306163}
+        _createdTransform: {fileID: 0}
         _defaultPosition: {x: 0, y: 0, z: 0}
         _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
         _isSimulateFingerTips: 0
-      ring:
-        transform: {fileID: 984720064}
-        positionEnabled: 0
+      middle2:
+        transform: {fileID: 1269124573}
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -13259,13 +13598,13 @@ MonoBehaviour:
         _effectorLocation: 23
         _effectorType: 10
         _effectorFlags: 0
-        _createdTransform: {fileID: 984720064}
+        _createdTransform: {fileID: 0}
         _defaultPosition: {x: 0, y: 0, z: 0}
         _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
         _isSimulateFingerTips: 0
-      little:
-        transform: {fileID: 1766846759}
-        positionEnabled: 0
+      ring:
+        transform: {fileID: 1066668178}
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -13274,7 +13613,308 @@ MonoBehaviour:
         _effectorLocation: 24
         _effectorType: 10
         _effectorFlags: 0
+        _createdTransform: {fileID: 1066668178}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      little:
+        transform: {fileID: 757628774}
+        positionEnabled: 1
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 1
+        _effectorLocation: 25
+        _effectorType: 10
+        _effectorFlags: 0
+        _createdTransform: {fileID: 757628774}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      ring1:
+        transform: {fileID: 35715432}
+        positionEnabled: 1
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 1
+        _effectorLocation: 26
+        _effectorType: 10
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      little1:
+        transform: {fileID: 273957051}
+        positionEnabled: 1
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 1
+        _effectorLocation: 27
+        _effectorType: 10
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      ring2:
+        transform: {fileID: 1644298847}
+        positionEnabled: 1
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 1
+        _effectorLocation: 28
+        _effectorType: 10
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      little2:
+        transform: {fileID: 1182817969}
+        positionEnabled: 1
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 1
+        _effectorLocation: 29
+        _effectorType: 10
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+    rightHandFingersEffectors:
+      thumb:
+        transform: {fileID: 799872449}
+        positionEnabled: 1
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 1
+        _effectorLocation: 30
+        _effectorType: 10
+        _effectorFlags: 0
+        _createdTransform: {fileID: 799872449}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      thumb1:
+        transform: {fileID: 1750966412}
+        positionEnabled: 1
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 1
+        _effectorLocation: 31
+        _effectorType: 10
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      thumb2:
+        transform: {fileID: 774483226}
+        positionEnabled: 1
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 1
+        _effectorLocation: 32
+        _effectorType: 10
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      index:
+        transform: {fileID: 969514169}
+        positionEnabled: 1
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 1
+        _effectorLocation: 33
+        _effectorType: 10
+        _effectorFlags: 0
+        _createdTransform: {fileID: 969514169}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      middle:
+        transform: {fileID: 194306163}
+        positionEnabled: 1
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 1
+        _effectorLocation: 34
+        _effectorType: 10
+        _effectorFlags: 0
+        _createdTransform: {fileID: 194306163}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      index1:
+        transform: {fileID: 489197593}
+        positionEnabled: 1
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 1
+        _effectorLocation: 35
+        _effectorType: 10
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      middle1:
+        transform: {fileID: 646502279}
+        positionEnabled: 1
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 1
+        _effectorLocation: 36
+        _effectorType: 10
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      index2:
+        transform: {fileID: 112597614}
+        positionEnabled: 1
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 1
+        _effectorLocation: 37
+        _effectorType: 10
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      middle2:
+        transform: {fileID: 674779961}
+        positionEnabled: 1
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 1
+        _effectorLocation: 38
+        _effectorType: 10
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      ring:
+        transform: {fileID: 984720064}
+        positionEnabled: 1
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 1
+        _effectorLocation: 39
+        _effectorType: 10
+        _effectorFlags: 0
+        _createdTransform: {fileID: 984720064}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      little:
+        transform: {fileID: 1766846759}
+        positionEnabled: 1
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 1
+        _effectorLocation: 40
+        _effectorType: 10
+        _effectorFlags: 0
         _createdTransform: {fileID: 1766846759}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      ring1:
+        transform: {fileID: 1361585963}
+        positionEnabled: 1
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 1
+        _effectorLocation: 41
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      little1:
+        transform: {fileID: 978463156}
+        positionEnabled: 1
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 1
+        _effectorLocation: 42
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      ring2:
+        transform: {fileID: 1850762904}
+        positionEnabled: 1
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 1
+        _effectorLocation: 43
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
+        _defaultPosition: {x: 0, y: 0, z: 0}
+        _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
+        _isSimulateFingerTips: 0
+      little2:
+        transform: {fileID: 752600842}
+        positionEnabled: 1
+        rotationEnabled: 0
+        positionWeight: 1
+        rotationWeight: 1
+        pull: 0
+        _isPresetted: 1
+        _effectorLocation: 44
+        _effectorType: 11
+        _effectorFlags: 0
+        _createdTransform: {fileID: 0}
         _defaultPosition: {x: 0, y: 0, z: 0}
         _defaultRotation: {x: 0, y: 0, z: 0, w: 1}
         _isSimulateFingerTips: 0
