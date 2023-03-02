@@ -15,22 +15,22 @@ public class IKSettingArms : MonoBehaviour
     [SerializeField] int Data_Size;
     GameObject FullbodyIK;
     Vector3[] points = new Vector3[38];
-    Vector3[] NormalizeBone = new Vector3[14];
-    float[] BoneDistance = new float[14];
+    Vector3[] NormalizeBone = new Vector3[16];
+    float[] BoneDistance = new float[16];
     float Timer;
-    int[,] joints = new int[,] { { 0, 1 }, { 1, 2 }, { 2, 3 },
-                                  { 3, 4 }, { 4, 5 }, { 5, 6 }, { 3, 7 }, { 7, 8 }, { 8, 9 }, { 3, 10 }, { 10, 11 }, { 11, 12 }, { 3, 13 }, { 13, 14 }, { 14, 15 }, { 3, 16 }, { 16, 17 }, { 17, 18 },
-                                  { 0, 19 }, { 19, 20 }, { 20, 21 },
-                                   { 21, 22 }, { 22, 23 }, { 23, 24 }, { 21, 25 }, { 25, 26 }, { 26, 27 }, { 21, 28 }, { 28, 29 }, { 29, 30 }, { 21, 31 }, { 31, 32 }, { 29, 30 }, { 21, 34 }, { 34, 35 }, { 35, 36 }  };
+    int[,] joints = new int[,] { { 37, 1 }, { 1, 2 }, { 2, 3 },
+                                 { 3, 4 }, { 4, 5 }, { 5, 6 }, { 3, 7 }, { 7, 8 }, { 8, 9 }, { 3, 10 }, { 10, 11 }, { 11, 12 }, { 3, 13 }, { 13, 14 }, { 14, 15 }, { 3, 16 }, { 16, 17 }, { 17, 18 },
+                                 { 37, 19 }, { 19, 20 }, { 20, 21 },
+                                 { 21, 22 }, { 22, 23 }, { 23, 24 }, { 21, 25 }, { 25, 26 }, { 26, 27 }, { 21, 28 }, { 28, 29 }, { 29, 30 }, { 21, 31 }, { 31, 32 }, { 29, 30 }, { 21, 34 }, { 34, 35 }, { 35, 36 }};
 
-    int[,] BoneJoint = new int[,] { { 1, 2 }, { 2, 3 }, 
+    int[,] BoneJoint = new int[,] {{ 37, 1 }, { 1, 2 }, { 2, 3 }, 
                                     { 3, 6 }, { 3, 9 }, { 3, 12 }, { 3, 15 }, { 3, 18 }, 
-                                    { 19, 20 }, { 20, 21 },
+                                    { 37, 19 }, { 19, 20 }, { 20, 21 },
                                     { 21, 24 }, { 21, 27 }, { 21, 30 }, { 21, 33 }, { 21, 36 }};
 
-    int[,] NormalizeJoint = new int[,] { { 1, 2 }, { 2, 3 }, 
+    int[,] NormalizeJoint = new int[,] {{ 0, 1 }, { 1, 2 }, { 2, 3 }, 
                                         { 3, 4 }, { 3, 5 }, { 3, 6 }, {3, 7 }, { 3, 8 },
-                                        { 9, 10 }, { 10, 11 }, 
+                                        { 0, 9 }, { 9, 10 }, { 10, 11 }, 
                                         { 11, 12 },{11,13 },{11, 14 },{11,15 },{11, 16 }  };
     int NowFrame = 0;
     void Start()
@@ -73,7 +73,7 @@ public class IKSettingArms : MonoBehaviour
             {
                 points[i] = new Vector3(x[i], z[i], -y[i]);
             }
-            for (int i = 0; i < 14; i++)
+            for (int i = 0; i < 16; i++)
             {
                 // NormalizeBone[i] = (points[BoneJoint[i, 1]] - points[BoneJoint[i, 0]]).normalized;
                 NormalizeBone[i] = (points[BoneJoint[i, 1]] - points[BoneJoint[i, 0]]).normalized;
@@ -95,7 +95,7 @@ public class IKSettingArms : MonoBehaviour
                     BoneList.Add(obj);
                 }
             }
-            for (int i = 0; i < 14; i++) //Enum.GetNames(typeof(NormalizeBonehandsRef)).Length
+            for (int i = 0; i < 16; i++) //Enum.GetNames(typeof(NormalizeBonehandsRef)).Length
             {
                 BoneDistance[i] = Vector3.Distance(BoneList[NormalizeJoint[i, 0]].position, BoneList[NormalizeJoint[i, 1]].position);
             }
@@ -103,15 +103,19 @@ public class IKSettingArms : MonoBehaviour
     }
     void IKSet()
     {
-        for (int i = 0; i < 14; i++)
+        for (int i = 0; i < 16; i++)
         {
             BoneList[NormalizeJoint[i, 1]].position = Vector3.Lerp(
                 BoneList[NormalizeJoint[i, 1]].position,
-                BoneList[NormalizeJoint[i, 0]].position + BoneDistance[i] * NormalizeBone[i], 0.05f
-            // BoneList[NormalizeJoint[i, 0]].position + BoneDistance[i] * NormalizeBone[i], 0.05f
-            );
+                BoneList[NormalizeJoint[i, 0]].position + BoneDistance[i] * (animator.GetBoneTransform(HumanBodyBones.Hips).rotation * NormalizeBone[i]), 0.05f
+           );
+            // BoneList[NormalizeJoint[i, 1]].position += (BoneList[0].position - BoneList[NormalizeJoint[i, 1]].position) + BoneList[NormalizeJoint[i, 1]].position;
+            // BoneListTmp[NormalizeJoint[i, 1]].RotateAround(animator.GetBoneTransform(HumanBodyBones.Hips).position,axis,(angle-previousAngle));
+            
+
             DrawLine(BoneList[NormalizeJoint[i, 0]].position + Vector3.right, BoneList[NormalizeJoint[i, 1]].position + Vector3.right, Color.red);
         }
+        // BoneList[1].position += new Vector3(0.1f, 0, 0);
         for (int i = 0; i < joints.Length / 2; i++)
         {
             DrawLine(points[joints[i, 0]] * 1.0f + new Vector3(1, 1, 1), points[joints[i, 1]] * 1.0f + new Vector3(1, 1, 1), Color.blue);
@@ -142,6 +146,7 @@ enum OpenPosehandsRef
     LeftMiddle,
     LeftRing,
     LeftLittle,
+    Head
 };
 enum NormalizeBonehandsRef
 {
