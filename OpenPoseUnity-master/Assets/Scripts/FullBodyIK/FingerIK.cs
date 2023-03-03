@@ -234,7 +234,7 @@ namespace SA
 					fingerLink.bone = bones[linkID];
 					fingerBranch.fingerLinks[linkID] = fingerLink;
 				}
-
+                Debug.Log("finger1 :" + fingerType);
 				_fingerBranches[fingerType] = fingerBranch;
 
 				if( fingerType == (int)FingerType.Thumb ) {

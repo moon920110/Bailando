@@ -15,8 +15,8 @@ public class IKSettingArms : MonoBehaviour
     [SerializeField] int Data_Size;
     GameObject FullbodyIK;
     Vector3[] points = new Vector3[38];
-    Vector3[] NormalizeBone = new Vector3[34];
-    float[] BoneDistance = new float[34];
+    Vector3[] NormalizeBone = new Vector3[35];
+    float[] BoneDistance = new float[35];
     float Timer;
     int[,] joints = new int[,] { { 0, 1 }, { 1, 2 }, { 2, 3 },
                                   { 3, 4 }, { 4, 5 }, { 5, 6 }, { 3, 7 }, { 7, 8 }, { 8, 9 }, { 3, 10 }, { 10, 11 }, { 11, 12 }, { 3, 13 }, { 13, 14 }, { 14, 15 }, { 3, 16 }, { 16, 17 }, { 17, 18 },
@@ -36,10 +36,10 @@ public class IKSettingArms : MonoBehaviour
     void Start()
     {
         PointUpdate();
-        for (int i = 0; i < 34; i++)
+        for (int i = 0; i < 35; i++)
         {
             // NormalizeBone[i] = (points[BoneJoint[i, 1]] - points[BoneJoint[i, 0]]).normalized;
-            Debug.Log(BoneList[i].position);
+            // Debug.Log(BoneList[i].position);
 
         }
     }
@@ -141,7 +141,7 @@ public class IKSettingArms : MonoBehaviour
         }
         for (int i = 0; i != 2; ++i)
         {
-            Debug.Log(i);
+            // Debug.Log(i);
         }
         for (int i = 0; i < joints.Length / 2; i++)
         {

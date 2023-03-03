@@ -1011,7 +1011,7 @@ namespace SA
             //_Prefix(ref rightHandFingersEffectors.middle, EffectorLocation.RightHandMiddle, rightArmEffectors.wrist, rightHandFingersBones.middle);
 
 
-            _tmpPrefix( ref leftHandFingersEffectors.thumb2, EffectorLocation.LeftHandThumb2, leftArmEffectors.wrist, leftHandFingersBones.thumb,3 );
+            _tmpPrefix(ref leftHandFingersEffectors.thumb2, EffectorLocation.LeftHandThumb2, leftArmEffectors.wrist, leftHandFingersBones.thumb,3 );
 			_tmpPrefix(ref leftHandFingersEffectors.thumb1, EffectorLocation.LeftHandThumb1, leftHandFingersEffectors.thumb2, leftHandFingersBones.thumb,2);
 			_tmpPrefix(ref leftHandFingersEffectors.thumb, EffectorLocation.LeftHandThumb, leftHandFingersEffectors.thumb1, leftHandFingersBones.thumb,1);
 			_tmpPrefix(ref leftHandFingersEffectors.index2, EffectorLocation.LeftHandIndex2, leftArmEffectors.wrist, leftHandFingersBones.index,3);
