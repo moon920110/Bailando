@@ -120,17 +120,19 @@ namespace SA
 
 				_notThumb1PitchUTraceSmooth = new FastAngle( _notThumb1PitchUTrace.angle + _notThumb1PitchUSmooth.angle );
 
+
 				if( fingerBones != null && fingerEffectors != null ) {
 					for( int fingerType = 0; fingerType < (int)FingerType.Max; ++fingerType ) {
 						Bone[] bones = null;
 						Effector effector = null;
 						switch( fingerType ) {
 						case (int)FingerType.Thumb: //0
-							bones = fingerBones.thumb;
+							bones = fingerBones.DeepCopy().thumb;
 							effector = fingerEffectors.thumb;
 							break;
 						case (int)FingerType.Thumb1: //1
-							bones = fingerBones.thumb;
+							//bones = fingerBones.thumb;
+							bones = fingerBones.DeepCopy().thumb;
 							for (int i = 0; i < bones.Length-1; i++)
 							{
 								bones[i] = bones[i + 1];
@@ -141,12 +143,13 @@ namespace SA
 							effector = fingerEffectors.thumb1;
 							break;
 						case (int)FingerType.Thumb2: //2
-							bones = fingerBones.thumb;
-							for (int i = 0; i < bones.Length - 1; i++)
+							//bones = fingerBones.thumb;
+							bones = fingerBones.DeepCopy().thumb;
+							for (int i = 0; i < bones.Length - 2; i++)
 							{
-								bones[i] = bones[i + 1];
+								bones[i] = bones[i + 2];
 							}
-							Array.Resize(ref bones, bones.Length - 2);
+							//Array.Resize(ref bones, bones.Length - 2);
 							effector = fingerEffectors.thumb2;
 							break;
 						case (int)FingerType.Index: //3

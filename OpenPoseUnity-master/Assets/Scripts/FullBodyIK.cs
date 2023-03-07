@@ -67,19 +67,19 @@ namespace SA
 			// public Bone[] thumb1;
 			// public Bone[] thumb2;
 			public Bone[] index;
-			public Bone[] index1;
+            public Bone[] index1;
             public Bone[] index2;
-			public Bone[] middle;
-			public Bone[] middle1;
+            public Bone[] middle;
+            public Bone[] middle1;
             public Bone[] middle2;
             public Bone[] ring;
-            public Bone[] ring2;
             public Bone[] ring1;
+            public Bone[] ring2;
             public Bone[] little;
             public Bone[] little1;
-			public Bone[] little2;
+            public Bone[] little2;
 
-			public void Repair()
+            public void Repair()
 			{
 				SafeResize( ref thumb, MaxHandFingerLength );
 				SafeResize( ref index, MaxHandFingerLength );
@@ -88,7 +88,28 @@ namespace SA
 				SafeResize( ref little, MaxHandFingerLength );
 				// Memo: Don't alloc each bone instances.( Alloc in _Prefix() ).
 			}
-		}
+
+            public FingersBones DeepCopy()
+            {
+                FingersBones CopiedFingerBones = new FingersBones();
+                CopiedFingerBones.thumb = this.thumb;
+                CopiedFingerBones.index = this.index;
+                CopiedFingerBones.index1 = this.index1;
+                CopiedFingerBones.index2 = this.index2;
+                CopiedFingerBones.middle = this.middle;
+                CopiedFingerBones.middle1 = this.middle1;
+                CopiedFingerBones.middle2 = this.middle2;
+                CopiedFingerBones.ring = this.ring;
+                CopiedFingerBones.ring1 = this.ring1;
+                CopiedFingerBones.ring2 = this.ring2;
+				CopiedFingerBones.little = this.little;
+				CopiedFingerBones.little1 = this.little1;
+				CopiedFingerBones.little2 = this.little2;
+
+				return CopiedFingerBones;
+
+            }
+        }
 
 		[System.Serializable]
 		public class BodyEffectors
