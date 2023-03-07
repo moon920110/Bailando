@@ -138,7 +138,7 @@ namespace SA
 								bones[i] = bones[i + 1];
 							}
 							Array.Resize(ref bones, bones.Length -1);
-							// Array.Reverse(bones);
+							Array.Reverse(bones);
 							// bones.Skip(1).ToArray();
 							effector = fingerEffectors.thumb1;
 							break;
@@ -149,7 +149,7 @@ namespace SA
 							{
 								bones[i] = bones[i + 2];
 							}
-							//Array.Resize(ref bones, bones.Length - 2);
+							Array.Resize(ref bones, bones.Length - 2);
 							effector = fingerEffectors.thumb2;
 							break;
 						case (int)FingerType.Index: //3
