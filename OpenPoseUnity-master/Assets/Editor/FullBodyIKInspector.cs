@@ -472,9 +472,9 @@ namespace SA
 
 				_FingerBoneField( prefix + "Thumb", ref fingerBones.thumb, true );
 				EditorGUILayout.Separator();
-				_FingerBoneField(prefix + "Thumb1", ref fingerBones.thumb1, true);
+				_FingerBoneField(prefix + "Thumb1", ref fingerBones.thumb, true);
 				EditorGUILayout.Separator();
-				_FingerBoneField(prefix + "Thumb2", ref fingerBones.thumb2, true);
+				_FingerBoneField(prefix + "Thumb2", ref fingerBones.thumb, true);
 				EditorGUILayout.Separator();
 
                 _FingerBoneField(prefix + "Index", ref fingerBones.index, true);

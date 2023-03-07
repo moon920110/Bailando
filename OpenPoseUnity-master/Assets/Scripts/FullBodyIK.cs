@@ -64,8 +64,8 @@ namespace SA
 		public class FingersBones
 		{
 			public Bone[] thumb;
-			public Bone[] thumb1;
-			public Bone[] thumb2;
+			// public Bone[] thumb1;
+			// public Bone[] thumb2;
 			public Bone[] index;
 			public Bone[] index1;
             public Bone[] index2;

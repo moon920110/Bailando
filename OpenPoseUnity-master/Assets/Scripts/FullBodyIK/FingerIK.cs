@@ -2,6 +2,7 @@
 // Released under the MIT license
 // http://opensource.org/licenses/mit-license.php
 using UnityEngine;
+using System;
 
 namespace SA
 {
@@ -124,31 +125,43 @@ namespace SA
 						Bone[] bones = null;
 						Effector effector = null;
 						switch( fingerType ) {
-						case (int)FingerType.Thumb:
+						case (int)FingerType.Thumb: //0
 							bones = fingerBones.thumb;
 							effector = fingerEffectors.thumb;
 							break;
-						case (int)FingerType.Thumb1:
-							bones = fingerBones.thumb1;
+						case (int)FingerType.Thumb1: //1
+							bones = fingerBones.thumb;
+							for (int i = 0; i < bones.Length-1; i++)
+							{
+								bones[i] = bones[i + 1];
+							}
+							Array.Resize(ref bones, bones.Length -1);
+							// Array.Reverse(bones);
+							// bones.Skip(1).ToArray();
 							effector = fingerEffectors.thumb1;
 							break;
-						case (int)FingerType.Thumb2:
-							bones = fingerBones.thumb2;
+						case (int)FingerType.Thumb2: //2
+							bones = fingerBones.thumb;
+							for (int i = 0; i < bones.Length - 1; i++)
+							{
+								bones[i] = bones[i + 1];
+							}
+							Array.Resize(ref bones, bones.Length - 2);
 							effector = fingerEffectors.thumb2;
 							break;
-						case (int)FingerType.Index:
+						case (int)FingerType.Index: //3
 							bones = fingerBones.index;
 							effector = fingerEffectors.index;
 							break;
-						case (int)FingerType.Index1:
+						case (int)FingerType.Index1: //4
 							bones = fingerBones.index1;
 							effector = fingerEffectors.index1;
 							break;
-						case (int)FingerType.Index2:
+						case (int)FingerType.Index2: //5
 							bones = fingerBones.index2;
 							effector = fingerEffectors.index2;
 							break;
-						case (int)FingerType.Middle:
+						case (int)FingerType.Middle: //6
 							bones = fingerBones.middle;
 							effector = fingerEffectors.middle;
 							break;
@@ -220,13 +233,14 @@ namespace SA
 						}
 					}
 				}
-
-				_FingerBranch fingerBranch = new _FingerBranch();
+                _FingerBranch fingerBranch = new _FingerBranch();
 				fingerBranch.effector = effector;
 
 				fingerBranch.fingerLinks = new _FingerLink[boneLength];
-				for( int linkID = 0; linkID < boneLength; ++linkID ) {
-					if( bones[linkID] == null || bones[linkID].transform == null ) {
+                
+				for( int linkID = 0; linkID < boneLength; ++linkID ) {	
+                    if( bones[linkID] == null || bones[linkID].transform == null ) {
+                        Debug.Log("finger1 :" + fingerType);
 						return;
 					}
 
@@ -234,10 +248,10 @@ namespace SA
 					fingerLink.bone = bones[linkID];
 					fingerBranch.fingerLinks[linkID] = fingerLink;
 				}
-                Debug.Log("finger1 :" + fingerType);
 				_fingerBranches[fingerType] = fingerBranch;
 
 				if( fingerType == (int)FingerType.Thumb ) {
+                    
 					_thumbBranch = new _ThumbBranch();
 					_thumbBranch.thumbLinks = new _ThumbLink[boneLength];
 					for( int i = 0; i != boneLength; ++i ) {
