@@ -127,41 +127,38 @@ namespace SA
 						Effector effector = null;
 						switch( fingerType ) {
 						case (int)FingerType.Thumb: //0
+							// bones = fingerBones.thumb;
 							bones = fingerBones.DeepCopy().thumb;
 							effector = fingerEffectors.thumb;
 							break;
 						case (int)FingerType.Thumb1: //1
-							//bones = fingerBones.thumb;
 							bones = fingerBones.DeepCopy().thumb;
 							for (int i = 0; i < bones.Length-1; i++)
 							{
 								bones[i] = bones[i + 1];
 							}
 							Array.Resize(ref bones, bones.Length -1);
-							Array.Reverse(bones);
-							// bones.Skip(1).ToArray();
 							effector = fingerEffectors.thumb1;
 							break;
-						case (int)FingerType.Thumb2: //2
-							//bones = fingerBones.thumb;
-							bones = fingerBones.DeepCopy().thumb;
-							for (int i = 0; i < bones.Length - 2; i++)
-							{
-								bones[i] = bones[i + 2];
-							}
-							Array.Resize(ref bones, bones.Length - 2);
-							effector = fingerEffectors.thumb2;
-							break;
+						// case (int)FingerType.Thumb2: //2
+						// 	bones = fingerBones.DeepCopy().thumb;
+						// 	for (int i = 0; i < bones.Length - 2; i++)
+						// 	{
+						// 		bones[i] = bones[i + 2];
+						// 	}
+						// 	Array.Resize(ref bones, bones.Length - 2);
+						// 	effector = fingerEffectors.thumb2;
+							// break;
 						case (int)FingerType.Index: //3
 							bones = fingerBones.index;
 							effector = fingerEffectors.index;
 							break;
 						case (int)FingerType.Index1: //4
-							bones = fingerBones.index1;
+							bones = fingerBones.index;
 							effector = fingerEffectors.index1;
 							break;
 						case (int)FingerType.Index2: //5
-							bones = fingerBones.index2;
+							bones = fingerBones.index;
 							effector = fingerEffectors.index2;
 							break;
 						case (int)FingerType.Middle: //6
@@ -169,11 +166,11 @@ namespace SA
 							effector = fingerEffectors.middle;
 							break;
 						case (int)FingerType.Middle1:
-							bones = fingerBones.middle1;
+							bones = fingerBones.middle;
 							effector = fingerEffectors.middle1;
 							break;
 						case (int)FingerType.Middle2:
-							bones = fingerBones.middle2;
+							bones = fingerBones.middle;
 							effector = fingerEffectors.middle2;
 							break;
 						case (int)FingerType.Ring:
@@ -185,19 +182,19 @@ namespace SA
 							effector = fingerEffectors.little;
 							break;
 						case (int)FingerType.Ring1:
-							bones = fingerBones.ring1;
+							bones = fingerBones.ring;
 							effector = fingerEffectors.ring1;
 							break;
 						case (int)FingerType.Little1:
-							bones = fingerBones.little1;
+							bones = fingerBones.little;
 							effector = fingerEffectors.little1;
 							break;
 						case (int)FingerType.Ring2:
-							bones = fingerBones.ring2;
+							bones = fingerBones.ring;
 							effector = fingerEffectors.ring2;
 							break;
 						case (int)FingerType.Little2:
-							bones = fingerBones.little2;
+							bones = fingerBones.little;
 							effector = fingerEffectors.little2;
 							break;
 						}

@@ -64,8 +64,8 @@ namespace SA
 		public class FingersBones
 		{
 			public Bone[] thumb;
-			// public Bone[] thumb1;
-			// public Bone[] thumb2;
+			public Bone[] thumb1;
+			public Bone[] thumb2;
 			public Bone[] index;
             public Bone[] index1;
             public Bone[] index2;
@@ -94,17 +94,9 @@ namespace SA
                 FingersBones CopiedFingerBones = new FingersBones();
                 CopiedFingerBones.thumb = this.thumb;
                 CopiedFingerBones.index = this.index;
-                CopiedFingerBones.index1 = this.index1;
-                CopiedFingerBones.index2 = this.index2;
                 CopiedFingerBones.middle = this.middle;
-                CopiedFingerBones.middle1 = this.middle1;
-                CopiedFingerBones.middle2 = this.middle2;
                 CopiedFingerBones.ring = this.ring;
-                CopiedFingerBones.ring1 = this.ring1;
-                CopiedFingerBones.ring2 = this.ring2;
 				CopiedFingerBones.little = this.little;
-				CopiedFingerBones.little1 = this.little1;
-				CopiedFingerBones.little2 = this.little2;
 
 				return CopiedFingerBones;
 
