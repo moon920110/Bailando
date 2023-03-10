@@ -129,72 +129,84 @@ namespace SA
 						case (int)FingerType.Thumb: //0
 							// bones = fingerBones.thumb;
 							bones = fingerBones.DeepCopy().thumb;
+							for (int i = 0; i < bones.Length - 1; i++)
+							{
+								bones[i] = bones[i + 1];
+							}
 							effector = fingerEffectors.thumb;
 							break;
 						case (int)FingerType.Thumb1: //1
 							bones = fingerBones.DeepCopy().thumb;
-							for (int i = 0; i < bones.Length-1; i++)
-							{
-								bones[i] = bones[i + 1];
-							}
 							Array.Resize(ref bones, bones.Length -1);
 							effector = fingerEffectors.thumb1;
 							break;
-						// case (int)FingerType.Thumb2: //2
-						// 	bones = fingerBones.DeepCopy().thumb;
-						// 	for (int i = 0; i < bones.Length - 2; i++)
-						// 	{
-						// 		bones[i] = bones[i + 2];
-						// 	}
-						// 	Array.Resize(ref bones, bones.Length - 2);
-						// 	effector = fingerEffectors.thumb2;
-							// break;
+						case (int)FingerType.Thumb2: //2
+							bones = fingerBones.DeepCopy().thumb;
+							Array.Resize(ref bones, bones.Length - 1);
+							effector = fingerEffectors.thumb2;
+							break;
 						case (int)FingerType.Index: //3
-							bones = fingerBones.index;
+							bones = fingerBones.DeepCopy().index;
+							for (int i = 0; i < bones.Length - 1; i++)
+							{
+								bones[i] = bones[i + 1];
+							}
 							effector = fingerEffectors.index;
 							break;
 						case (int)FingerType.Index1: //4
-							bones = fingerBones.index;
+							bones = fingerBones.DeepCopy().index;
 							effector = fingerEffectors.index1;
 							break;
 						case (int)FingerType.Index2: //5
-							bones = fingerBones.index;
+							bones = fingerBones.DeepCopy().index;
 							effector = fingerEffectors.index2;
 							break;
 						case (int)FingerType.Middle: //6
-							bones = fingerBones.middle;
+							bones = fingerBones.DeepCopy().middle;
+							for (int i = 0; i < bones.Length - 1; i++)
+							{
+								bones[i] = bones[i + 1];
+							}
 							effector = fingerEffectors.middle;
 							break;
 						case (int)FingerType.Middle1:
-							bones = fingerBones.middle;
+							bones = fingerBones.DeepCopy().middle;
 							effector = fingerEffectors.middle1;
 							break;
 						case (int)FingerType.Middle2:
-							bones = fingerBones.middle;
+							bones = fingerBones.DeepCopy().middle;
 							effector = fingerEffectors.middle2;
 							break;
 						case (int)FingerType.Ring:
-							bones = fingerBones.ring;
+							bones = fingerBones.DeepCopy().ring;
+							for (int i = 0; i < bones.Length - 1; i++)
+							{
+								bones[i] = bones[i + 1];
+							}
 							effector = fingerEffectors.ring;
 							break;
-						case (int)FingerType.Little:
-							bones = fingerBones.little;
-							effector = fingerEffectors.little;
-							break;
 						case (int)FingerType.Ring1:
-							bones = fingerBones.ring;
+							bones = fingerBones.DeepCopy().ring;
 							effector = fingerEffectors.ring1;
 							break;
-						case (int)FingerType.Little1:
-							bones = fingerBones.little;
-							effector = fingerEffectors.little1;
-							break;
 						case (int)FingerType.Ring2:
-							bones = fingerBones.ring;
+							bones = fingerBones.DeepCopy().ring;
 							effector = fingerEffectors.ring2;
 							break;
+						case (int)FingerType.Little:
+							bones = fingerBones.DeepCopy().little;
+							for (int i = 0; i < bones.Length - 1; i++)
+							{
+								bones[i] = bones[i + 1];
+							}
+							effector = fingerEffectors.little;
+							break;
+						case (int)FingerType.Little1:
+							bones = fingerBones.DeepCopy().little;
+							effector = fingerEffectors.little1;
+							break;
 						case (int)FingerType.Little2:
-							bones = fingerBones.little;
+							bones = fingerBones.DeepCopy().little;
 							effector = fingerEffectors.little2;
 							break;
 						}
@@ -218,12 +230,18 @@ namespace SA
 					return;
 				}
 
-				if( effector.bone != null && bones[boneLength - 1] == effector.bone ) {
+                // Debug.Log(bones[boneLength - 1] == effector.bone);
+                // Debug.Log("bones :  " + bones[boneLength - 1].transform);
+                // Debug.Log("effector : " + effector.bone.transform);
+                // Debug.Log("before : " + boneLength);
+                // && boneLength == 4
+                if( effector.bone != null && bones[boneLength - 1] == effector.bone) {
 					boneLength -= 1;
 					if( boneLength == 0 ) {
 						return;
 					}
 				}
+				// Debug.Log("after : " + boneLength);
 
 				if( boneLength != 0 ) {
 					if( bones[boneLength - 1] == null || bones[boneLength - 1].transform == null ) {
@@ -240,14 +258,20 @@ namespace SA
                 
 				for( int linkID = 0; linkID < boneLength; ++linkID ) {	
                     if( bones[linkID] == null || bones[linkID].transform == null ) {
-                        Debug.Log("finger1 :" + fingerType);
+                        Debug.Log("null_finger :" + fingerType);
 						return;
 					}
 
 					_FingerLink fingerLink = new _FingerLink();
-					fingerLink.bone = bones[linkID];
+                    Debug.Log("fingerType :" + fingerType);
+                    Debug.Log("linkID :" + linkID );
+                    // Debug.Log("bones :" + bones);
+					// Debug.Log("fingerLink :" + fingerLink);
+
+                    fingerLink.bone = bones[linkID];
 					fingerBranch.fingerLinks[linkID] = fingerLink;
 				}
+				
 				_fingerBranches[fingerType] = fingerBranch;
 
 				if( fingerType == (int)FingerType.Thumb ) {
