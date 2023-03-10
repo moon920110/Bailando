@@ -230,18 +230,12 @@ namespace SA
 					return;
 				}
 
-                // Debug.Log(bones[boneLength - 1] == effector.bone);
-                // Debug.Log("bones :  " + bones[boneLength - 1].transform);
-                // Debug.Log("effector : " + effector.bone.transform);
-                // Debug.Log("before : " + boneLength);
-                // && boneLength == 4
-                if( effector.bone != null && bones[boneLength - 1] == effector.bone) {
+                if( effector.bone != null && bones[boneLength - 1] == effector.bone ) {
 					boneLength -= 1;
 					if( boneLength == 0 ) {
 						return;
 					}
 				}
-				// Debug.Log("after : " + boneLength);
 
 				if( boneLength != 0 ) {
 					if( bones[boneLength - 1] == null || bones[boneLength - 1].transform == null ) {
@@ -263,15 +257,9 @@ namespace SA
 					}
 
 					_FingerLink fingerLink = new _FingerLink();
-                    Debug.Log("fingerType :" + fingerType);
-                    Debug.Log("linkID :" + linkID );
-                    // Debug.Log("bones :" + bones);
-					// Debug.Log("fingerLink :" + fingerLink);
-
                     fingerLink.bone = bones[linkID];
 					fingerBranch.fingerLinks[linkID] = fingerLink;
 				}
-				
 				_fingerBranches[fingerType] = fingerBranch;
 
 				if( fingerType == (int)FingerType.Thumb ) {
