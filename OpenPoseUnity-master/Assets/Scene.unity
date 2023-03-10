@@ -8507,7 +8507,7 @@ MonoBehaviour:
         eyesYawInnerRate: 0.212
     editorSettings:
       isAdvanced: 0
-      toolbarSelected: 1
+      toolbarSelected: 2
       isShowEffectorTransform: 0
     bodyBones:
       hips:
@@ -18234,7 +18234,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       index:
         transform: {fileID: 1176381939}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18249,7 +18249,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       index1:
         transform: {fileID: 1993713842}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18264,7 +18264,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       index2:
         transform: {fileID: 49860188}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18279,7 +18279,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       middle:
         transform: {fileID: 1500754887}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18294,7 +18294,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       middle1:
         transform: {fileID: 1741931931}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18309,7 +18309,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       middle2:
         transform: {fileID: 1269124573}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18324,7 +18324,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       ring:
         transform: {fileID: 1066668178}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18339,7 +18339,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       ring1:
         transform: {fileID: 35715432}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18354,7 +18354,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       ring2:
         transform: {fileID: 1644298847}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18369,7 +18369,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       little:
         transform: {fileID: 757628774}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18384,7 +18384,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       little1:
         transform: {fileID: 273957051}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18399,7 +18399,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       little2:
         transform: {fileID: 1182817969}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18415,7 +18415,7 @@ MonoBehaviour:
     rightHandFingersEffectors:
       thumb:
         transform: {fileID: 799872449}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18430,7 +18430,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       thumb1:
         transform: {fileID: 1750966412}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18445,7 +18445,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       thumb2:
         transform: {fileID: 774483226}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18460,7 +18460,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       index:
         transform: {fileID: 969514169}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18475,7 +18475,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       index1:
         transform: {fileID: 489197593}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18490,7 +18490,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       index2:
         transform: {fileID: 112597614}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18505,7 +18505,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       middle:
         transform: {fileID: 194306163}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18520,7 +18520,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       middle1:
         transform: {fileID: 646502279}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18535,7 +18535,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       middle2:
         transform: {fileID: 674779961}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18550,7 +18550,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       ring:
         transform: {fileID: 984720064}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18565,7 +18565,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       ring1:
         transform: {fileID: 1361585963}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18580,7 +18580,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       ring2:
         transform: {fileID: 1850762904}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18595,7 +18595,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       little:
         transform: {fileID: 1766846759}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18610,7 +18610,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       little1:
         transform: {fileID: 978463156}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18625,7 +18625,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       little2:
         transform: {fileID: 752600842}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -18651,7 +18651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a43a21afb6af8144a982067893c3eed1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 2100829723}
   FrameRate: 60
   BoneList: []
   Data_Path: /DataPose/
@@ -18665,15 +18665,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2100829719}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f2b0453141146c41a4a7b4ebc0b10bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 2100829723}
   FrameRate: 60
   BoneList: []
   Data_Path: /DataArmsTest_2/
   File_Name: 
   startFrame: 0
   Data_Size: 158
+--- !u!95 &2100829723 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 28acfe0f9e83729458403d2b51ba6116,
+    type: 3}
+  m_PrefabInstance: {fileID: 2100829717}
+  m_PrefabAsset: {fileID: 0}
