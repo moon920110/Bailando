@@ -305,7 +305,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &382016530
 GameObject:
@@ -431,37 +431,6 @@ Transform:
   - {fileID: 1707437775}
   m_Father: {fileID: 1819066125}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &827903053
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 827903054}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &827903054
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 827903053}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.89363366, y: 0.8814291, z: 0.22229075}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2100829718}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &936872686
 GameObject:
@@ -679,36 +648,6 @@ Transform:
   m_Father: {fileID: 1954140641}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1394654395
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1394654396}
-  m_Layer: 0
-  m_Name: Hips
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1394654396
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1394654395}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1438256497
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,7 +729,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 32.498, y: 177.386, z: -1.405}
 --- !u!1 &1447874796
 GameObject:
@@ -1109,27 +1048,27 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 827903054}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 28acfe0f9e83729458403d2b51ba6116,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28acfe0f9e83729458403d2b51ba6116,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.89363366
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28acfe0f9e83729458403d2b51ba6116,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.8814291
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28acfe0f9e83729458403d2b51ba6116,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.22229075
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28acfe0f9e83729458403d2b51ba6116,
         type: 3}
@@ -1175,7 +1114,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: f5bf9c4b8ba2ba147a1c47387083e11a, type: 2}
+      objectReference: {fileID: 9100000, guid: 176f9d4268da06640ad61f9084e29e89, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28acfe0f9e83729458403d2b51ba6116, type: 3}
 --- !u!4 &2100829718 stripped
@@ -6192,11 +6131,11 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       elbow:
         transform: {fileID: 1447874797}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
-        pull: 0
+        pull: 1
         _isPresetted: 1
         _effectorLocation: 11
         _effectorType: 8
@@ -6238,11 +6177,11 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       elbow:
         transform: {fileID: 1333622922}
-        positionEnabled: 0
+        positionEnabled: 1
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
-        pull: 0
+        pull: 1
         _isPresetted: 1
         _effectorLocation: 12
         _effectorType: 8
@@ -6269,7 +6208,7 @@ MonoBehaviour:
     leftHandFingersEffectors:
       thumb:
         transform: {fileID: 537028428}
-        positionEnabled: 1
+        positionEnabled: 0
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -6284,7 +6223,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       index:
         transform: {fileID: 946572774}
-        positionEnabled: 1
+        positionEnabled: 0
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -6299,7 +6238,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       middle:
         transform: {fileID: 1336629529}
-        positionEnabled: 1
+        positionEnabled: 0
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -6314,7 +6253,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       ring:
         transform: {fileID: 124278776}
-        positionEnabled: 1
+        positionEnabled: 0
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -6329,7 +6268,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       little:
         transform: {fileID: 2144977320}
-        positionEnabled: 1
+        positionEnabled: 0
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -6345,7 +6284,7 @@ MonoBehaviour:
     rightHandFingersEffectors:
       thumb:
         transform: {fileID: 1751387881}
-        positionEnabled: 1
+        positionEnabled: 0
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -6360,7 +6299,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       index:
         transform: {fileID: 1267484832}
-        positionEnabled: 1
+        positionEnabled: 0
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -6375,7 +6314,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       middle:
         transform: {fileID: 382016531}
-        positionEnabled: 1
+        positionEnabled: 0
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -6390,7 +6329,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       ring:
         transform: {fileID: 1706189910}
-        positionEnabled: 1
+        positionEnabled: 0
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1
@@ -6405,7 +6344,7 @@ MonoBehaviour:
         _isSimulateFingerTips: 0
       little:
         transform: {fileID: 1707437775}
-        positionEnabled: 1
+        positionEnabled: 0
         rotationEnabled: 0
         positionWeight: 1
         rotationWeight: 1

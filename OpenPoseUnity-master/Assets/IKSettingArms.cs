@@ -31,7 +31,7 @@ public class IKSettingArms : MonoBehaviour
     int[,] NormalizeJoint = new int[,] {{ 0, 1 }, { 1, 2 }, { 2, 3 }, 
                                         { 3, 4 }, { 3, 5 }, { 3, 6 }, {3, 7 }, { 3, 8 },
                                         { 0, 9 }, { 9, 10 }, { 10, 11 }, 
-                                        { 11, 12 },{11,13 },{11, 14 },{11,15 },{11, 16 }  };
+                                        { 11, 12 },{11,13 },{11, 14 },{11,15 },{11, 16 } };
     int NowFrame = 0;
     void Start()
     {

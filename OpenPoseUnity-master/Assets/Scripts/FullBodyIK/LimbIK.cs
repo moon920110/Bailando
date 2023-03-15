@@ -28,8 +28,11 @@ namespace SA
 			Bone _beginBone;
 			Bone _bendingBone;
 			Bone _endBone;
+			Bone _fingerEndBone;
 			Effector _bendingEffector;
 			Effector _endEffector;
+			Effector _fingerEndEffector;
+			Effector _fingerEndEffector2;
 
 			RollBone[] _armRollBones;
 			RollBone[] _elbowRollBones;
@@ -98,6 +101,14 @@ namespace SA
 					_endBone = armBones.wrist;
 					_bendingEffector = armEffectors.elbow;
 					_endEffector = armEffectors.wrist;
+
+					var fingerBones = (_limbIKSide == Side.Left) ? fullBodyIK.leftHandFingersBones : fullBodyIK.rightHandFingersBones;
+					var fingerEffectors = (_limbIKSide == Side.Left) ? fullBodyIK.leftHandFingersEffectors : fullBodyIK.rightHandFingersEffectors;
+					
+					_fingerEndBone = fingerBones.middle[3];
+					_fingerEndEffector = fingerEffectors.middle;
+					_fingerEndEffector2 = fingerEffectors.thumb;
+					
 					_PrepareRollBones( ref _armRollBones, armBones.armRoll );
 					_PrepareRollBones( ref _elbowRollBones, armBones.elbowRoll );
 				}
@@ -1151,8 +1162,21 @@ namespace SA
 				float endRotationWeight = _endEffector.rotationEnabled ? _endEffector.rotationWeight : 0.0f;
 				if( endRotationWeight > IKEpsilon ) {
 					Quaternion endEffectorWorldRotation = _endEffector.worldRotation;
+					// Quaternion fingerEndEffectorWorldRotation = _fingerEndEffector.worldRotation;
 					Quaternion toRotation;
 					SAFBIKQuatMult( out toRotation, ref endEffectorWorldRotation, ref _endEffectorToWorldRotation );
+					
+					// Quaternion tmp = _bendingBone.worldRotation;
+					// SAFBIKQuatMultInv0( out _endEffectorToWorldRotation, ref _endEffector._defaultRotation, ref tmp);
+					
+					Quaternion tmp2 = Quaternion.FromToRotation(_endEffector.transform.localPosition, _fingerEndEffector.transform.position);
+					// SAFBIKQuatMult( out _endEffectorToWorldRotation, ref _endEffectorToWorldRotation, ref tmp2);
+
+					// var p1 = _fingerEndEffector.transform.localPosition - _endEffector.transform.localPosition;
+					// var p2 = _bendingBone.transform.localPosition - _endEffector.transform.localPosition;
+					// _endEffector.transform.rotation = Quaternion.Euler(new Vector3(1, 1, 1) * Vector3.Angle(p1, p2));
+
+					// _endEffector.transform.LookAt(_fingerEndEffector.transform.localPosition,-_fingerEndEffector.transform.up);
 
 					if( endRotationWeight < 1.0f - IKEpsilon ) {
 						Quaternion fromRotation;
@@ -1169,10 +1193,11 @@ namespace SA
 						}
 						_endBone.worldRotation = Quaternion.Lerp( fromRotation, toRotation, endRotationWeight );
 					} else {
-						_endBone.worldRotation = toRotation;
+						// _endBone.worldRotation = toRotation;
+						_endBone.transform.localRotation = _endEffector.transform.rotation * tmp2;
 					}
 
-					_EndRotationLimit();
+					// _EndRotationLimit();
                     return true;
 				} else {
 					if( _internalValues.resetTransforms ) {
