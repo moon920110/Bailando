@@ -68,7 +68,7 @@ public class IKSettingBody : MonoBehaviour
                 points[i] = new Vector3(x[i], y[i], z[i]);
             }
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 5; i++)
             {
                 NormalizeBone[i] = (points[BoneJoint[i, 1]] - points[BoneJoint[i, 0]]).normalized;
             }
@@ -103,7 +103,7 @@ public class IKSettingBody : MonoBehaviour
         //     Vector3 hipRot = (NormalizeBone[0] + NormalizeBone[2] + NormalizeBone[4]).normalized;
         //     FullbodyIK.transform.forward = Vector3.Lerp(FullbodyIK.transform.forward, new Vector3(hipRot.x, 0, hipRot.z), 0.1f);
         // }
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i < 5; i++)
         {
             BoneList[0].position = (points[0] * 0.005f) + new Vector3(initPosition.x,0.005f,initPosition.z);
             BoneList[NormalizeJoint[i, 1]].position = Vector3.Lerp(
