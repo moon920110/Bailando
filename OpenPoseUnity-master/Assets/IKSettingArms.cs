@@ -11,13 +11,12 @@ public class IKSettingArms : MonoBehaviour
     public List<Transform> BoneList = new List<Transform>();
     [SerializeField] string Data_Path;
     [SerializeField] string File_Name;
-    [SerializeField] int startFrame;
-    [SerializeField] int Data_Size;
     GameObject FullbodyIK;
     Vector3[] points = new Vector3[38];
     Vector3[] NormalizeBone = new Vector3[16];
     float[] BoneDistance = new float[16];
     float Timer;
+    float DelayTimer = 0f;
     int[,] joints = new int[,] { { 37, 1 }, { 1, 2 }, { 2, 3 },
                                  { 3, 4 }, { 4, 5 }, { 5, 6 }, { 3, 7 }, { 7, 8 }, { 8, 9 }, { 3, 10 }, { 10, 11 }, { 11, 12 }, { 3, 13 }, { 13, 14 }, { 14, 15 }, { 3, 16 }, { 16, 17 }, { 17, 18 },
                                  { 37, 19 }, { 19, 20 }, { 20, 21 },
@@ -33,17 +32,49 @@ public class IKSettingArms : MonoBehaviour
                                         { 0, 9 }, { 9, 10 }, { 10, 11 }, 
                                         { 11, 12 },{11,13 },{11, 14 },{11,15 },{11, 16 } };
     int NowFrame = 0;
+    int FolderController = 0;
+    int [,] FileManageArray;
+    float [] DelayManageArray;
     void Start()
-    {
+    {   
+        DirectoryInfo di = new DirectoryInfo(Application.dataPath + Data_Path);
+        var directories = di.EnumerateDirectories();
+
+        FileManageArray = new int [directories.Count(), 2];
+        DelayManageArray = new float [directories.Count()];
+        StreamReader fi = null;
+        fi = new StreamReader(Application.dataPath + Data_Path + '/' + "framedelay.txt");
+        string all = fi.ReadToEnd();
+        var tmp = all.Replace("\r\n", ",").Split(',').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
+        DelayManageArray[0] = tmp[0];
+        for (int i = 1; i < DelayManageArray.Length; i++)
+        {
+            DelayManageArray[i] = tmp[i] - tmp[i-1];
+        }
+        var cnt = 0;
+        foreach (var directory in directories)
+        {
+            DirectoryInfo di2 = new DirectoryInfo(directory.FullName);
+            var files = di2.EnumerateFiles("*.txt");
+            var numberoffiles = files.Count();
+            var startfile = int.Parse(files.First().Name.Replace(files.First().Extension,""));
+            FileManageArray[cnt,0] = startfile;
+            FileManageArray[cnt,1] = numberoffiles;
+            cnt +=1;
+        }
         PointUpdate();
     }
     void Update()
     {
         Timer += Time.deltaTime;
-        if (Timer > (1 / FrameRate))
+        DelayTimer += Time.deltaTime;
+        if(DelayTimer > DelayManageArray[FolderController])
         {
-            Timer = 0;
-            PointUpdate();
+            if (Timer > (1 / FrameRate))
+            {
+                Timer = 0;
+                PointUpdate();
+            }
         }
         if (!FullbodyIK)
         {
@@ -57,9 +88,9 @@ public class IKSettingArms : MonoBehaviour
     void PointUpdate()
     {
         StreamReader fi = null;
-        if (NowFrame < Data_Size)
+        if (NowFrame < FileManageArray[FolderController,1])
         {
-            fi = new StreamReader(Application.dataPath + Data_Path + File_Name + (NowFrame + startFrame).ToString() + ".txt");
+            fi = new StreamReader(Application.dataPath + Data_Path + FolderController + '/' + (NowFrame + FileManageArray[FolderController,0]).ToString() + ".txt");
             NowFrame++;
             string all = fi.ReadToEnd();
             string[] axis = all.Split(']');
@@ -80,6 +111,12 @@ public class IKSettingArms : MonoBehaviour
                 // 최대값 최소값 찾아놓기
             }
             // 관절 전체에 대해 normalize 연산 실행
+        }
+        else
+        {
+            FolderController++;
+            NowFrame = 0;
+            DelayTimer = 0f;
         }
     }
     void IKFind()
