@@ -6394,6 +6394,7 @@ MonoBehaviour:
   BoneList: []
   Data_Path: /DataArms/
   File_Name: 
+  clip: {fileID: 3807409158282722636, guid: d61b21665b4a7504cb345038029af1cc, type: 3}
 --- !u!95 &2100829723 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 28acfe0f9e83729458403d2b51ba6116,

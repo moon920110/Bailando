@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEngine;
+
+using UnityEditor.Animations;
+using UnityEditor;
 public class IKSettingArms : MonoBehaviour
 {
     [SerializeField] Animator animator;
@@ -35,6 +38,10 @@ public class IKSettingArms : MonoBehaviour
     int FolderController = 0;
     int [,] FileManageArray;
     float [] DelayManageArray;
+    bool onlyPlayOnce = true;
+    AnimatorController animationController;
+    public GameObject clip;
+    List<Motion> clipList;
     void Start()
     {   
         DirectoryInfo di = new DirectoryInfo(Application.dataPath + Data_Path);
@@ -62,6 +69,15 @@ public class IKSettingArms : MonoBehaviour
             FileManageArray[cnt,1] = numberoffiles;
             cnt +=1;
         }
+
+        animationController = (AnimatorController)animator.runtimeAnimatorController;
+        clipList = clip.GetComponent<ClipList>().clipList;
+
+        var state = animationController.layers[0].stateMachine.states.FirstOrDefault(s => s.state.name.Equals("Hands")).state;
+        animationController.SetStateEffectiveMotion(state, clipList[FolderController]);
+
+        animator.Rebind();
+
         PointUpdate();
     }
     void Update()
@@ -70,12 +86,18 @@ public class IKSettingArms : MonoBehaviour
         DelayTimer += Time.deltaTime;
         if(DelayTimer > DelayManageArray[FolderController])
         {
+            if(onlyPlayOnce)
+            {
+                animator.SetTrigger("Play");
+                onlyPlayOnce = false;
+            }
             if (Timer > (1 / FrameRate))
             {
                 Timer = 0;
                 PointUpdate();
             }
         }
+
         if (!FullbodyIK)
         {
             IKFind();
@@ -117,6 +139,11 @@ public class IKSettingArms : MonoBehaviour
             FolderController++;
             NowFrame = 0;
             DelayTimer = 0f;
+            onlyPlayOnce = true;
+
+            var state = animationController.layers[0].stateMachine.states.FirstOrDefault(s => s.state.name.Equals("Hands")).state;
+            animationController.SetStateEffectiveMotion(state, clipList[FolderController]);
+            animator.Rebind();
         }
     }
     void IKFind()
