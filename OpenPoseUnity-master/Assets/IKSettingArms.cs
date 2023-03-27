@@ -148,12 +148,12 @@ public class IKSettingArms : MonoBehaviour
     }
     void IKFind()
     {
-        FullbodyIK = GameObject.Find("FullBodyIK");
+        FullbodyIK = gameObject.transform.Find("FullBodyIK").gameObject;
         if (FullbodyIK)
         {
             for (int i = 0; i < Enum.GetNames(typeof(OpenPosehandsRef)).Length; i++)
             {
-                Transform obj = GameObject.Find(Enum.GetName(typeof(OpenPosehandsRef), i)).transform;
+                Transform obj = RecursiveFindChild(FullbodyIK.transform, Enum.GetName(typeof(OpenPoseRef), i));
                 if (obj)
                 {
                     BoneList.Add(obj);
@@ -188,6 +188,25 @@ public class IKSettingArms : MonoBehaviour
     void DrawLine(Vector3 s, Vector3 e, Color c)
     {
         Debug.DrawLine(s, e, c);
+    }
+    Transform RecursiveFindChild(Transform parent, string childName)
+    {
+        foreach (Transform child in parent)
+        {
+            if(child.name == childName)
+            {
+                return child;
+            }
+            else
+            {
+                Transform found = RecursiveFindChild(child, childName);
+                if (found != null)
+                {
+                    return found;
+                }
+            }
+        }
+        return null;
     }
 }
 enum OpenPosehandsRef
