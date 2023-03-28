@@ -153,7 +153,7 @@ public class IKSettingArms : MonoBehaviour
         {
             for (int i = 0; i < Enum.GetNames(typeof(OpenPosehandsRef)).Length; i++)
             {
-                Transform obj = RecursiveFindChild(FullbodyIK.transform, Enum.GetName(typeof(OpenPoseRef), i));
+                Transform obj = RecursiveFindChild(FullbodyIK.transform, Enum.GetName(typeof(OpenPosehandsRef), i));
                 if (obj)
                 {
                     BoneList.Add(obj);
