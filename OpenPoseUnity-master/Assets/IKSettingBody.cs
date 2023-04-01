@@ -28,6 +28,10 @@ public class IKSettingBody : MonoBehaviour
     int[, ] NormalizeJoint = new int[, ] { { 0, 1 }, { 1, 2 }, { 0, 3 }, { 3, 4 }, { 0, 5 }, { 5, 6 }};
     int NowFrame = 0;
     Vector3 initPosition;
+    float initX;
+    float initY;
+    float initZ;
+    Vector3 positionOffset;
     void Start()
     {
         PointUpdate();
@@ -64,9 +68,13 @@ public class IKSettingBody : MonoBehaviour
             // float[] x = axis[0].Replace("[", "").Replace(Environment.NewLine, "").Split(' ').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
             // float[] y = axis[2].Replace("[", "").Replace(Environment.NewLine, "").Split(' ').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
             // float[] z = axis[1].Replace("[", "").Replace(Environment.NewLine, "").Split(' ').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
+            if (NowFrame == 1)
+            {
+                positionOffset = new Vector3(x[0] - initX, y[0] - initY, z[0] - initZ);
+            }
             for (int i = 0; i < 17; i++)
             {
-                points[i] = new Vector3(x[i], y[i], z[i]);
+                points[i] = new Vector3(x[i], y[i], z[i]) - positionOffset;
             }
 
             for (int i = 0; i < 6; i++)
@@ -98,7 +106,7 @@ public class IKSettingBody : MonoBehaviour
     void IKSet()
     {
         // BoneList[0].position = BoneList[0].position;
-        BoneList[0].position = (points[0] * 0.005f) + initPosition;
+        BoneList[0].position = (points[0] * 0.004f) + initPosition;
         // BoneList[0].position = Vector3.Scale(initPosition,-(points[0]*0.00f));
         for (int i = 0; i < 6; i++)
         {

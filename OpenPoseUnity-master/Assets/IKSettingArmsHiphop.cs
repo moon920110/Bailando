@@ -7,7 +7,7 @@ using UnityEngine;
 
 using UnityEditor.Animations;
 using UnityEditor;
-public class IKSettingArms : MonoBehaviour
+public class IKSettingArmsHiphop : MonoBehaviour
 {
     [SerializeField] Animator animator;
     [SerializeField, Range(10, 120)] float FrameRate;
@@ -33,7 +33,8 @@ public class IKSettingArms : MonoBehaviour
     int[,] NormalizeJoint = new int[,] {{ 0, 1 }, { 1, 2 }, { 2, 3 }, 
                                         { 3, 4 }, { 3, 5 }, { 3, 6 }, {3, 7 }, { 3, 8 },
                                         { 0, 9 }, { 9, 10 }, { 10, 11 }, 
-                                        { 11, 12 },{11,13 },{11, 14 },{11,15 },{11, 16 } };
+                                        { 11, 12 },{ 11, 13 },{ 11, 14 },{ 11, 15 },{ 11, 16 }
+                                        };
     int NowFrame = 0;
     int FolderController = 0;
     int [,] FileManageArray;
@@ -125,7 +126,7 @@ public class IKSettingArms : MonoBehaviour
             // float[] z = axis[1].Replace("[", "").Replace(Environment.NewLine, "").Split(' ').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
             for (int i = 0; i < 38; i++)
             {
-                points[i] = new Vector3(x[i], z[i], -y[i]);
+                points[i] = new Vector3(x[i], -y[i], -z[i]);
             }
             for (int i = 0; i < NormalizeBoneLen; i++)
             {
@@ -210,40 +211,3 @@ public class IKSettingArms : MonoBehaviour
         return null;
     }
 }
-enum OpenPosehandsRef
-{
-    //17개
-    Neck,
-    RightArm,
-    RightElbow,
-    RightWrist,
-    RightThumb,
-    RightIndex,
-    RightMiddle,
-    RightRing,
-    RightLittle,
-    LeftArm,
-    LeftElbow,
-    LeftWrist,
-    LeftThumb,
-    LeftIndex,
-    LeftMiddle,
-    LeftRing,
-    LeftLittle,
-    Head
-};
-enum NormalizeBonehandsRef
-{
-    RightArm2RightWrist,
-    RightWrist2RightThumb,
-    RightWrist2RightIndex,
-    RightWrist2RightMiddle,
-    RightWrist2RightRing,
-    RightWrist2RightLittle,
-    LeftArm2LeftWrist,
-    LeftWrist2LeftThumb,
-    LeftWrist2LeftIndex,
-    LeftWrist2LeftMiddle,
-    LeftWrist2LeftRing,
-    LeftWrist2LeftLittle,
-};

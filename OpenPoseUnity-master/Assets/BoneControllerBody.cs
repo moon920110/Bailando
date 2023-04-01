@@ -72,12 +72,12 @@ public class BoneControllerBody : MonoBehaviour
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.Chest));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.Neck));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.Head));
-		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftUpperArm));
-		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftLowerArm));
-		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftHand));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightUpperArm));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightLowerArm));
 		boneList.Add(animator.GetBoneTransform(HumanBodyBones.RightHand));
+		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftUpperArm));
+		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftLowerArm));
+		boneList.Add(animator.GetBoneTransform(HumanBodyBones.LeftHand));
 
 		Vector3 init_forward = TriangleNormal(points[7],points[4],points[0]);
 		initInv[0] = Quaternion.Inverse(Quaternion.LookRotation(init_forward));
