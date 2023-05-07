@@ -20,20 +20,26 @@ public class IKSettingBody : MonoBehaviour
     Vector3[] NormalizeBone = new Vector3[12];
     float[] BoneDistance = new float[12];
     float Timer;
-    // int[, ] joints = new int[, ] { { 0, 1 }, { 1, 2 }, { 2, 3 }, { 0, 4 }, { 4, 5 }, { 5, 6 }, { 0, 7 }, { 7, 8 }, { 8, 9 }, { 9, 10 }, { 8, 11 }, { 11, 12 }, { 12, 13 }, { 8, 14 }, { 14, 15 }, { 15, 16 } };
-    // int[, ] BoneJoint = new int[, ] { { 0, 2 }, { 2, 3 }, { 0, 5 }, { 5, 6 }, { 0, 9 }, { 9, 10 }, { 9, 11 }, { 11, 12 }, { 12, 13 }, { 9, 14 }, { 14, 15 }, { 15, 16 } };
-    // int[, ] NormalizeJoint = new int[, ] { { 0, 1 }, { 1, 2 }, { 0, 3 }, { 3, 4 }, { 0, 5 }, { 5, 6 }, { 5, 7 }, { 7, 8 }, { 8, 9 }, { 5, 10 }, { 10, 11 }, { 11, 12 } };
-    int[, ] joints = new int[, ] { { 0, 2 }, { 2, 3 }, { 0, 5 }, { 5, 6 }, { 0, 7 }, { 7, 8 }, { 8, 9 }, { 9, 10 }};
-    int[, ] BoneJoint = new int[, ] {{ 0, 2 }, { 2, 3 }, { 0, 5 }, { 5, 6 }, { 0, 9 }, { 9, 10 }};
-    int[, ] NormalizeJoint = new int[, ] { { 0, 1 }, { 1, 2 }, { 0, 3 }, { 3, 4 }, { 0, 5 }, { 5, 6 }};
+    int[, ] joints = new int[, ] { { 0, 1 }, { 1, 2 }, { 2, 3 }, { 0, 4 }, { 4, 5 }, { 5, 6 }, { 0, 7 }, { 7, 8 }, { 8, 9 }, { 9, 10 }, { 8, 11 }, { 11, 12 }, { 12, 13 }, { 8, 14 }, { 14, 15 }, { 15, 16 } };
+    int[, ] BoneJoint = new int[, ] { { 0, 2 }, { 2, 3 }, { 0, 5 }, { 5, 6 }, { 0, 9 }, { 9, 10 }, { 9, 11 }, { 11, 12 }, { 12, 13 }, { 9, 14 }, { 14, 15 }, { 15, 16 } };
+    int[, ] NormalizeJoint = new int[, ] { { 0, 1 }, { 1, 2 }, { 0, 3 }, { 3, 4 }, { 0, 5 }, { 5, 6 }, { 5, 7 }, { 7, 8 }, { 8, 9 }, { 5, 10 }, { 10, 11 }, { 11, 12 } };
+    // int[, ] joints = new int[, ] { { 0, 2 }, { 2, 3 }, { 0, 5 }, { 5, 6 }, { 0, 7 }, { 7, 8 }, { 8, 9 }, { 9, 10 }};
+    // int[, ] BoneJoint = new int[, ] {{ 0, 2 }, { 2, 3 }, { 0, 5 }, { 5, 6 }, { 0, 9 }, { 9, 10 }};
+    // int[, ] NormalizeJoint = new int[, ] { { 0, 1 }, { 1, 2 }, { 0, 3 }, { 3, 4 }, { 0, 5 }, { 5, 6 }};
     int NowFrame = 0;
     Vector3 initPosition;
     float initX;
     float initY;
     float initZ;
     Vector3 positionOffset;
+    int NormalizeBoneLen = 12;
+    public bool ableArms = false;
     void Start()
     {
+        NormalizeBoneLen = 12;
+        BoneJoint = new int[, ] { { 0, 2 }, { 2, 3 }, { 0, 5 }, { 5, 6 }, { 0, 9 }, { 9, 10 }, { 9, 11 }, { 11, 12 }, { 12, 13 }, { 9, 14 }, { 14, 15 }, { 15, 16 } };
+        NormalizeJoint = new int[, ] { { 0, 1 }, { 1, 2 }, { 0, 3 }, { 3, 4 }, { 0, 5 }, { 5, 6 }, { 5, 7 }, { 7, 8 }, { 8, 9 }, { 5, 10 }, { 10, 11 }, { 11, 12 } };
+        
         PointUpdate();
     }
     void Update()
@@ -42,6 +48,18 @@ public class IKSettingBody : MonoBehaviour
         if (Timer > (1 / FrameRate))
         {
             Timer = 0;
+            if(ableArms)
+            {
+                NormalizeBoneLen = 12;
+                BoneJoint = new int[, ] { { 0, 2 }, { 2, 3 }, { 0, 5 }, { 5, 6 }, { 0, 9 }, { 9, 10 }, { 9, 11 }, { 11, 12 }, { 12, 13 }, { 9, 14 }, { 14, 15 }, { 15, 16 } };
+                NormalizeJoint = new int[, ] { { 0, 1 }, { 1, 2 }, { 0, 3 }, { 3, 4 }, { 0, 5 }, { 5, 6 }, { 5, 7 }, { 7, 8 }, { 8, 9 }, { 5, 10 }, { 10, 11 }, { 11, 12 } };
+            }
+            else
+            {
+                NormalizeBoneLen = 6;
+                BoneJoint = new int[, ] {{ 0, 2 }, { 2, 3 }, { 0, 5 }, { 5, 6 }, { 0, 9 }, { 9, 10 }};
+                NormalizeJoint = new int[, ] { { 0, 1 }, { 1, 2 }, { 0, 3 }, { 3, 4 }, { 0, 5 }, { 5, 6 }};
+            }
             PointUpdate();
         }
         if (!FullbodyIK)
@@ -77,7 +95,7 @@ public class IKSettingBody : MonoBehaviour
                 points[i] = new Vector3(x[i], y[i], z[i]) - positionOffset;
             }
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < NormalizeBoneLen; i++)
             {
                 NormalizeBone[i] = (points[BoneJoint[i, 1]] - points[BoneJoint[i, 0]]).normalized;
             }
@@ -96,7 +114,7 @@ public class IKSettingBody : MonoBehaviour
                     BoneList.Add(obj);
                 }
             }
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < NormalizeBoneLen; i++)
             {
                 BoneDistance[i] = Vector3.Distance(BoneList[NormalizeJoint[i, 0]].position, BoneList[NormalizeJoint[i, 1]].position);
             }
@@ -108,7 +126,7 @@ public class IKSettingBody : MonoBehaviour
         // BoneList[0].position = BoneList[0].position;
         BoneList[0].position = (points[0] * 0.004f) + initPosition;
         // BoneList[0].position = Vector3.Scale(initPosition,-(points[0]*0.00f));
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i < NormalizeBoneLen; i++)
         {
             BoneList[NormalizeJoint[i, 1]].position = Vector3.Lerp(
                 BoneList[NormalizeJoint[i, 1]].position,
@@ -120,7 +138,7 @@ public class IKSettingBody : MonoBehaviour
         FullbodyIK.transform.forward = Vector3.Lerp(FullbodyIK.transform.forward, new Vector3(hipRot.x, hipRot.y, hipRot.z), 0.1f);
         for (int i = 0; i < joints.Length / 2; i++)
         {
-            DrawLine(points[joints[i, 0]] * 0.005f + Vector3.right, points[joints[i, 1]]  * 0.005f + Vector3.right, Color.blue);
+            DrawLine(points[joints[i, 0]] * 0.005f + Vector3.right - new Vector3(-1f, -0.25f, 1f), points[joints[i, 1]]  * 0.005f + Vector3.right - new Vector3(-1f, -0.25f, 1f), Color.blue);
         }
         pointDifference = points[0];
     }
@@ -160,13 +178,12 @@ enum OpenPoseRef
     RightFoot,
     Neck,
     Head,
-
-    // LeftArm,
-    // LeftElbow,
-    // LeftWrist,
-    // RightArm,
-    // RightElbow,
-    // RightWrist,
+    RightArm,
+    RightElbow,
+    RightWrist,
+    LeftArm,
+    LeftElbow,
+    LeftWrist,
 };
 enum NormalizeBoneRef
 {

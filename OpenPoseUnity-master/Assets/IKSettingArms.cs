@@ -10,7 +10,7 @@ using UnityEditor;
 public class IKSettingArms : MonoBehaviour
 {
     [SerializeField] Animator animator;
-    [SerializeField, Range(10, 120)] float FrameRate;
+    [SerializeField, Range(10, 240)] float FrameRate;
     public List<Transform> BoneList = new List<Transform>();
     [SerializeField] string Data_Path;
     [SerializeField] string File_Name;
@@ -46,8 +46,9 @@ public class IKSettingArms : MonoBehaviour
     void Start()
     {   
         DirectoryInfo di = new DirectoryInfo(Application.dataPath + Data_Path);
-        var directories = di.EnumerateDirectories();
-
+        // var directories = di.EnumerateDirectories();
+        var directories = di.GetDirectories("*.*", SearchOption.TopDirectoryOnly).OrderBy(x => Int32.Parse(x.Name)).ToArray();
+        
         FileManageArray = new int [directories.Count(), 2];
         DelayManageArray = new float [directories.Count()];
         StreamReader fi = null;
@@ -60,6 +61,7 @@ public class IKSettingArms : MonoBehaviour
             DelayManageArray[i] = tmp[i] - tmp[i-1];
         }
         var cnt = 0;
+        
         foreach (var directory in directories)
         {
             DirectoryInfo di2 = new DirectoryInfo(directory.FullName);
@@ -111,7 +113,7 @@ public class IKSettingArms : MonoBehaviour
     void PointUpdate()
     {
         StreamReader fi = null;
-        if (NowFrame < FileManageArray[FolderController,1])
+        if ((NowFrame+FileManageArray[FolderController,0]) < FileManageArray[FolderController,1]-1)
         {
             fi = new StreamReader(Application.dataPath + Data_Path + FolderController + '/' + (NowFrame + FileManageArray[FolderController,0]).ToString() + ".txt");
             NowFrame++;
@@ -173,7 +175,7 @@ public class IKSettingArms : MonoBehaviour
             BoneList[NormalizeJoint[i, 1]].position = Vector3.Lerp(
                 BoneList[NormalizeJoint[i, 1]].position,
                 BoneList[NormalizeJoint[i, 0]].position + BoneDistance[i] * (animator.GetBoneTransform(HumanBodyBones.Hips).rotation * NormalizeBone[i]), 0.05f
-           );
+                );
             // BoneList[NormalizeJoint[i, 1]].position += (BoneList[0].position - BoneList[NormalizeJoint[i, 1]].position) + BoneList[NormalizeJoint[i, 1]].position;
             // BoneListTmp[NormalizeJoint[i, 1]].RotateAround(animator.GetBoneTransform(HumanBodyBones.Hips).position,axis,(angle-previousAngle));
             
@@ -183,7 +185,9 @@ public class IKSettingArms : MonoBehaviour
         // BoneList[1].position += new Vector3(0.1f, 0, 0);
         for (int i = 0; i < joints.Length / 2; i++)
         {
-            DrawLine(points[joints[i, 0]] * 1.0f + new Vector3(1, 1, 1), points[joints[i, 1]] * 1.0f + new Vector3(1, 1, 1), Color.blue);
+            DrawLine(points[joints[i, 0]] * 1.0f + Vector3.right+animator.GetBoneTransform(HumanBodyBones.Hips).position - new Vector3(-1f,1.2f,0f),
+                points[joints[i, 1]] * 1.0f + Vector3.right + animator.GetBoneTransform(HumanBodyBones.Hips).position - new Vector3(-1f,1.2f,0f), 
+                Color.blue);
         }
     }
     void DrawLine(Vector3 s, Vector3 e, Color c)
