@@ -96,7 +96,7 @@ public class IKSettingArmsHiphop : MonoBehaviour
     {
         Timer += Time.deltaTime;
         DelayTimer += Time.deltaTime;
-        if(DelayTimer > DelayManageArray[FolderController - motionOffset])
+        if(DelayTimer > DelayManageArray[FolderController])
         {
             if(onlyPlayOnce)
             {
@@ -122,10 +122,10 @@ public class IKSettingArmsHiphop : MonoBehaviour
     void PointUpdate()
     {
         StreamReader fi = null;
-        if (NowFrame < FileManageArray[FolderController - motionOffset, 1])
+        if (NowFrame < FileManageArray[FolderController, 1])
         {
             fi = new StreamReader(Application.dataPath + Data_Path + FolderController + '/' + 
-                                  (NowFrame + FileManageArray[FolderController - motionOffset, 0]).ToString() + ".txt");
+                                  (NowFrame + FileManageArray[FolderController, 0]).ToString() + ".txt");
             NowFrame++;
             string all = fi.ReadToEnd();
             string[] axis = all.Split(']');
