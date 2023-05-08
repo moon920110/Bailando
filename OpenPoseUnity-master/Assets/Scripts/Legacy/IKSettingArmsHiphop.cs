@@ -43,6 +43,7 @@ public class IKSettingArmsHiphop : MonoBehaviour
     bool onlyPlayOnce = true;
     AnimatorController animationController;
     public GameObject clip;
+    public int motionOffset = 0;
     List<Motion> clipList;
     int NormalizeBoneLen = 16;
     void Start()
@@ -58,7 +59,7 @@ public class IKSettingArmsHiphop : MonoBehaviour
         StreamReader fi = null;
         fi = new StreamReader(Application.dataPath + Data_Path + '/' + "framedelay.txt");
         string all = fi.ReadToEnd();
-        var tmp = all.Replace("\r\n", ",").Split(',').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
+        var tmp = all.Replace("\n", ",").Replace("\r\n", ",").Split(',').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
         DelayManageArray[0] = tmp[0];
         for (int i = 1; i < DelayManageArray.Length; i++)
         {
@@ -88,14 +89,14 @@ public class IKSettingArmsHiphop : MonoBehaviour
         animationController.SetStateEffectiveMotion(state, clipList[FolderController]);
 
         animator.Rebind();
-
+        FolderController += motionOffset;
         PointUpdate();
     }
     void Update()
     {
         Timer += Time.deltaTime;
         DelayTimer += Time.deltaTime;
-        if(DelayTimer > DelayManageArray[FolderController])
+        if(DelayTimer > DelayManageArray[FolderController - motionOffset])
         {
             if(onlyPlayOnce)
             {
@@ -121,9 +122,10 @@ public class IKSettingArmsHiphop : MonoBehaviour
     void PointUpdate()
     {
         StreamReader fi = null;
-        if (NowFrame < FileManageArray[FolderController,1])
+        if (NowFrame < FileManageArray[FolderController - motionOffset, 1])
         {
-            fi = new StreamReader(Application.dataPath + Data_Path + FolderController + '/' + (NowFrame + FileManageArray[FolderController,0]).ToString() + ".txt");
+            fi = new StreamReader(Application.dataPath + Data_Path + FolderController + '/' + 
+                                  (NowFrame + FileManageArray[FolderController - motionOffset, 0]).ToString() + ".txt");
             NowFrame++;
             string all = fi.ReadToEnd();
             string[] axis = all.Split(']');
