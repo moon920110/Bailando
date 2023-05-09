@@ -40,12 +40,14 @@ public class IKSettingArmsHiphop : MonoBehaviour
     int [,] FileManageArray;
     float [] DelayManageArray;
     float [] FrameRateManageArray;
+    List<List<float[]>> Allpoints;
     bool onlyPlayOnce = true;
     AnimatorController animationController;
     public GameObject clip;
     public int motionOffset = 0;
     List<Motion> clipList;
     int NormalizeBoneLen = 16;
+    AnimatorState state;
     void Start()
     {   
         DirectoryInfo di = new DirectoryInfo(Application.dataPath + Data_Path);
@@ -83,14 +85,17 @@ public class IKSettingArmsHiphop : MonoBehaviour
         }
 
         animationController = (AnimatorController)animator.runtimeAnimatorController;
+        
         clipList = clip.GetComponent<ClipList>().clipList;
-
-        var state = animationController.layers[0].stateMachine.states.FirstOrDefault(s => s.state.name.Equals("Hands")).state;
-        animationController.SetStateEffectiveMotion(state, clipList[FolderController]);
-
-        animator.Rebind();
+        state = animationController.layers[0].stateMachine.states.FirstOrDefault(s => s.state.name.Equals("Hands")).state;
+        
         FolderController += motionOffset;
-        PointUpdate();
+        // ({[x1,y1,z1],[x2,y2,z2]},{[x1,y1,z1],[x2,y2,z2]})
+        Allpoints = new List<List<float[]>>();
+        GetAllPoints();
+        // PointUpdate();
+        IKFind();
+        animator.SetTrigger("Dance");
     }
     void Update()
     {
@@ -100,78 +105,78 @@ public class IKSettingArmsHiphop : MonoBehaviour
         {
             if(onlyPlayOnce)
             {
-                animator.SetTrigger("Play");
+                state.speed = FrameRate/60;
+                animationController.SetStateEffectiveMotion(state, clipList[FolderController]);
+                animator.Rebind();
+
+                animator.SetTrigger("Hand");
                 onlyPlayOnce = false;
             }
             if (Timer > (1 / FrameRate))
             {
                 Timer = 0;
-                PointUpdate();
+                if(NowFrame < FileManageArray[FolderController,1])
+                {
+                    for (int i = 0; i < 38; i++)
+                    {
+                        points[i] = new Vector3(
+                            Allpoints[FolderController][NowFrame*3][i],
+                            -Allpoints[FolderController][NowFrame*3+2][i],
+                            -Allpoints[FolderController][NowFrame*3+1][i]
+                            );
+                    }
+                    for (int i = 0; i < NormalizeBoneLen; i++)
+                    {
+                        NormalizeBone[i] = (points[BoneJoint[i, 1]] - points[BoneJoint[i, 0]]).normalized;
+                    }
+                    NowFrame++;
+                }
+                else
+                {
+                    FolderController++;
+                    NowFrame = 0;
+                    DelayTimer = 0f;
+                    onlyPlayOnce = true;
+                    FrameRate = FrameRateManageArray[FolderController];
+                }
             }
         }
 
-        if (!FullbodyIK)
-        {
-            IKFind();
-        }
-        else
-        {
-            IKSet();
-        }
+        IKSet();
+        
     }
-    void PointUpdate()
+    void GetAllPoints()
     {
         StreamReader fi = null;
-        if (NowFrame < FileManageArray[FolderController, 1])
+        for (int folder = 0; folder < FileManageArray.GetLength(0);folder++)
         {
-            fi = new StreamReader(Application.dataPath + Data_Path + FolderController + '/' + 
-                                  (NowFrame + FileManageArray[FolderController, 0]).ToString() + ".txt");
-            NowFrame++;
-            string all = fi.ReadToEnd();
-            string[] axis = all.Split(']');
-            float[] x = axis[0].Replace("[", "").Replace(" ", "").Split(',').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
-            float[] y = axis[1].Replace("[", "").Replace(" ", "").Split(',').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
-            float[] z = axis[2].Replace("[", "").Replace(" ", "").Split(',').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
-            // float[] x = axis[0].Replace("[", "").Replace(Environment.NewLine, "").Split(' ').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
-            // float[] y = axis[2].Replace("[", "").Replace(Environment.NewLine, "").Split(' ').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
-            // float[] z = axis[1].Replace("[", "").Replace(Environment.NewLine, "").Split(' ').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
-            
-            
-            //rotate Vector3 values in z axis for 90 degree
-            for (int i = 0; i < 38; i++)
+            List<float[]> tmpList = new List<float[]>();
+            // loop until read all files in folder
+            for (int files = 0; files < FileManageArray[folder, 1]; files++)
             {
-                float x1 = x[i];
-                float y1 = z[i];
-                float z1 = y[i];
-                x[i] = x1 * Mathf.Cos(90 * Mathf.Deg2Rad) - y1 * Mathf.Sin(90 * Mathf.Deg2Rad);
-                y[i] = x1 * Mathf.Sin(90 * Mathf.Deg2Rad) + y1 * Mathf.Cos(90 * Mathf.Deg2Rad);
-                z[i] = z1;
-            }
-
-            for (int i = 0; i < 38; i++)
-            {
-                points[i] = new Vector3(x[i], -z[i], -y[i]);
-            }
-            for (int i = 0; i < NormalizeBoneLen; i++)
-            {
-                // NormalizeBone[i] = (points[BoneJoint[i, 1]] - points[BoneJoint[i, 0]]).normalized;
-                NormalizeBone[i] = (points[BoneJoint[i, 1]] - points[BoneJoint[i, 0]]).normalized;
-                // 최대값 최소값 찾아놓기
-            }
-            // 관절 전체에 대해 normalize 연산 실행
-        }
-        else
-        {
-            FolderController++;
-            NowFrame = 0;
-            DelayTimer = 0f;
-            onlyPlayOnce = true;
-
-            var state = animationController.layers[0].stateMachine.states.FirstOrDefault(s => s.state.name.Equals("Hands")).state;
-            animationController.SetStateEffectiveMotion(state, clipList[FolderController]);
-            animator.Rebind();
+                fi = new StreamReader(Application.dataPath + Data_Path + folder + '/' + 
+                                    (files + FileManageArray[folder, 0]).ToString() + ".txt");
+                string all = fi.ReadToEnd();
+                string[] axis = all.Split(']');
+                float[] x = axis[0].Replace("[", "").Replace(" ", "").Split(',').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
+                float[] y = axis[1].Replace("[", "").Replace(" ", "").Split(',').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
+                float[] z = axis[2].Replace("[", "").Replace(" ", "").Split(',').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
             
-            FrameRate = FrameRateManageArray[FolderController];
+                for (int i = 0; i < 38; i++)
+                {
+                    float x1 = x[i];
+                    float y1 = z[i];
+                    float z1 = y[i];
+                    x[i] = x1 * Mathf.Cos(90 * Mathf.Deg2Rad) - y1 * Mathf.Sin(90 * Mathf.Deg2Rad);
+                    y[i] = x1 * Mathf.Sin(90 * Mathf.Deg2Rad) + y1 * Mathf.Cos(90 * Mathf.Deg2Rad);
+                    z[i] = z1;
+                }
+                tmpList.Add(x);
+                tmpList.Add(y);
+                tmpList.Add(z);
+                fi.Close();
+            }
+            Allpoints.Add(tmpList);
         }
     }
     void IKFind()

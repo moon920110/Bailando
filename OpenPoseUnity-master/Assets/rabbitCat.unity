@@ -493,7 +493,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
+  m_TargetDisplay: 5
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -1394,7 +1394,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
+  m_TargetDisplay: 4
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -7107,6 +7107,7 @@ MonoBehaviour:
   Data_Path: /Dances/Cat/Arms/
   File_Name: 
   clip: {fileID: 7180995423880928431, guid: cab2628d70d8f384ba5f008d84995aad, type: 3}
+  motionOffset: 0
 --- !u!4 &1628324127 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -405757517938427082, guid: 381d33f4e9910ae458dd9a2a4a56915c,

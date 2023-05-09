@@ -493,7 +493,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
+  m_TargetDisplay: 5
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -7102,6 +7102,7 @@ MonoBehaviour:
   Data_Path: /Dances/Announce/Arms/
   File_Name: 
   clip: {fileID: 2384338890392228613, guid: ed06a2377d7a71146bdceecf8b6ef98c, type: 3}
+  motionOffset: 0
 --- !u!4 &1628324127 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -405757517938427082, guid: 381d33f4e9910ae458dd9a2a4a56915c,

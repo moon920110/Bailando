@@ -34,13 +34,22 @@ public class IKSettingBody : MonoBehaviour
     Vector3 positionOffset;
     int NormalizeBoneLen = 12;
     public bool ableArms = false;
+    List<float[]> Allpoints;
+    int NumberOfFiles;
     void Start()
     {
         NormalizeBoneLen = 12;
         BoneJoint = new int[, ] { { 0, 2 }, { 2, 3 }, { 0, 5 }, { 5, 6 }, { 0, 9 }, { 9, 10 }, { 9, 11 }, { 11, 12 }, { 12, 13 }, { 9, 14 }, { 14, 15 }, { 15, 16 } };
         NormalizeJoint = new int[, ] { { 0, 1 }, { 1, 2 }, { 0, 3 }, { 3, 4 }, { 0, 5 }, { 5, 6 }, { 5, 7 }, { 7, 8 }, { 8, 9 }, { 5, 10 }, { 10, 11 }, { 11, 12 } };
         
-        PointUpdate();
+        Allpoints = new List<float[]>();
+
+        DirectoryInfo di = new DirectoryInfo(Application.dataPath + Data_Path);
+        var fi = di.EnumerateFiles("*.txt");
+        NumberOfFiles = fi.Count();
+        GetAllPoints();
+
+        IKFind();
     }
     void Update()
     {
@@ -60,45 +69,50 @@ public class IKSettingBody : MonoBehaviour
                 BoneJoint = new int[, ] {{ 0, 2 }, { 2, 3 }, { 0, 5 }, { 5, 6 }, { 0, 9 }, { 9, 10 }};
                 NormalizeJoint = new int[, ] { { 0, 1 }, { 1, 2 }, { 0, 3 }, { 3, 4 }, { 0, 5 }, { 5, 6 }};
             }
-            PointUpdate();
-        }
-        if (!FullbodyIK)
-        {
-            IKFind();
-        }
-        else
-        {
-            IKSet();
-        }
-    }
-    void PointUpdate()
-    {
-        StreamReader fi = null;
-        if (NowFrame < Data_Size)
-        {
-            fi = new StreamReader(Application.dataPath + Data_Path + File_Name + (NowFrame + startFrame).ToString() + ".txt");
-            NowFrame++;
-            string all = fi.ReadToEnd();
-            string[] axis = all.Split(']');
-            float[] x = axis[0].Replace("[", "").Replace(" ", "").Split(',').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
-			float[] y = axis[1].Replace("[", "").Replace(" ", "").Split(',').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
-			float[] z = axis[2].Replace("[", "").Replace(" ", "").Split(',').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
-            // float[] x = axis[0].Replace("[", "").Replace(Environment.NewLine, "").Split(' ').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
-            // float[] y = axis[2].Replace("[", "").Replace(Environment.NewLine, "").Split(' ').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
-            // float[] z = axis[1].Replace("[", "").Replace(Environment.NewLine, "").Split(' ').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
-            if (NowFrame == 1)
-            {
-                positionOffset = new Vector3(x[0] - initX, y[0] - initY, z[0] - initZ);
-            }
             for (int i = 0; i < 17; i++)
             {
-                points[i] = new Vector3(x[i], y[i], z[i]) - positionOffset;
+                points[i] = new Vector3(
+                    Allpoints[NowFrame*3][i],
+                    Allpoints[NowFrame*3+1][i],
+                    Allpoints[NowFrame*3+2][i]
+                    );
             }
-
             for (int i = 0; i < NormalizeBoneLen; i++)
             {
                 NormalizeBone[i] = (points[BoneJoint[i, 1]] - points[BoneJoint[i, 0]]).normalized;
             }
+            NowFrame++;
+            PointUpdate();
+        }
+
+        IKSet();
+    }
+    void GetAllPoints()
+    {
+        StreamReader fi = null;
+        // loop until read all files in folder
+        for (int files = 0; files < NumberOfFiles; files++)
+        {
+            fi = new StreamReader(Application.dataPath + Data_Path + File_Name + (files + startFrame).ToString() + ".txt");
+            string all = fi.ReadToEnd();
+            string[] axis = all.Split(']');
+            float[] x = axis[0].Replace("[", "").Replace(" ", "").Split(',').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
+            float[] y = axis[1].Replace("[", "").Replace(" ", "").Split(',').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
+            float[] z = axis[2].Replace("[", "").Replace(" ", "").Split(',').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
+        
+            for (int i = 0; i < 17; i++)
+            {
+                float x1 = x[i];
+                float y1 = y[i];
+                float z1 = z[i];
+                x[i] = x1 - x[0] - initX;
+                y[i] = x1 - y[0] - initY;
+                z[i] = z1 - z[0] - initZ;
+            }
+            Allpoints.Add(x);
+            Allpoints.Add(y);
+            Allpoints.Add(z);
+            fi.Close();
         }
     }
     void IKFind()
