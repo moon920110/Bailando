@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ControlFPS : MonoBehaviour
 {
+    public int targetFrameRate = 60;
     void Awake() {
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = targetFrameRate;
     }
 }
