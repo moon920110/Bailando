@@ -62,15 +62,18 @@ public class IKSettingArmsHiphop : MonoBehaviour
         fi = new StreamReader(Application.dataPath + Data_Path + '/' + "framedelay.txt");
         string all = fi.ReadToEnd();
         var tmp = all.Replace("\n", ",").Replace("\r\n", ",").Split(',').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
-        DelayManageArray[0] = tmp[0];
+        DelayManageArray[0] = tmp[0] * 2f;
         for (int i = 1; i < DelayManageArray.Length; i++)
         {
-            DelayManageArray[i] = tmp[i] - tmp[i-1];
+            DelayManageArray[i] = (tmp[i] - tmp[i-1])*2f;
         }
         fi = new StreamReader(Application.dataPath + Data_Path + '/' + "framerate.txt");
         all = fi.ReadToEnd();
         tmp = all.Replace("\r\n", ",").Split(',').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
-        FrameRateManageArray = tmp;
+        for (int i = 0; i < FrameRateManageArray.Length; i++)
+        {
+            FrameRateManageArray[i] = tmp[i] / 2f;
+        }
         var cnt = 0;
         
         foreach (var directory in directories)
@@ -145,6 +148,54 @@ public class IKSettingArmsHiphop : MonoBehaviour
         IKSet();
         
     }
+    void LateUpdate()
+    {
+        Timer += Time.deltaTime;
+        DelayTimer += Time.deltaTime;
+        if(DelayTimer > DelayManageArray[FolderController])
+        {
+            if(onlyPlayOnce)
+            {
+                state.speed = FrameRate/60;
+                animationController.SetStateEffectiveMotion(state, clipList[FolderController]);
+                animator.Rebind();
+
+                animator.SetTrigger("Hand");
+                onlyPlayOnce = false;
+            }
+            if (Timer > (1 / FrameRate))
+            {
+                Timer = 0;
+                if(NowFrame < FileManageArray[FolderController,1])
+                {
+                    for (int i = 0; i < 38; i++)
+                    {
+                        points[i] = new Vector3(
+                            Allpoints[FolderController][NowFrame*3][i],
+                            -Allpoints[FolderController][NowFrame*3+2][i],
+                            -Allpoints[FolderController][NowFrame*3+1][i]
+                            );
+                    }
+                    for (int i = 0; i < NormalizeBoneLen; i++)
+                    {
+                        NormalizeBone[i] = (points[BoneJoint[i, 1]] - points[BoneJoint[i, 0]]).normalized;
+                    }
+                    NowFrame++;
+                }
+                else
+                {
+                    FolderController++;
+                    NowFrame = 0;
+                    DelayTimer = 0f;
+                    onlyPlayOnce = true;
+                    FrameRate = FrameRateManageArray[FolderController];
+                }
+            }
+        }
+
+        IKSet();
+        
+    }
     void GetAllPoints()
     {
         StreamReader fi = null;
@@ -167,6 +218,12 @@ public class IKSettingArmsHiphop : MonoBehaviour
                     float x1 = x[i];
                     float y1 = z[i];
                     float z1 = y[i];
+                    if(i == 2 || i == 3 || i == 20 || i == 21)
+                    {
+                        x1 = x1 * 1.05f;
+                        y1 = y1 * 1.05f;
+                        z1 = z1 * 1.05f;
+                    }
                     x[i] = x1 * Mathf.Cos(90 * Mathf.Deg2Rad) - y1 * Mathf.Sin(90 * Mathf.Deg2Rad);
                     y[i] = x1 * Mathf.Sin(90 * Mathf.Deg2Rad) + y1 * Mathf.Cos(90 * Mathf.Deg2Rad);
                     z[i] = z1;

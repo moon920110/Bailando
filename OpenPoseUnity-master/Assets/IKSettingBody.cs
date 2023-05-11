@@ -82,7 +82,6 @@ public class IKSettingBody : MonoBehaviour
                 NormalizeBone[i] = (points[BoneJoint[i, 1]] - points[BoneJoint[i, 0]]).normalized;
             }
             NowFrame++;
-            PointUpdate();
         }
 
         IKSet();
@@ -90,6 +89,9 @@ public class IKSettingBody : MonoBehaviour
     void GetAllPoints()
     {
         StreamReader fi = null;
+        float normX = 0;
+        float normY = 0;
+        float normZ = 0;
         // loop until read all files in folder
         for (int files = 0; files < NumberOfFiles; files++)
         {
@@ -99,15 +101,21 @@ public class IKSettingBody : MonoBehaviour
             float[] x = axis[0].Replace("[", "").Replace(" ", "").Split(',').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
             float[] y = axis[1].Replace("[", "").Replace(" ", "").Split(',').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
             float[] z = axis[2].Replace("[", "").Replace(" ", "").Split(',').Where(s => s != "").Select(f => float.Parse(f)).ToArray();
-        
+            if (files == 0)
+            {
+                normX = x[0] - initX;
+                normY = y[0] - initY;
+                normZ = z[0] - initZ;
+            }
+
             for (int i = 0; i < 17; i++)
             {
                 float x1 = x[i];
                 float y1 = y[i];
                 float z1 = z[i];
-                x[i] = x1 - x[0] - initX;
-                y[i] = x1 - y[0] - initY;
-                z[i] = z1 - z[0] - initZ;
+                x[i] = x1 - normX;
+                y[i] = y1 - normY;
+                z[i] = z1 - normZ;
             }
             Allpoints.Add(x);
             Allpoints.Add(y);

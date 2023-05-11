@@ -114,7 +114,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Hands
-  m_Speed: 4
+  m_Speed: 1.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -4253671963448851310}
@@ -127,7 +127,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 4619424495238071794, guid: 0c76be667adc3934ebd8a7560e396bb1,
+  m_Motion: {fileID: 4619424495238071794, guid: b9eceb9ddd4e7114288d9463583148d4,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 

@@ -9,6 +9,7 @@ TagManager:
   - CameraWide
   - CameraZoom
   - CameraUpper
+  - rabbit
   layers:
   - Default
   - TransparentFX
